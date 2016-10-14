@@ -1,0 +1,6 @@
+#!/bin/bash
+pdflatex Start_Document.tex
+bibtex Start_Document
+pdflatex Start_Document.tex
+pdflatex Start_Document.tex
+firefox Start_Document.pdf#page=$1

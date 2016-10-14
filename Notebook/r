@@ -1,0 +1,6 @@
+#!/bin/bash
+pdflatex lab_book_1.tex
+bibtex lab_book_1
+pdflatex lab_book_1.tex
+pdflatex lab_book_1.tex
+firefox lab_book_1.pdf#page=$1 &

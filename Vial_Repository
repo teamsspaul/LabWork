@@ -1,0 +1,214 @@
+#!/usr/bin/env python3
+
+"""
+Vial_Repository is a python code used to create a .csv file 
+that keeps track of your laboratory vials.
+"""
+
+__author__     =  "Paul Mendoza"
+__copyright__  =  "Copyright 2016, Planet Earth"
+__credits__    = ["Sunil Chirayath",
+                  "Charles Folden",
+                  "Jeremy Conlin"]
+__license__    =  "GPL"
+__version__    =  "1.0.1"
+__maintainer__ =  "Paul Mendoza"
+__email__      =  "paul.m.mendoza@gmail.com"
+__status__     =  "Production"
+
+################################################################
+##################### Import packages ##########################
+################################################################
+
+import os.path
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import datetime
+
+################################################################
+################### Import Own Functions #######################
+################################################################
+
+
+################################################################
+###################### Vial Creation ###########################
+################## and or modification #########################
+################################################################
+
+######## Rules Read all
+#1.
+#For any concentration a captical M is used for molarity
+#Followed by a space and the constituant
+#2.
+#'Notes' will be used to verify 'Volume (ml)' and 'Contents' (if provided)
+#If there is a discrepency, a flag will be thrown up and the
+#program will quit. Make sure any references to volumes are in the
+#same units (only use ul and ml or microliters and mililiters)
+#3.
+#Any reference of a 'Label' in 'Notes' MUST be followed by '_Vial'
+#4.
+#Consistency is key, if HNO_3 is written for nitric acid,
+#consistently use this for nitric acid
+#5.
+#Any creation of a new vial must have 'Creation' in the
+#'Operation' variable
+#6.
+#'Notes' format (there is a space before and after the '+' sign)
+#'volume unit_of_volume Contents + volume unit_of_volume Contents'
+#In the above line, the Contents format:
+#'Molarity_for_species_1M species_1;Molarity_for_species_2M species_2'
+#Yes there is an M right after (no space)
+#7.
+#This code calculates concentrations from Molarities and volumes
+
+Cf={
+    'Label'              : ['1G'],
+    'Contents'           : ['1M HNO_3'],
+    'Volume (ml)'        : [4],
+    'Volume (ul)'        : [4000],
+    'DateTime Created'   : ['2014-05-14 00:00:00'],
+    
+    'Operation'          : ['Creation'],
+    'DateTime Mod'       : ['2014-05-14 00:00:00'],
+    'Notes'              : ['3.75 ml DI + 0.25 ml 16M HNO_3']
+   }
+
+# Cf={
+#     'Label'              : ['0G'],
+#     'Contents'           : [''],
+#     'Volume (ml)'        : [''],
+#     'Volume (ul)'        : [''],
+#     'DateTime Created'   : ['2014-05-14 00:00:00'],
+    
+#     'Operation'          : ['Creation'],
+#     'DateTime Mod'       : ['2014-05-14 00:00:00'],
+#     'Notes'              : ['4 ml of 1G_Vial + 0.5 ml DUO2; 16M HNO_3']
+#    }
+
+Cf=pd.DataFrame(
+                data=Cf,
+                columns=[
+                         'Label',
+                         'Contents',
+                         'Volume (ml)',
+                         'Volume (ul)',
+                         'DateTime Created',
+                         'Operation',
+                         'DateTime Mod',
+                         'Notes'
+                        ]
+                )
+
+#Check if Note is of decent length
+if len(Cf.Notes[0])<5:
+    print("Too short of a note, bad form for a scientist")
+    quit()
+
+#Can we calculate volumes and contents?
+Calculate=True
+if '_Vial' in Cf.Notes[0]:
+    Calculate=False
+    print('Vial modification detected')
+    if 'Creation' in  Cf.Operation[0]:
+        print('Further creating a new vial')
+
+#If we can calculate volumes...then lets do it
+if Calculate:
+    if 'ul' in Cf.Notes[0] and 'ml' in Cf.Notes[0]:
+        print("Mixing units in Cf.Notes[0] bad form")
+        quit()
+    if 'ml' not in Cf.Notes[0] and 'ul' not in Cf.Notes[0]:
+        print("No units in Cf.Notes[0] bad form")
+        quit()
+    AddList=Cf.Notes[0].split(' + ')
+    for item in AddList:
+        print(item)
+        
+quit()
+        
+#Current Date and Time
+DateTime=str(datetime.datetime.now()).split('.')[0]
+
+################################################################
+##################### Print Options ############################
+################################################################
+
+
+
+################################################################
+##################### Create or update #########################
+#####################     .csv file    #########################
+################################################################
+
+if(os.path.isfile("VialDataset.csv")):
+    print("Updating VialDataset.csv")
+    New=False
+    #df = pd.read_csv('VialDataset.csv', index_col=0)
+    df = pd.read_csv('VialDataset.csv')
+
+else:
+    print("Starting a new VialDataset file")
+    New=True
+    df={
+        'Label'             : [],
+        'Contents'          : [],
+        'Volume (ml)'       : [],
+        'Volume (ul)'       : [],
+        'DateTime Created'  : [],
+        
+        'Operation'         : [],
+        'DateTime Mod'      : [],
+        'Notes'             : []
+        }
+    df=pd.DataFrame(
+                    data=df,
+                    columns=[
+                        'Label',
+                        'Contents',
+                        'Volume (ml)',
+                        'Volume (ul)',
+                        'DateTime Created',
+                        'Operation',
+                        'DateTime Mod',
+                        'Notes'
+                        ]
+                    )
+    #df = df.set_index('Label')
+
+################################################################
+################### Update the dataset #########################
+################################################################
+
+if New: #If first vial, put into list
+    df=df.append(Cf,ignore_index=True) 
+else:
+    for i in df.Label: #Loop through all Existing labels
+        if Cf.Label[0] == i and Cf.Operation[0] == 'Creation':
+            print("Vial Already exists")
+            print(df)
+            quit()
+        print(i)
+
+
+
+
+    
+#s = pd.Series([80,2,50], index=['HPI','Int_rate','US_GDP_Thousands'])
+#df4 = df1.append(s, ignore_index=True)
+#concat = pd.concat([df1,df2,df3])
+
+
+
+#print(df)
+    
+#for i in df.Contents:
+#    print(i)
+
+#print(df.Contents[0])
+
+
+
+df.to_csv('VialDataset.csv',index=False)
+
+    

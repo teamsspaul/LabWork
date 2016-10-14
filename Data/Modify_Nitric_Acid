@@ -1,0 +1,55 @@
+#!/usr/bin/env python3
+
+"""
+Modify_Atomic_Weights modifies output from:
+physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=&ascii=ascii&isotype=all
+to make usable in code
+Get rid of all "_" lines from above link
+Modify top line and last lines (Remove top lines, make csv line out of labels)
+Add labels "protons" and "symbol" to the first line
+remove "D" "T" and "H" from lines in the hydrogen section
+"""
+
+__author__     =  "Paul Mendoza"
+__copyright__  =  "Copyright 2016, Planet Earth"
+__credits__    = ["Sunil Chirayath",
+                  "Charles Folden",
+                  "Jeremy Conlin"]
+__license__    =  "GPL"
+__version__    =  "1.0.1"
+__maintainer__ =  "Paul Mendoza"
+__email__      =  "paul.m.mendoza@gmail.com"
+__status__     =  "Production"
+
+################################################################
+##################### Import packages ##########################
+################################################################
+
+import os.path
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import datetime
+
+
+#Save all lines in a list called content
+with open('Nitric_Acid','r') as myfile:
+    content=myfile.readlines()
+
+f=open('Nitric_Acid.csv','w')
+
+#Loop through content 
+for i in range(0,len(content)):
+
+    line=content[i]                #Save each line in easier variable    
+    line=line.replace('\n',' ')    #Remove newline characters
+    line=line.replace(',','-')
+
+    listline=line.split()
+    if i>=64:
+        listline=np.append([listline[0],"NaN"],listline[1:-1])
+    csvStrline=','.join(listline)
+    f.write(csvStrline+'\n')
+
+
+
