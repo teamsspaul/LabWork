@@ -82,8 +82,9 @@
 \newexperiment{Notes}{Experiment Notes}
 \newexperiment{Stock}{Stock creation}
 \newexperiment{Cycle1Prep}{Preparation for Cycle 1}
-\newexperiment{Cycle1}{Cycle 1 experiment}
-\newexperiment{Cycle1_Counting}{Counting for Cycle 1 experiment}
+\newexperiment{Cycle1_Fail}{Cycle 1 Mistake experiment}
+\newexperiment{Cycle1_Fail_Counting}{Counting for Cycle 1
+  Mistake experiment}
 \newexperiment{table1}{Isotopes we are looking for}
 %\newexperiment{shorthand}{Description of the experiment}
 
@@ -448,7 +449,7 @@ but it doesn't have to}
 
 \labday{Monday, 10 October 2016\\ 12:30 pm - 4:30 pm}
 
-\experiment{Cycle1}
+\experiment{Cycle1_Fail}
 \begin{todolist}
 \item[\done]{First contact - Extraction}
   \begin{itemize}
@@ -524,7 +525,7 @@ but it doesn't have to}
 \vspace{5mm}
 This experiment had sputtering of pipette at certain times.
 
-\experiment{Cycle1_Counting}
+\experiment{Cycle1_Fail_Counting}
 \begin{todolist}
 \item[\done]{Counted waste $\boxed{1}$, containing 0.3
   ml of $\boxed{Stock}$ and 0.2 ml $\boxed{TBP}$, on HPGe,
@@ -537,7 +538,7 @@ This experiment had sputtering of pipette at certain times.
 
 \labday{Tuesday, 11 October 2016\\ 10:30 pm - 1:00 am}
 
-\experiment{Cycle1_Counting}
+\experiment{Cycle1_Fail_Counting}
 There are 6 things to count.
 \begin{todolist}
 \item[\done]{Initial solution $\boxed{1}$ - 23 cm away, 0.3 ml HNO\tsbs{3}}
@@ -598,17 +599,56 @@ There are 6 things to count.
 %	LAB BOOK day
 %-----------------------------------------------------------------------
 
-\labday{Wednesday, 11 October 2016\\ 11:30 am - 1:30 pm}
+\labday{Wednesday, 12 October 2016\\ 11:30 am - 1:30 pm}
 
-\experiment{Cycle1_Counting}
+\experiment{Cycle1_Fail_Counting}
 
 \begin{todolist}
 \item[\done]{Finish count $\boxed{3P}$}
 \item[\done]{Start sample $\boxed{2W}$}
-\item{Determine preliminary results}
+\item[\done]{Determine preliminary results}
   \begin{itemize}
   \item{Determined \tss{137}Cs, \tss{144}Ce, \tss{106}Rh
     activities for first 4 counts - Excel sheet}
+  \item{Used excel sheet from John Burns for efficiency
+    calibration of Eu-152 source...will just use
+    the sheet from now on}
+  \item{Also got from John, a templating file for GENIE,
+    ``AnalysisMG.tpi'', which helps a lot for output from
+    GENIE, again, something I do not want to modify}
+  \item{The template was in an algorithm from GENIE, had
+    the following steps}
+    \begin{enumerate}
+    \item{Peak Locate - Unidentified 2nd Diff}
+      \begin{itemize}
+      \item{Channels 1-16000}
+      \item{2.50}
+      \item{0.50 - FWHM}
+      \item{Add to existing results}
+      \end{itemize}
+    \item{Peak Area - Sum/Non-linear LSQ Fit}
+      \begin{itemize}
+      \item{Channels 1-16000}
+      \item{4 channels, use fixed tail parameters}
+      \item{Channels, Step, 4.00, 4.00, 4.00}
+      \item{Output to screen and printer}
+      \end{itemize}
+    \item{Reporting...}
+      \begin{itemize}
+      \item{``AnalysisMG.tpi'', ``C:/GENIE2K/CTLFILES/''}
+      \item{PeakAnalysis, 1.000000}
+      \item{Start on: Page One, New File, $\mu$Ci}
+      \end{itemize}
+    \end{enumerate}
+  \end{itemize}
+\item[\done]{Notes for research meeting}
+  \begin{itemize}
+  \item{Process dilutes by factor of 12, no matter what}
+  \item{Concentrated stock by a factor of two}
+  \item{Decreased initial volume}
+  \item{Have to mainatin, 0.2 ml excess volume to pipette from top}
+  \item{Have to maintain, 0.1 ml excess from bottom}
+  \item{Mistake in extraction - all extractions at once}
   \end{itemize}
 \end{todolist}
 
@@ -618,14 +658,38 @@ There are 6 things to count.
 %	LAB BOOK day
 %-----------------------------------------------------------------------
 
-\labday{Thursday, 12 October 2016\\ 12:30 am - 4:30 pm}
+\labday{Thursday, 13 October 2016\\ 12:30 am - 4:30 pm}
 
-\experiment{Cycle1_Counting}
+\experiment{Cycle1_Fail_Counting}
 
 \begin{todolist}
 \item[\done]{Finish count $\boxed{2W}$}
 \item[\done]{Start count $\boxed{2}$}
+\item[\done]{Fix alpha counter, reivew alpha counting}
+  \begin{itemize}
+  \item{Alpha detector broken, fixed by plugging into proper port}
+  \item{Counted Calibration Alpha source}
+    \begin{itemize}
+    \item{item}
+    \end{itemize}
+  \item{Counted Background}
+  \end{itemize}
 \end{todolist}
+
+
+%------------------------------------------------------------------------
+%	LAB BOOK day
+%-----------------------------------------------------------------------
+
+\labday{Friday, 14 October 2016\\ 8:30 am - 9:00 pm}
+
+\experiment{Cycle1_Fail_Counting}
+
+\begin{todolist}
+\item[\done]{Finish count $\boxed{2}$}
+\end{todolist}
+
+
 %----------------------------------------------------------------------
 %	Examples
 %-----------------------------------------------------------------------
