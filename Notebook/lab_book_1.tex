@@ -81,10 +81,15 @@
 
 \newexperiment{Notes}{Experiment Notes}
 \newexperiment{Stock}{Stock creation}
-\newexperiment{Cycle1Prep}{Preparation for Cycle 1}
-\newexperiment{Cycle1_Fail}{Cycle 1 Mistake experiment}
-\newexperiment{Cycle1_Fail_Counting}{Counting for Cycle 1
-  Mistake experiment}
+\newexperiment{Process1Prep}{Preparation for Process 1}
+\newexperiment{Process1_Fail}{Process 1 Mistake experiment}
+\newexperiment{Process1_Fail_Counting}{Counting for Process 1
+  Mistake experiment (Gamma)}
+\newexperiment{Process1_Fail_Counting2}{Counting for Process 1
+  Mistake experiment (Alpha)}
+\newexperiment{Process1_Fail_Counting_Analysis}{Analysis
+  for Process 1 Mistake (Gamma)}
+\newexperiment{Cycle_2_Prep}{Preparation for 3 Cycles}
 \newexperiment{table1}{Isotopes we are looking for}
 %\newexperiment{shorthand}{Description of the experiment}
 
@@ -288,7 +293,7 @@ $\boxed{\rightarrow Stock}$
 \item[\done]{Move shielding back to where it was}
 \end{todolist}
 
-\experiment{Cycle1Prep}
+\experiment{Process1Prep}
 \begin{todolist}
 \item[\done]{Count calibration standard Eu-152 in HPGe 3 hours 22 minutes at furtherest position from detector (26 cm)}
   \begin{itemize}
@@ -311,7 +316,7 @@ $\boxed{\rightarrow Stock}$
 
 \labday{Saturday, 8 October 2016\\ 10:00am - 2:00 pm}
 
-\experiment{Cycle1Prep}
+\experiment{Process1Prep}
 
 \begin{todolist}
 \item[\done]{Finish background count, lasted 12 hours}
@@ -369,7 +374,7 @@ $M_{2,HNO_3}=\frac{M_{3,HNO_3}V_3}{V_2}$
 
 \labday{Sunday, 9 October 2016\\ 7:30 pm - 11:30 pm}
 
-\experiment{Cycle1Prep}
+\experiment{Process1Prep}
 
 \begin{todolist}
 \item[\done]{Prepare for multi contact extraction and back extraction exp}
@@ -449,7 +454,7 @@ but it doesn't have to}
 
 \labday{Monday, 10 October 2016\\ 12:30 pm - 4:30 pm}
 
-\experiment{Cycle1_Fail}
+\experiment{Process1_Fail}
 \begin{todolist}
 \item[\done]{First contact - Extraction}
   \begin{itemize}
@@ -525,12 +530,22 @@ but it doesn't have to}
 \vspace{5mm}
 This experiment had sputtering of pipette at certain times.
 
-\experiment{Cycle1_Fail_Counting}
+\experiment{Process1_Fail_Counting}
 \begin{todolist}
 \item[\done]{Counted waste $\boxed{1}$, containing 0.3
   ml of $\boxed{Stock}$ and 0.2 ml $\boxed{TBP}$, on HPGe,
   for 12 hours (left for the night)}
 \end{todolist}
+
+\begin{figure}[H] % Example of including images
+\begin{center}
+  \includegraphics[width=0.85\linewidth]
+                  {Figures/Process_1_Mess_Up}
+\end{center}
+\caption{Process 1 Mess Up Experimental Overview}
+\label{fig:example2}
+\end{figure}
+
 
 %------------------------------------------------------------------------
 %	LAB BOOK day
@@ -538,7 +553,7 @@ This experiment had sputtering of pipette at certain times.
 
 \labday{Tuesday, 11 October 2016\\ 10:30 pm - 1:00 am}
 
-\experiment{Cycle1_Fail_Counting}
+\experiment{Process1_Fail_Counting}
 There are 6 things to count.
 \begin{todolist}
 \item[\done]{Initial solution $\boxed{1}$ - 23 cm away, 0.3 ml HNO\tsbs{3}}
@@ -554,7 +569,7 @@ There are 6 things to count.
 \end{center}
 \begin{todolist}
 \item[\done]{Pull out 0.2 from bottom of $\boxed{1}$ (HNO\tsbs{3}),
-  dillute to 0.3 ml with $\boxed{4\ M\ HNO_3}$ $\boxed{\rightarrow 1W}$}
+  dillute to 0.3 ml with $\boxed{4\ M\ HNO_3}$ $\boxed{\rightarrow 1W}$ (Part)}
   \begin{itemize}
   \item{Count on HPGe $\sim$ 1 hour}
   \end{itemize}
@@ -572,7 +587,7 @@ There are 6 things to count.
   \item{Coult not pull out all 0.7, but only 0.6}
   \end{itemize}
 \item[\done]{Pull out 0.6 ml from top of $\boxed{2}$ (TBP)
-  $\boxed{\rightarrow 2W2}$, should have 0.4 ml, 0.2 ml of TBP,
+  $\boxed{\rightarrow 2W2}$, should have 0.5 ml, 0.3 ml of TBP,
   and 0.2 ml of HNO\tsbs{3}}
 \end{todolist}
 
@@ -580,7 +595,7 @@ There are 6 things to count.
 \begin{figure}[H] % Example of including images
 \begin{center}
   \includegraphics[width=0.5\linewidth]
-                  {Figures/Extraction_Cycle_1_First_3_Counts}
+                  {Figures/Extraction_Process_1_First_3_Counts}
 \end{center}
 \caption{First Three Counts}
 \label{fig:example1}
@@ -589,7 +604,7 @@ There are 6 things to count.
 \begin{figure}[H] % Example of including images
 \begin{center}
   \includegraphics[width=0.5\linewidth]
-                  {Figures/Back_Extraction_Cycle_1_Last_3_Counts}
+                  {Figures/Back_Extraction_Process_1_Last_3_Counts}
 \end{center}
 \caption{Second Three Counts}
 \label{fig:example2}
@@ -601,7 +616,7 @@ There are 6 things to count.
 
 \labday{Wednesday, 12 October 2016\\ 11:30 am - 1:30 pm}
 
-\experiment{Cycle1_Fail_Counting}
+\experiment{Process1_Fail_Counting}
 
 \begin{todolist}
 \item[\done]{Finish count $\boxed{3P}$}
@@ -660,19 +675,172 @@ There are 6 things to count.
 
 \labday{Thursday, 13 October 2016\\ 12:30 am - 4:30 pm}
 
-\experiment{Cycle1_Fail_Counting}
+\experiment{Process1_Fail_Counting}
 
 \begin{todolist}
 \item[\done]{Finish count $\boxed{2W}$}
+\end{todolist}
+
+\experiment{Process1_Fail_Counting2}
+\begin{todolist}
 \item[\done]{Start count $\boxed{2}$}
 \item[\done]{Fix alpha counter, reivew alpha counting}
   \begin{itemize}
   \item{Alpha detector broken, fixed by plugging into proper port}
   \item{Counted Calibration Alpha source}
     \begin{itemize}
-    \item{Somestuff}
+    \item{There are some details for determining
+      what the alpha efficiency should be for the alpha
+      detector, and I want to make sure I do it correctly,
+      have not had time to look into it. I have a PDF file
+      that shows what is in the sample\\
+      /notebook/Figures/Alpha\_Copy.pdf}
+    \item{Pu-239 and Pu-240 are unresolved}
+    \item{Pu-238 and Am-241 are unresolved}
+    \item{Isotope Droduets Laboratories}
+    \item{38.81 nCi}
+    \item{1451-68-3}
+    \item{1 Dec 10}
+    \item{Kevin also provided me with a Excel Sheet that does
+      some of the calculations, probably will have to modify}
     \end{itemize}
-  \item{Counted Background}
+  \end{itemize}
+\item[\done]{Counted Alpha Background}
+\item[\done]{Counted Alpha Calibration (9 mm position)}
+\item[\done]{Prepare alpha sample of $\boxed{Stock}$}
+  \begin{itemize}
+    \item{From Jarrod's stock 10$\mu$l was dilluted to 1ml
+    and 10 $\mu$l was taken}
+  \end{itemize}
+\end{todolist}
+\begin{center}
+10 $\mu$l of $\boxed{Stock}$ (4 M HNO\tsbs{3})\\
++\\
+190 $\mu$l of DI water (leftover in glovebox)\\
+=\\
+0.2 ml of $\sim$ 0 M HNO\tsbs{3} $\boxed{4\ Dillution}$
+\end{center}
+\begin{todolist}
+\item[\done]{Prepare and count alpha sample of Stock}
+  \begin{itemize}
+  \item{Take 20 $\mu$l of $\boxed{4\ Dillution}$, put onto
+  concentric circle disk plates (innermost circle) $\boxed{D1}$}
+    \begin{itemize}
+    \item{It should be noted that once an alpha source is
+      placed on these disks and dried out, they look no different
+      from other disks}
+    \end{itemize}
+  \item{Let dry in glovebox}
+  \end{itemize}
+\item[\done]{Count $\boxed{D1}$ over night}
+\end{todolist}
+
+%------------------------------------------------------------------------
+%	LAB BOOK day
+%-----------------------------------------------------------------------
+
+\labday{Friday, 14 October 2016\\ 8:30 am - 9:00 pm}
+
+\experiment{Process1_Fail_Counting}
+
+\begin{todolist}
+\item[\done]{Finish count $\boxed{2}$}
+\end{todolist}
+
+\experiment{Process1_Fail_Counting2}
+\begin{todolist}
+\item[\done]{Finish count for $\boxed{D1}$}
+\item[\done]{Move $\boxed{D1}$ to safe (or glovebox)}
+\end{todolist}
+
+\experiment{Process1_Fail_Counting_Analysis}
+\begin{todolist}
+\item{Attempt to understand our alpha efficiency (basically
+  how much is in the calibration source)}
+\end{todolist}
+
+%------------------------------------------------------------------------
+%	LAB BOOK day
+%-----------------------------------------------------------------------
+
+\labday{Monday - Wednesday, 17-19 October 2016}
+
+\experiment{Process1_Fail_Counting_Analysis}
+
+\begin{todolist}
+\item{Looked into alpha calibration math some more}
+\item[\done]{Analyze and automate (somewhat) Gamma analysis}
+  \begin{itemize}
+  \item{Program for pulling peak data from GENIE}
+  \item{Program for calculating efficency from peak energy data using
+    John Burn's Excel file}
+  \item{Determine Compton Edges for peaks}
+    \begin{itemize}
+    \item{$$E_f=\frac{E_i}{1+\frac{E_i}{511}(1-cos\theta)}$$}
+    \item{$$E_i=\frac{E_f}{1-\frac{E_f}{511}(1-cos\theta)}$$}
+    \item{Found that I do not have any back scatter peaks}
+    \end{itemize}
+  \item{Program for finding sum peaks}
+    \begin{itemize}
+    \item{Included backscatter peaks}
+    \item{Found some coincidence peaks, didn't know how to analyze}
+    \end{itemize}
+  \item{Quantify most of the peaks in gamma spectrum (took the longest)}
+    \begin{itemize}
+    \item{$$CPS=A\gamma\epsilon$$}
+    \item{$$CPS=A_1\gamma_1\epsilon_1+A_2\gamma_2\epsilon_2$$}
+    \item{Most peaks used the first equation, one peak had
+      overlapping energies, so used the second equation,
+      had to assume one of the activities}
+    \end{itemize}
+  \item{Applied this analysis to
+    6 gamma spectrum (took second longest - now more automated)}
+  \item{Create graphics to help depict
+    what work was actually done}
+  \end{itemize}
+\item[\done]{Note: Follow these steps when analyzing Gamma}
+  \begin{enumerate}
+  \item{Make sure Efficiency Excel Sheet is up to date}
+    \begin{itemize}
+    \item{Run Eff Count and particular distance}
+    \item{Run: ``Analyze - Execute Sequence - Analyze\_Data''
+      on GENIE}
+    \item{Save as a .PDF (not .pdf) file the spectra data
+      : File - Export Report to PDF from GENIE}
+    \item{Pull Peak information with Data\_Pull.py program (direct
+    program to directory with .PDF file)}
+    \item{Put data into spreed sheet
+    ``C:/Rad\_Detection/Calibration/Gamma/Eff\_cal\_summary\_Eu-152.xlsm''}
+    \end{itemize}
+  \item{Gather data in a similar manner as with the efficiency count
+  - will produce a bunch of plain Excel Sheets}
+  \item{Find the template  from C:/Rad\_Dection folder, update
+    real Eff column with ``Eff\_Calc.py'' (Make sure you
+    copy paste energies into the gamma\_energies file)}
+  \item{Copy this template over to the sheets you just made,
+    and gamma analysis for the peaks will be complete}
+    \begin{itemize}
+    \item{Note: Will have to copy, paste, remove peak columns that
+      were not found or in excess from template, lining up everything
+      and then delete was copied over, then paste again, janky,
+      but not super slow - this list is a reminder for Paul,
+      if anyone else is using this list, would probably need
+      more explanation }
+    \end{itemize}
+  \end{enumerate}
+\item[\done]{Notes for Research Meeting}
+  \begin{itemize}
+  \item{Showed activities for each of the solutions}
+  \item{Found that D-values couldn't be found because
+    of experimental setup}
+  \item{Activity Balance seemed to match up}
+    \begin{itemize}
+    \item{Although it wasn't perfect because the numbers
+    weren't exactly close to zero, but within the error}
+    \end{itemize}
+  \item{Results seemed to match up with previous experiment}
+  \item{Moving Forward, John and Sunil and I discussed
+    what these next experiments should entail}
   \end{itemize}
 \end{todolist}
 
@@ -681,12 +849,70 @@ There are 6 things to count.
 %	LAB BOOK day
 %-----------------------------------------------------------------------
 
-\labday{Friday, 14 October 2016\\ 8:30 am - 9:00 pm}
+\labday{Thursday, 20 October 2016}
 
-\experiment{Cycle1_Fail_Counting}
+\experiment{Cycle_2_Prep}
+
+Note from John:\\~\\
+After the research meeting yesterday, I thought about Paul’s
+project quite a bit and what the best path forward should be.
+\textbf{In my opinion, it would be best for him to do a single-cycle}
+\textbf{(extraction/back extraction) in a replicate of 3 and determine}
+\textbf{the D-values for both the extraction and back extraction and}
+\textbf{show the reproducibility of this single-cycle experiment.} I
+believe this is one of the goal you set for him as a part of
+his proposal. From there we can move into the whole process
+with confidence that we have consistent behavior for Cs-137
+and Cs-134, as well as, a good understanding of the D-values
+for the isotopes of interest that can be seen by gamma-ray
+analysis. He and I spent some time this morning talking about
+this and we both agree that this week he will focus on completing
+all 3 single-cycle replicates, gamma counting all the solutions,
+alpha counting as many as possible (I do not believe alpha and
+gamma counts cannot be performed at the same time, as they both
+use the computer), and analyzing a majority of the data before
+next week’s research meeting. If you do not think this is plan
+of action in the best to pursue we can restructure it.
+\\~\\
+I spend the rest of the day doing homework, I aplogize,
+but it was due yesterday, I think its dumb that I should
+have to apologize for spending \textbf{ANY} time doing homework.
+\\~\\
+John also mentioned two good techniques, that should be noted:
+\begin{itemize}
+\item{Pipetting with equal volumes using the plastic squish tops}
+  \begin{itemize}
+  \item{Squeeze top while going through organic, suck up as much as
+    possible}
+  \item{Then draw from top as well}
+  \end{itemize}
+\item{Measureing volume with pipette}
+  \begin{itemize}
+  \item{The above technique would need some means for measuring volume
+    using the pipette, you can vary the volume around
+    what you thought you sucked up, and check if there is air
+    at the bottom of the tip}
+  \end{itemize}
+\end{itemize}
+
+
+%------------------------------------------------------------------------
+%	LAB BOOK day
+%-----------------------------------------------------------------------
+
+\labday{Friday, 21 October 2016\\ 9:30am - 12:00 pm\\1:00 pm 5:00 pm}
 
 \begin{todolist}
-\item[\done]{Finish count $\boxed{2}$}
+\item[\done]{Updated this lab notebook (most of this morning)}
+\end{todolist}
+
+\experiment{Cycle_2_Prep}
+
+\begin{todolist}
+\item{Practice pipetting out with squish tops like John Mentioned}
+  \begin{itemize}
+  \item{Determine if 0.3 ml is a good amount of solution to use}
+  \end{itemize}
 \end{todolist}
 
 
