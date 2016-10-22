@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.30)  21 OCT 2016 18:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.30)  22 OCT 2016 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -630,7 +630,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [10
 
-] <Figures/Process_1_Mess_Up.png, id=255, 680.5425pt x 1258.7025pt>
+] <Figures/Process_1_Mess_Up.png, id=266, 680.5425pt x 1258.7025pt>
 File: Figures/Process_1_Mess_Up.png Graphic file (type png)
 
 <use Figures/Process_1_Mess_Up.png>
@@ -653,7 +653,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 554.
 
 
-<Figures/Extraction_Process_1_First_3_Counts.png, id=267, 405.01312pt x 532.238
+<Figures/Extraction_Process_1_First_3_Counts.png, id=278, 405.01312pt x 532.238
 43pt>
 File: Figures/Extraction_Process_1_First_3_Counts.png Graphic file (type png)
  <use Figures/Extraction_Process_1_First_3_Counts.png>
@@ -663,7 +663,7 @@ n input line 598.
  [13
 
 ]
-<Figures/Back_Extraction_Process_1_Last_3_Counts.png, id=273, 507.39563pt x 515
+<Figures/Back_Extraction_Process_1_Last_3_Counts.png, id=284, 507.39563pt x 515
 .67656pt>
 File: Figures/Back_Extraction_Process_1_Last_3_Counts.png Graphic file (type pn
 g)
@@ -763,27 +763,34 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [23
 
+] [24]
+chapter without number
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 959.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1070.
+[25
+
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1048.
- [24]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1048.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1070.
  (./lab_book_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1048.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1048.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1070.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1070.
 
 Package rerunfilecheck Info: File `lab_book_1.out' has not changed.
-(rerunfilecheck)             Checksum: B2B5236409214DB3FC0F79EA1E054FF5;2711.
+(rerunfilecheck)             Checksum: A0C13901C9CBB1EB4C7CC4C1544C5510;2868.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1048.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1070.
  ) 
 Here is how much of TeX's memory you used:
- 9055 strings out of 494953
- 138003 string characters out of 6180977
- 391229 words of memory out of 5000000
- 12127 multiletter control sequences out of 15000+600000
+ 9061 strings out of 494953
+ 138075 string characters out of 6180977
+ 392232 words of memory out of 5000000
+ 12129 multiletter control sequences out of 15000+600000
  16278 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  47i,12n,68p,288b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -801,10 +808,10 @@ x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on lab_book_1.pdf (27 pages, 321309 bytes).
+Output written on lab_book_1.pdf (28 pages, 322369 bytes).
 PDF statistics:
- 407 PDF objects out of 1000 (max. 8388607)
- 353 compressed objects within 4 object streams
- 84 named destinations out of 1000 (max. 500000)
- 272 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 424 PDF objects out of 1000 (max. 8388607)
+ 369 compressed objects within 4 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 288 words of extra memory for PDF output out of 10000 (max. 10000000)
 
