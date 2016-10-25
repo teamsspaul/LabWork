@@ -34,7 +34,9 @@
 \contentsline {experiment}{\numberline {1}Preparation for 3 Cycles}{25}{experiment.13.1}
 \contentsline {chapter}{\nonumberline Sunday, 23 October 2016}{26}{chapter*.15}
 \contentsline {experiment}{\numberline {1}Preparation for 3 Cycles}{26}{experiment.14.1}
-\contentsline {chapter}{\nonumberline Monday, 24 October 2016\\10:00 am - 12:00 pm\\3:00 pm - 10:00 pm}{27}{chapter*.16}
+\contentsline {chapter}{\nonumberline Monday, 24 October 2016\\10:00 am - 12:00 pm\\3:00 pm - 8:00 pm}{27}{chapter*.16}
 \contentsline {experiment}{\numberline {1}Preparation for 3 Cycles}{27}{experiment.15.1}
 \contentsline {experiment}{\numberline {2}Counting for Process 1 Mistake experiment (Alpha)}{27}{experiment.15.2}
 \contentsline {experiment}{\numberline {3}Cycle experiment, replicate of 3}{27}{experiment.15.3}
+\contentsline {chapter}{\nonumberline Tuesday, 25 October 2016\\8:00 am}{29}{chapter*.17}
+\contentsline {experiment}{\numberline {1}Cycle experiment, replicate of 3}{29}{experiment.16.1}
