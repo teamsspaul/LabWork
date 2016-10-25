@@ -92,7 +92,7 @@
 \newexperiment{Cycle_X3_Prep}{Preparation for 3 Cycles}
 \newexperiment{table1}{Isotopes we are looking for}
 \newexperiment{Cycle_X3}{Cycle experiment, replicate of 3}
-\newexperiment{programs}{Automation Work}
+\newexperiment{programs}{Calculation Work}
 %\newexperiment{shorthand}{Description of the experiment}
 
 %----------------------------------------------------------------------
@@ -1106,8 +1106,24 @@ John also mentioned two good techniques, that should be noted:
     $\gamma=$yield\\
       $A=$activity
     \end{center}
-    Ratio at 26 cm and 0 cm...I wrote it down on a paper,
-    no time to type up.
+    At two different distances $1$ and $2$:
+    \begin{align*}
+      CPS_1&=A\epsilon_D\epsilon_{G1}\gamma\\
+      CPS_2&=A\epsilon_D\epsilon_{G2}\gamma
+    \end{align*}
+    Take ratio:
+    \begin{equation*}
+      \frac{CPS_1}{CPS_2}=\frac{A\epsilon_D\epsilon_{G1}\gamma}
+           {A\epsilon_D\epsilon_{G2}\gamma}=
+           \frac{\epsilon_D\epsilon_{G1}}{\epsilon_D\epsilon_{G2}}
+           =R
+    \end{equation*}
+    Kept both efficiencies because calibration lumps both together.
+    If This ratio, $R$ is known, then we can count at a closer
+    distance and say:
+    \begin{equation*}
+      CPS_2=\frac{CPS_1}{R}
+    \end{equation*}
   \end{itemize}
 \item[\done]{Move $\boxed{6\ Or}$ and $\boxed{7\ Aq}$ to Antichamber
   (not sure which one I am counting next)}
@@ -1133,9 +1149,48 @@ John also mentioned two good techniques, that should be noted:
 
 
 \begin{todolist}
-\item{Count $\boxed{6\ Or}$ 3:00 pm - 6:00 pm}
-\item{Count $\boxed{5\ Or}$ 6:00 pm - 9:00 pm}
-\item{Count $\boxed{7\ Aq}$ 9:00 pm - 11:00 pm}
+\item[\done]{Count $\boxed{6\ Or}$ 8:00 pm - 11:00 am}
+\item{\st{Go to count $\boxed{5\ Or}$}}
+  \begin{itemize}
+  \item{Have $\boxed{7\ Or}$ and $\boxed{7\ Aq}$ in small
+    antichamber}
+  \item{Put antichamber to vacuum to transfer vials into
+    glovebox}
+  \item{Push caps exploded off vials due to large pressure
+    difference...that is very dissapointing}
+  \end{itemize}
+\item[\done]{Clean up contamination from exploded vials in antichamber}
+  \begin{itemize}
+  \item{Dispose of counting vials, and caps for all vials rad waste}
+  \item{Dispose of exploded vials in rad waste (after dried)}
+  \item{Remove diaper paper from transfer plate}
+  \item{Clean with radiac wipes}
+    \begin{itemize}
+    \item{Clean antichamber}
+    \item{Clean antichamber}
+    \item{Swipe area, count on alpha detector, because
+      our swipe counter is down}
+    \item{Clean antichamber}
+    \item{Dr. Chirayath brought someone by to talk, not a good time}
+    \item{Clean antichamber}
+    \item{Clean glass beaker that was in antichamber...lots}
+    \end{itemize}
+  \item{Final areas swiped and counted for 10
+    minutes after decontamination}
+    \begin{itemize}
+    \item{Tray $\sim$0 counts in alpha realm}
+    \item{Top part of cylinder of antichamber
+      $\sim$3 counts in alpha realm (around 20 for background)}
+    \item{Top back part of cylinder $\sim$ 100 - still slightly
+      contaminated, but no time for continued cleaning,
+      because need to do experiment}
+    \item{Left/Right side of cylinder (mid plane) $\sim$ small}
+    \item{Bottom back portion of cylinder of antichamber - $\sim$100}
+    \item{Glass vial - none}
+    \end{itemize}
+  \end{itemize}
+\item[\done]{Count $\boxed{5\ Or}$ 3:00 pm - 7:00 pm (finally!!)}
+\item{\st{Count $\boxed{7\ Aq}$ 9:00 pm - 11:00 pm} (Spilled)}
 \item{Count $\boxed{6\ Aq}$ 11:00 pm - 1:00 am}
 \item{Count $\boxed{5\ Aq}$ 1:00 am - 3:00 am}
 \end{todolist}
@@ -1152,19 +1207,19 @@ John also mentioned two good techniques, that should be noted:
 \begin{todolist}
 \item{Add XX $\mu$l Fe(II) solution to $\boxed{5\ Or}$}
 \item{Add XX $\mu$l Fe(II) solution to $\boxed{6\ Or}$}
-\item{Add XX $\mu$l Fe(II) solution to $\boxed{7\ Or}$}
+\item{\st{Add XX $\mu$l Fe(II) solution to $\boxed{7\ Or}$} (spilled)}
 \item{Shake $\boxed{5\ Or}$ 15 minutes on pulse mode}
 \item{Shake $\boxed{6\ Or}$ 15 minutes on pulse mode}
-\item{Shake $\boxed{7\ Or}$ 15 minutes on pulse mode}
-\item{Remove XX $\mu$l organic and XX $\mu$l aqueous
-  from $\boxed{Ex\ Buddy}$}
-\item{Centrifuge $\boxed{5\ Or}$, $\boxed{6\ Or}$, $\boxed{7\ Or}$
-  $\boxed{Ex\ Buddy}$, 30,000 rpm for 5 minutes}
+\item{\st{Shake $\boxed{7\ Or}$ 15 minutes on pulse mode} (spilled)}
+\item{\st{Remove XX $\mu$l organic and XX $\mu$l aqueous
+  from $\boxed{Ex\ Buddy}$} (No longer necessary)}
+\item{Centrifuge $\boxed{5\ Or}$, $\boxed{6\ Or}$, \st{$\boxed{7\ Or}$}
+  \st{$\boxed{Ex\ Buddy}$}, 30,000 rpm for 5 minutes}
 \end{todolist}
 \begin{todolist}
 \item{Vials labeled $\boxed{5\ AqII}$, 
   $\boxed{5\ OrII}$, $\boxed{6\ AqII}$, $\boxed{6\ OrII}$,
-  $\boxed{7\ AqII}$, $\boxed{7\ OrII}$, transfered into
+  \st{$\boxed{7\ AqII}$, $\boxed{7\ OrII}$}, transfered into
   glovebox}
 \item{Separate phases for samples}
   \begin{itemize}
@@ -1177,10 +1232,10 @@ John also mentioned two good techniques, that should be noted:
   \item{Using a variable pipette and the squish pipette,
     as much of the top phase (organic) phase was removed as possible
     (turns out to be around 450 $\mu$l and transfered to
-    $\boxed{5\ OrII}$, $\boxed{6\ OrII}$, and $\boxed{7\ OrII}$.}
+    $\boxed{5\ OrII}$, $\boxed{6\ OrII}$, and \st{$\boxed{7\ OrII}$}.}
   \item{Then as much of the bottom phase (aqueous) was removed as
     possible (turns out to be around 430 $\mu$l) and transfered
-    to $\boxed{5\ AqII}$, $\boxed{6\ AqII}$, and $\boxed{7\ AqII}$.}
+    to $\boxed{5\ AqII}$, $\boxed{6\ AqII}$, and \st{$\boxed{7\ AqII}$}.}
   \end{itemize}
 \item{Measure Volumes of 9 vials (Aqueous, organic, and original
   - units in $\mu$l)}
@@ -1194,15 +1249,30 @@ John also mentioned two good techniques, that should be noted:
     \hline
     6 & \hspace{1.5cm} & \hspace{1.5cm} & \hspace{1.5cm} & \hspace{1.5cm}\\
     \hline
-    7 & \hspace{1.5cm} & \hspace{1.5cm} & \hspace{1.5cm} & \hspace{1.5cm}\\
-    \hline
   \end{tabular}
 \end{center}
 \begin{todolist}
 \item{Count Vials}
-\item{Modify program for analyzing spectra}
 \item{Analyze spectra}
 \end{todolist}
+
+\experiment{programs}
+
+\begin{todolist}
+\item[\done]{Updated Spreedsheets to calculate
+  activities based on avaiable peaks, also if
+  a particular peak has really large errors,
+  this will be ignored. Also updated Excel sheets
+  to calculate propagated error mass in each vial
+  - for D-value calculations}
+  \begin{equation*}
+    grams=\frac{\text{Activity}\times\text{Molar Mass}}
+    {\lambda_sN_A}
+  \end{equation*}
+  where $\lambda$ is in seconds and $N_A$ is avogadros number.
+\end{todolist}
+
+
 %----------------------------------------------------------------------
 %	Examples
 %-----------------------------------------------------------------------
