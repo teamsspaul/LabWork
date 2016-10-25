@@ -92,6 +92,7 @@
 \newexperiment{Cycle_X3_Prep}{Preparation for 3 Cycles}
 \newexperiment{table1}{Isotopes we are looking for}
 \newexperiment{Cycle_X3}{Cycle experiment, replicate of 3}
+\newexperiment{programs}{Automation Work}
 %\newexperiment{shorthand}{Description of the experiment}
 
 %----------------------------------------------------------------------
@@ -1095,10 +1096,31 @@ John also mentioned two good techniques, that should be noted:
 \item[\done]{Start count $\boxed{7\ Or}$ on face of detector 6:00 pm
   this is because I cannot see \tss{134}Cs - the isotope I am
   most concerned about}
+  \begin{itemize}
+  \item{Will try and implement this:}
+    $$CPS=A\epsilon_D\epsilon_G\gamma$$
+    Where:
+    \begin{center}
+    $\epsilon_D=$Detector eff\\
+    $\epsilon_G=$Geometric eff\\
+    $\gamma=$yield\\
+      $A=$activity
+    \end{center}
+    Ratio at 26 cm and 0 cm...I wrote it down on a paper,
+    no time to type up.
+  \end{itemize}
 \item[\done]{Move $\boxed{6\ Or}$ and $\boxed{7\ Aq}$ to Antichamber
   (not sure which one I am counting next)}
 \end{todolist}
 
+\experiment{programs}
+\begin{todolist}
+\item[\done]{Modify program for analyzing spectra}
+  \begin{itemize}
+  \item{Hopefully now analyzing gamma data will just be,
+    run program, and copy a part of an excel spreedsheet}
+  \end{itemize}
+\end{todolist}
 
 %------------------------------------------------------------------------
 %	LAB BOOK day
