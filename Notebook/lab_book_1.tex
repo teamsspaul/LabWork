@@ -93,6 +93,8 @@
 \newexperiment{table1}{Isotopes we are looking for}
 \newexperiment{Cycle_X3}{Cycle experiment, replicate of 3}
 \newexperiment{programs}{Calculation Work}
+\newexperiment{Contamination}{Contamination spill 10/25/16}
+\newexperiment{ResearchMeeting}{Details from research meeting}
 %\newexperiment{shorthand}{Description of the experiment}
 
 %----------------------------------------------------------------------
@@ -170,6 +172,12 @@
 
 \begin{itemize}
 \item{Project Number: 504370-0001}
+\item{EHS Contact:}
+  \begin{itemize}
+  \item{d-imenchaca@tamu.edu}
+  \item{979-676-0590 For Dan}
+  \item{979-845-2132:General}
+  \end{itemize}
 \item{Files on computer saved in C:/Paul\_Mendoza}
 \item{\tss{152}Eu Liquid calibration source}
   \begin{itemize}
@@ -1150,6 +1158,10 @@ John also mentioned two good techniques, that should be noted:
 
 \begin{todolist}
 \item[\done]{Count $\boxed{6\ Or}$ 8:00 pm - 11:00 am}
+\end{todolist}
+
+\experiment{Contamination}
+\begin{todolist}
 \item{\st{Go to count $\boxed{5\ Or}$}}
   \begin{itemize}
   \item{Have $\boxed{7\ Or}$ and $\boxed{7\ Aq}$ in small
@@ -1189,6 +1201,9 @@ John also mentioned two good techniques, that should be noted:
     \item{Glass vial - none}
     \end{itemize}
   \end{itemize}
+\end{todolist}
+\experiment{Cycle_X3}
+\begin{todolist}
 \item[\done]{Count $\boxed{5\ Or}$ 3:00 pm - 7:30 pm (finally!!)}
 \item{\st{Count $\boxed{7\ Aq}$ 9:00 pm - 11:00 pm} (Spilled)}
 \item[\done]{Count $\boxed{6\ Aq}$ 7:00 pm - 9:00 pm}
@@ -1269,7 +1284,7 @@ John also mentioned two good techniques, that should be noted:
 \end{todolist}
 
 
-
+ 
 %------------------------------------------------------------------------
 %	LAB BOOK day
 %-----------------------------------------------------------------------
@@ -1280,11 +1295,157 @@ John also mentioned two good techniques, that should be noted:
 \experiment{Cycle_X3}
 
 \begin{todolist}
-\item{Finish count $\boxed{5\ Aq}$}
-\item{Count Vials}
-\item{Analyze spectra}
+\item[\done]{Finish count $\boxed{5\ Aq}$}
+\item[\done]{Start count $\boxed{6\ AqII}$}
+\item[\done]{Analyze current spectra}
+  \begin{itemize}
+  \item{Calculate activity (with error) for
+    vials $\boxed{5}$, $\boxed{6}$, $\boxed{7}$,
+    $\boxed{5\ A}$, $\boxed{5\ O}$, $\boxed{6\ A}$,
+    $\boxed{6\ O}$, $\boxed{7\ O}$}
+  \item{Calculate, for those same vials (with error,
+    even including error on molar mass), mass of each
+    radioactive species, and the concentration (g/L)}
+  \item{Compared all first solution activities and concentrations,
+    they were all very similar}
+  \item{Compared \tss{137}Cs \tss{134}Cs ratio, and they agreed between
+    vials}
+  \item{Determined activity balance, making sure each
+    cycle had balance of activity (measured a part of the solution
+    459/500, found grams per liter, and multiplied by 400).}
+    \begin{itemize}
+    \item{Agreed within the error}
+    \end{itemize}
+  \item{Determined D-values from aqueous and organic solutions,
+    compared same elements different isotopes}
+    \begin{itemize}
+    \item{The numbers did not look super similar,
+      but sort of similar}
+      \begin{equation*}
+        O\%=\frac{1}{1+\frac{V_{A}}{V_{O}D}}
+        \Rightarrow D_O=\frac{1}{\frac{V_O}{V_A}(\frac{1}{O\%}-1)}
+      \end{equation*}
+      \begin{equation*}
+        A\%=\frac{1}{1+\frac{V_OD}{V_A}}\Rightarrow
+        D_A=\frac{V_A}{V_O}(\frac{1}{A\%}-1)
+      \end{equation*}
+      Where O and A represent organic and aqueous, where
+      V is volume and \% refers to mass percent in a
+      particular phase.
+      The mass percent was determined via:
+      \begin{equation*}
+        \%=\frac{\text{Mass Part}}{\text{Total Mass}}=
+        \frac{c\ \left[\frac{g}{L}\right]\cdot V_{\text{contact}}}
+        {\text{Mass in original}}
+      \end{equation*}
+    \end{itemize}
+  \item{Propagate error for D-value calculation (as well as for others)}
+    \begin{itemize}
+    \item{Attempted to install uncertainties onto python
+      on windows system, but failed epically, windows is terrible}
+    \item{Instead used uncertainties on linux based system to check
+      my answers for the below codes}
+      \begin{center}
+        Aqueous D-value calculation
+      \end{center}
+      \begin{equation*}
+        \sigma_{D_A}^2=\left[\frac{ \sigma_{V_A} }{V_O}
+          \left(\frac{1}{A\%}-1\right)
+          \right]^2+\left[\frac{V_A\sigma_{V_O}}{V_O^2}
+          \left(\frac{1}{A\%}-1\right)
+          \right]^2+\left[\frac{V_A\sigma_{A\%}}{V_OA\%^2}\right]^2
+      \end{equation*}
+      \begin{center}
+        Organic D-value calculation
+      \end{center}
+      \begin{equation*}
+        \sigma_{D_O}=\sqrt{
+          \left[\frac{ \sigma_{V_O} }{V_A}
+          \left(\frac{1}{O\%}-1\right)
+          \right]^2+\left[\frac{V_O\sigma_{V_A}}{V_A^2}
+          \left(\frac{1}{O\%}-1\right)
+          \right]^2+\left[\frac{V_O\sigma_{O\%}}{V_AO\%^2}\right]^2
+          }\cdot D_O^2
+      \end{equation*}
+    \end{itemize}
+  \end{itemize}
+\item[\done]{Create graphic to explain these results to
+  research group}
 \end{todolist}
 
+\experiment{Contamination}
+\begin{todolist}
+\item[\done]{Create graphic of all alpha spectra and locations of swipes}
+\item[\done]{Called EHS, talked to Dan Manchaka about contamination
+  spill yesterday}
+  \begin{itemize}
+  \item{d-imenchaca@tamu.edu}
+  \item{979-676-0590}
+  \end{itemize}
+\item[\done]{EHS came by $\sim$3:20pm to evaluate the contamination
+  in the lab}
+  \begin{itemize}
+  \item{Asked about the incident - reported}
+  \item{Took pictures of glovebox and room}
+  \item{Swiped and surveyed}
+  \end{itemize}
+\end{todolist}
+
+\experiment{ResearchMeeting}
+\begin{itemize}
+\item{Note that Dr. Chirayath needs a VGA to HDMI converter}
+\item{Discussed research results}
+  \begin{itemize}
+  \item{Want the third experiment to be completed}
+  \end{itemize}
+\item{Discussed contaminaiton}
+  \begin{itemize}
+  \item{Specific Activity of \tss{239}Pu: 0.063 $\frac{Ci}{g}$,
+        largest amount of Pu released: 5 $\mu$g}
+    \begin{align*}
+      0.063\frac{Ci}{g}\cdot\frac{10^{-6}g}{\mu g}
+      \cdot \frac{3.7\times10^{10}Bq}{Ci}=&2331
+      \frac{Bq}{\mu g}\\
+      &2331\cdot5\mu g=11655Bq
+    \end{align*}
+  \item{Specific Activity of \tss{238}U: 12,445 $\frac{Bq}{g}$,
+    largest amount of U released: \\0.000258 g}
+    \begin{align*}
+      0.000258\ g\cdot12445\frac{Bq}{g}=3.21 Bq
+    \end{align*}
+  \end{itemize}
+\item{Annual intake limits $\sim$300 Bq}
+\item{Say 40\% was released to air: 4663 Bq}
+\item{Room size is about 72 cubic meters = 72000 liters}
+\item{0.065 Bq/liter}
+\item{Human breathes 20 times per minute with 6 liter capacity}
+\item{2 liters per second, 7200 liters per hour}
+  \begin{equation*}
+    0.065\frac{Bq}{liter}\cdot7200\frac{liters}{Hr}=
+  468 \frac{Bq}{Hr}
+  \end{equation*}
+\item{Things to discuss with Dan:}
+  \begin{enumerate}
+  \item{Ask Dan if a spill procedure should exist for
+    antichamber}
+  \item{Remind Dan biggest concern is evaporation}
+  \item{Should we get Masks}
+  \end{enumerate}
+\end{itemize}
+
+ 
+%------------------------------------------------------------------------
+%	LAB BOOK day
+%-----------------------------------------------------------------------
+
+\labday{Thursday, 27 October 2016\\9:30 am}
+
+\begin{todolist}
+\item[\done]{Update laboratory notebook}
+\item{Determine calculation for alpha samples}
+\item{Outline project for UQ}
+\item{Meet with Dan Menchaka about rad stuff}
+\end{todolist}
 
 
 %----------------------------------------------------------------------
