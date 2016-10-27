@@ -49,3 +49,6 @@
 \contentsline {experiment}{\numberline {2}Contamination spill 10/25/16}{34}{experiment.17.2}
 \contentsline {experiment}{\numberline {3}Details from research meeting}{34}{experiment.17.3}
 \contentsline {chapter}{\nonumberline Thursday, 27 October 2016\\9:30 am}{36}{chapter*.19}
+\contentsline {experiment}{\numberline {1}Cycle experiment, replicate of 3}{36}{experiment.18.1}
+\contentsline {chapter}{\nonumberline Friday, 28 October 2016}{37}{chapter*.20}
+\contentsline {experiment}{\numberline {1}Cycle experiment, replicate of 3}{37}{experiment.19.1}
