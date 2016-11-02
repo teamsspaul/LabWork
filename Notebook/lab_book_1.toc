@@ -60,3 +60,5 @@
 \contentsline {chapter}{\nonumberline Tuesday, 1 November 2016}{40}{chapter*.22}
 \contentsline {experiment}{\numberline {1}Contamination spill 10/25/16}{40}{experiment.21.1}
 \contentsline {experiment}{\numberline {2}Minor Contamination of HPGe, found Monday 10/31/2016}{40}{experiment.21.2}
+\contentsline {chapter}{\nonumberline Wednesday, 2 November 2016}{41}{chapter*.23}
+\contentsline {experiment}{\numberline {1}Cycle experiment, replicate of 3}{41}{experiment.22.1}
