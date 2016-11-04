@@ -1601,7 +1601,7 @@ John also mentioned two good techniques, that should be noted:
   \item{Activities should be corrected to the date the smaple was
     added to the license, assume the date to be May 5th, 2014}
   \item{License number is 933}
-  \item{Last time 0.0076 mCi removed, 0.66267 remains}
+  \item{Last time 0.00005 mCi removed, 0.657392 remains}
   \end{enumerate}
 \end{todolist}
 
@@ -1624,7 +1624,7 @@ John also mentioned two good techniques, that should be noted:
   \begin{itemize}
   \item{It does look like he shielded \tss{137}Cs}
   \end{itemize}
-\item{Clean all vials}
+\item[\done]{Clean all outside vials}
 \end{todolist}
 
 %------------------------------------------------------------------------
@@ -1639,12 +1639,98 @@ John also mentioned two good techniques, that should be noted:
 \item[\done]{Start Efficiency Count with Eu-152 Liquid source,
   again (on Monday we found the \tss{137}Cs higher
   background)}
-\item{Background corrections for all calculations}
-\item{Assuming 10$\mu$l contamination what are D-values}
+\item[\done]{Background corrections for all calculations}
+  \begin{itemize}
+  \item{Added Background Row to Gamma\_Template,
+    call it now Gamma\_Template\_BK, this will subtract
+    background}
+  \item{Could automate subtraction, need to
+    add this row based on background of background}
+  \end{itemize}
+\item[\done]{Assuming 10$\mu$l contamination what are D-values}
+\item[\done]{Checked calculation on why the error for
+  D-values from Aqueous are so bad,
+  mostly due to how its calculated. Calculated a different way,
+  gave same answer, but slightly larger error, I guess I'll have
+  to abandon that type of calculation.}
 \item{Make Easy to read power point}
 \item{Automate Decay corrections}
 \end{todolist}
 
+\experiment{ResearchMeeting}
+\begin{itemize}
+\item{Showed results, at first Chirayath, thought that
+  \tss{137}Cs was not behaving the same, but showed it was}
+\item{Said we need to do the experiment three times again,
+  only the extraction}
+\end{itemize}
+
+
+%------------------------------------------------------------------------
+%	LAB BOOK day
+%-----------------------------------------------------------------------
+
+\labday{Thursday, 3 November 2016}
+
+\experiment{Cycle_X3}
+
+\begin{todolist}
+\item[\done]{Calculation for best volume to minimize error on
+  D-values, several routes, averaged them}
+  \begin{itemize}
+  \item{\href{https://ned.ipac.caltech.edu/level5/Leo/Stats4_5.html}{
+      The Weighted Mean}}
+    \begin{equation*}
+      \hat{\mu}=\frac{\Sigma x_i/\sigma_i^2}{\Sigma 1/\sigma_i^2}
+    \end{equation*}
+    \begin{equation*}
+      \sigma^2(\hat{\mu})=\frac{1}{\Sigma1/\sigma_i^2}
+    \end{equation*}
+  \end{itemize}
+\item{Automate background calculation and decay corrections}
+\end{todolist}
+
+\experiment{Contamination}
+
+\begin{todolist}
+\item[\done]{Talked with Evgeny Tereshatov: ETereshatov@tamu.edu}
+  \begin{itemize}
+  \item{Said 52.50 $\pm$ 0.5 $\mu$Ci decay corrected to 5 May, 2014
+    \tss{144}Ce is to be disposed}
+  \item{RSO 0079436}
+  \item{Need Waste Disposal Report Form}
+  \item{Made estimates on \tss{137}Cs, \tss{134}Cs}
+  \item{Accidentally added \tss{90}Sr, it should have been
+    \tss{125}Sb}
+  \end{itemize}
+\item[\done]{Called EHS three times, left message once - no response}
+\end{todolist}
+
+%------------------------------------------------------------------------
+%	LAB BOOK day
+%-----------------------------------------------------------------------
+
+\labday{Friday, 4 November 2016}
+
+\experiment{Cycle_X3}
+
+\begin{todolist}
+\item[\done]{Dr. Burns suggested to not use Series 7 in the calculations
+  did yesterday, I removed them from the calculations, changed
+  the final result by 0.2 $\mu$l. (10.5 to 10.7)}
+\item{He also suggested to do the correction calculation at
+  an earlier stage, like in the CPS arena, which would take a lot
+  more work - honestly I don't think it will change things much,
+  probably the same about as above}
+\end{todolist}
+
+\experiment{Contamination}
+
+\begin{todolist}
+\item{Called EHS, no response, found old waste dissposal sheet,
+  filling it in}
+\item{Looking for Waste Dissposal Report Form}
+\end{todolist}
 
 
 

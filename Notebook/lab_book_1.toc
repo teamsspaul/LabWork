@@ -62,3 +62,10 @@
 \contentsline {experiment}{\numberline {2}Minor Contamination of HPGe, found Monday 10/31/2016}{40}{experiment.21.2}
 \contentsline {chapter}{\nonumberline Wednesday, 2 November 2016}{41}{chapter*.23}
 \contentsline {experiment}{\numberline {1}Cycle experiment, replicate of 3}{41}{experiment.22.1}
+\contentsline {experiment}{\numberline {2}Details from research meeting}{41}{experiment.22.2}
+\contentsline {chapter}{\nonumberline Thursday, 3 November 2016}{42}{chapter*.24}
+\contentsline {experiment}{\numberline {1}Cycle experiment, replicate of 3}{42}{experiment.23.1}
+\contentsline {experiment}{\numberline {2}Contamination spill 10/25/16}{42}{experiment.23.2}
+\contentsline {chapter}{\nonumberline Friday, 4 November 2016}{43}{chapter*.25}
+\contentsline {experiment}{\numberline {1}Cycle experiment, replicate of 3}{43}{experiment.24.1}
+\contentsline {experiment}{\numberline {2}Contamination spill 10/25/16}{43}{experiment.24.2}
