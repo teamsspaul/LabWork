@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.30)  4 NOV 2016 16:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.30)  7 NOV 2016 17:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -423,20 +423,20 @@ LaTeX Warning: Label `fig:example2' multiply defined.
 )
 \openout1 = `lab_book_1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
 \AtBeginShipoutBox=\box32
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
@@ -446,7 +446,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 143.
 )
-Package hyperref Info: Link coloring ON on input line 105.
+Package hyperref Info: Link coloring ON on input line 107.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -456,9 +456,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count125
 )
-LaTeX Info: Redefining \ref on input line 105.
-LaTeX Info: Redefining \pageref on input line 105.
-LaTeX Info: Redefining \nameref on input line 105.
+LaTeX Info: Redefining \ref on input line 107.
+LaTeX Info: Redefining \pageref on input line 107.
+LaTeX Info: Redefining \nameref on input line 107.
 
 (./lab_book_1.out) (./lab_book_1.out)
 \@outlinefile=\write4
@@ -493,17 +493,17 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 122.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 124.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 122.
+LaTeX Font Info:    Try loading font information for U+msa on input line 124.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 122.
+LaTeX Font Info:    Try loading font information for U+msb on input line 124.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -523,11 +523,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 138.
+(hyperref)                removing `\\' on input line 140.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 138.
+(hyperref)                removing `\\' on input line 140.
 
 
 Class scrbook Warning: \float@addtolists detected!
@@ -544,13 +544,13 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 142.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 144.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 142.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 144.
  [1
 
 
@@ -559,16 +559,16 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.183   \item{
+l.185   \item{
               979-845-2132:General}] [2] [3]
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 262.
+(hyperref)                removing `\\' on input line 264.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 262.
+(hyperref)                removing `\\' on input line 264.
 
 [4
 
@@ -576,37 +576,37 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 331.
+(hyperref)                removing `\\' on input line 333.
 
 [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 368--372
+Underfull \hbox (badness 10000) in paragraph at lines 370--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--372
+Underfull \hbox (badness 10000) in paragraph at lines 370--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--376
+Underfull \hbox (badness 10000) in paragraph at lines 375--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--376
+Underfull \hbox (badness 10000) in paragraph at lines 375--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--382
+Underfull \hbox (badness 10000) in paragraph at lines 379--384
 
  []
 
 
-Overfull \hbox (7.63692pt too wide) in paragraph at lines 377--382
+Overfull \hbox (7.63692pt too wide) in paragraph at lines 379--384
 \OT1/cmr/m/n/10.95 Solve it-er-a-tively (where $\OML/cmm/m/it/10.95 M[]$ \OT1/c
 mr/m/n/10.95 de-ter-mines $\OML/cmm/m/it/10.95 ^^Z[]$\OT1/cmr/m/n/10.95 ) with 
 first guess of: $\OML/cmm/m/it/10.95 M[] \OT1/cmr/m/n/10.95 = []$ 
@@ -618,7 +618,7 @@ first guess of: $\OML/cmm/m/it/10.95 M[] \OT1/cmr/m/n/10.95 = []$
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 389.
+(hyperref)                removing `\\' on input line 391.
 
 [8
 
@@ -626,15 +626,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 469.
+(hyperref)                removing `\\' on input line 471.
 
 [10
 
-] <Figures/Process_1_Mess_Up.png, id=467, 680.5425pt x 1258.7025pt>
+] <Figures/Process_1_Mess_Up.png, id=478, 680.5425pt x 1258.7025pt>
 File: Figures/Process_1_Mess_Up.png Graphic file (type png)
 
 <use Figures/Process_1_Mess_Up.png>
-Package pdftex.def Info: Figures/Process_1_Mess_Up.png used on input line 557.
+Package pdftex.def Info: Figures/Process_1_Mess_Up.png used on input line 559.
 (pdftex.def)             Requested size: 355.51976pt x 657.54445pt.
  [11]
 Overfull \vbox (101.42422pt too high) has occurred while \output is active []
@@ -645,55 +645,55 @@ Overfull \vbox (101.42422pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.562 
+l.564 
        <./Figures/Process_1_Mess_Up.png>]
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 568.
+(hyperref)                removing `\\' on input line 570.
 
 
-<Figures/Extraction_Process_1_First_3_Counts.png, id=480, 405.01312pt x 532.238
+<Figures/Extraction_Process_1_First_3_Counts.png, id=490, 405.01312pt x 532.238
 43pt>
 File: Figures/Extraction_Process_1_First_3_Counts.png Graphic file (type png)
  <use Figures/Extraction_Process_1_First_3_Counts.png>
 Package pdftex.def Info: Figures/Extraction_Process_1_First_3_Counts.png used o
-n input line 612.
+n input line 614.
 (pdftex.def)             Requested size: 209.12778pt x 274.82458pt.
  [13
 
 ]
-<Figures/Back_Extraction_Process_1_Last_3_Counts.png, id=486, 507.39563pt x 515
+<Figures/Back_Extraction_Process_1_Last_3_Counts.png, id=496, 507.39563pt x 515
 .67656pt>
 File: Figures/Back_Extraction_Process_1_Last_3_Counts.png Graphic file (type pn
 g)
  <use Figures/Back_Extraction_Process_1_Last_3_Counts.png>
 Package pdftex.def Info: Figures/Back_Extraction_Process_1_Last_3_Counts.png us
-ed on input line 621.
+ed on input line 623.
 (pdftex.def)             Requested size: 209.12778pt x 212.53822pt.
  [14pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.631 ...ay, 12 October 2016\\ 11:30 am - 1:30 pm}
+l.633 ...ay, 12 October 2016\\ 11:30 am - 1:30 pm}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{figure.6.2}) has been already used, duplic
 ate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.631 ...ay, 12 October 2016\\ 11:30 am - 1:30 pm}
+l.633 ...ay, 12 October 2016\\ 11:30 am - 1:30 pm}
                                                    <./Figures/Extraction_Proces
 s_1_First_3_Counts.png> <./Figures/Back_Extraction_Process_1_Last_3_Counts.png>
 ]
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 631.
+(hyperref)                removing `\\' on input line 633.
 
 
-Overfull \hbox (11.53252pt too wide) in paragraph at lines 642--645
+Overfull \hbox (11.53252pt too wide) in paragraph at lines 644--647
 []\OT1/cmr/m/n/10.95 Used ex-cel sheet from John Burns for ef-fi-ciency cal-i-b
 ra-tion of Eu-152 source...will
  []
@@ -704,7 +704,7 @@ ra-tion of Eu-152 source...will
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 690.
+(hyperref)                removing `\\' on input line 692.
 
 [17
 
@@ -712,7 +712,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 756.
+(hyperref)                removing `\\' on input line 758.
 
 [19
 
@@ -721,7 +721,7 @@ chapter without number
 [20
 
 ]
-Overfull \hbox (78.75644pt too wide) in paragraph at lines 826--828
+Overfull \hbox (78.75644pt too wide) in paragraph at lines 828--830
 []\OT1/cmr/m/n/10.95 Put data into spreed sheet ``C:/Rad[]Detection/Calibration
 /Gamma/Eff[]cal[]summary[]Eu-
  []
@@ -735,17 +735,17 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 870--897
+Underfull \hbox (badness 10000) in paragraph at lines 872--899
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 870--897
+Underfull \hbox (badness 10000) in paragraph at lines 872--899
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 870--897
+Underfull \hbox (badness 10000) in paragraph at lines 872--899
 
  []
 
@@ -755,11 +755,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 870--897
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 917.
+(hyperref)                removing `\\' on input line 919.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 917.
+(hyperref)                removing `\\' on input line 919.
 
 [23
 
@@ -767,11 +767,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 973.
+(hyperref)                removing `\\' on input line 975.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 973.
+(hyperref)                removing `\\' on input line 975.
 
 [25
 
@@ -783,11 +783,11 @@ chapter without number
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 1019.
+(hyperref)                removing `\\' on input line 1021.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 1019.
+(hyperref)                removing `\\' on input line 1021.
 
 [27
 
@@ -795,7 +795,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 1157.
+(hyperref)                removing `\\' on input line 1159.
 
 [30
 
@@ -803,12 +803,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 1296.
+(hyperref)                removing `\\' on input line 1298.
 
 [33
 
 ]
-Overfull \hbox (0.53775pt too wide) detected at line 1373
+Overfull \hbox (0.53775pt too wide) detected at line 1375
 \OML/cmm/m/it/10.95 ^^[[] \OT1/cmr/m/n/10.95 = [] \OMS/cmsy/m/n/10.95 ^^A \OML/
 cmm/m/it/10.95 D[]
  []
@@ -817,7 +817,7 @@ cmm/m/it/10.95 D[]
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 1445.
+(hyperref)                removing `\\' on input line 1447.
 
 [36
 
@@ -836,7 +836,7 @@ chapter without number
 ]
 chapter without number
 
-Overfull \hbox (14.26392pt too wide) in paragraph at lines 1646--1649
+Overfull \hbox (14.26392pt too wide) in paragraph at lines 1648--1651
 []\OT1/cmr/m/n/10.95 Added Back-ground Row to Gamma[]Template, call it now Gamm
 a[]Template[]BK,
  []
@@ -852,26 +852,30 @@ chapter without number
 [43
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1916.
- [44]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1916.
+chapter without number
+[44
+
+] [45]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1973.
+ [46]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1973.
  (./lab_book_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1916.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1916.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1973.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1973.
 
 Package rerunfilecheck Info: File `lab_book_1.out' has not changed.
-(rerunfilecheck)             Checksum: 82DBEA1ADA53028547AA69221196A649;5908.
+(rerunfilecheck)             Checksum: 6EE662B0183095E1BA91DD1D572A2D8D;6063.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1916.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1973.
  ) 
 Here is how much of TeX's memory you used:
- 9199 strings out of 494953
- 140060 string characters out of 6180977
- 396685 words of memory out of 5000000
- 12187 multiletter control sequences out of 15000+600000
+ 9206 strings out of 494953
+ 140139 string characters out of 6180977
+ 396688 words of memory out of 5000000
+ 12189 multiletter control sequences out of 15000+600000
  16278 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  47i,12n,68p,288b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -890,10 +894,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on lab_book_1.pdf (48 pages, 379853 bytes).
+Output written on lab_book_1.pdf (50 pages, 384373 bytes).
 PDF statistics:
- 751 PDF objects out of 1000 (max. 8388607)
- 672 compressed objects within 7 object streams
- 168 named destinations out of 1000 (max. 500000)
- 592 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 772 PDF objects out of 1000 (max. 8388607)
+ 691 compressed objects within 7 object streams
+ 173 named destinations out of 1000 (max. 500000)
+ 608 words of extra memory for PDF output out of 10000 (max. 10000000)
 
