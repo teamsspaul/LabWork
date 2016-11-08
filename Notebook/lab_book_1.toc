@@ -72,3 +72,6 @@
 \contentsline {experiment}{\numberline {3}Cycle experiment, round 2, replicate of 3}{43}{experiment.24.3}
 \contentsline {chapter}{\nonumberline Monday, 7 November 2016}{44}{chapter*.26}
 \contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3}{44}{experiment.25.1}
+\contentsline {chapter}{\nonumberline Tuesday, 8 November 2016}{47}{chapter*.27}
+\contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3}{47}{experiment.26.1}
+\contentsline {experiment}{\numberline {2}Things to do for school}{48}{experiment.26.2}
