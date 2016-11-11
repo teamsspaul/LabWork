@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.30)  10 NOV 2016 21:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.30)  10 NOV 2016 21:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -518,11 +518,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {/home/paul/.texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./lab_book_1.toc [
 2
 
-] [3])
+] [3] [4])
 \tf@toc=\write5
 \openout5 = `lab_book_1.toc'.
 
- [4]
+
 [5]
 chapter without number
 
@@ -634,7 +634,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [10
 
-] <Figures/Process_1_Mess_Up.png, id=522, 680.5425pt x 1258.7025pt>
+] <Figures/Process_1_Mess_Up.png, id=537, 680.5425pt x 1258.7025pt>
 File: Figures/Process_1_Mess_Up.png Graphic file (type png)
 
 <use Figures/Process_1_Mess_Up.png>
@@ -657,7 +657,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 571.
 
 
-<Figures/Extraction_Process_1_First_3_Counts.png, id=534, 405.01312pt x 532.238
+<Figures/Extraction_Process_1_First_3_Counts.png, id=549, 405.01312pt x 532.238
 43pt>
 File: Figures/Extraction_Process_1_First_3_Counts.png Graphic file (type png)
  <use Figures/Extraction_Process_1_First_3_Counts.png>
@@ -667,7 +667,7 @@ n input line 615.
  [13
 
 ]
-<Figures/Back_Extraction_Process_1_Last_3_Counts.png, id=540, 507.39563pt x 515
+<Figures/Back_Extraction_Process_1_Last_3_Counts.png, id=555, 507.39563pt x 515
 .67656pt>
 File: Figures/Back_Extraction_Process_1_Last_3_Counts.png Graphic file (type pn
 g)
@@ -869,7 +869,7 @@ Overfull \hbox (3.15239pt too wide) in paragraph at lines 1890--1897
 
 [47
 
-] <Figures/Cycle_x3_round_2.png, id=730, 889.82437pt x 1519.92844pt>
+] <Figures/Cycle_x3_round_2.png, id=745, 889.82437pt x 1519.92844pt>
 File: Figures/Cycle_x3_round_2.png Graphic file (type png)
 
 <use Figures/Cycle_x3_round_2.png>
@@ -891,28 +891,32 @@ chapter without number
 
 ]
 chapter without number
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2140.
 [51
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2140.
+chapter without number
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2164.
+[52
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2164.
  (./lab_book_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2140.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2140.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2164.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2164.
 
 Package rerunfilecheck Info: File `lab_book_1.out' has not changed.
-(rerunfilecheck)             Checksum: 37420D8BF6A5E6BFC448040DF37B8DA3;6693.
+(rerunfilecheck)             Checksum: 216BFD0B4458DBA85CCD96684DF4C71F;6925.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2140.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2164.
  ) 
 Here is how much of TeX's memory you used:
- 9240 strings out of 494953
- 140663 string characters out of 6180977
- 396778 words of memory out of 5000000
- 12204 multiletter control sequences out of 15000+600000
+ 9248 strings out of 494953
+ 140767 string characters out of 6180977
+ 396781 words of memory out of 5000000
+ 12207 multiletter control sequences out of 15000+600000
  16278 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  47i,12n,68p,288b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -931,10 +935,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on lab_book_1.pdf (56 pages, 450601 bytes).
+Output written on lab_book_1.pdf (57 pages, 451770 bytes).
 PDF statistics:
- 848 PDF objects out of 1000 (max. 8388607)
- 758 compressed objects within 8 object streams
- 191 named destinations out of 1000 (max. 500000)
- 677 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 869 PDF objects out of 1000 (max. 8388607)
+ 778 compressed objects within 8 object streams
+ 196 named destinations out of 1000 (max. 500000)
+ 701 words of extra memory for PDF output out of 10000 (max. 10000000)
 

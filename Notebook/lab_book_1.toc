@@ -80,3 +80,6 @@
 \contentsline {chapter}{\nonumberline Thursday, 10 November 2016}{51}{chapter*.29}
 \contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3}{51}{experiment.28.1}
 \contentsline {experiment}{\numberline {2}Things to do for school}{51}{experiment.28.2}
+\contentsline {chapter}{\nonumberline Friday, 11 November 2016}{52}{chapter*.30}
+\contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3}{52}{experiment.29.1}
+\contentsline {experiment}{\numberline {2}Things to do for school}{52}{experiment.29.2}
