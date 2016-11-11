@@ -74,4 +74,9 @@
 \contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3}{44}{experiment.25.1}
 \contentsline {chapter}{\nonumberline Tuesday, 8 November 2016}{47}{chapter*.27}
 \contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3}{47}{experiment.26.1}
-\contentsline {experiment}{\numberline {2}Things to do for school}{48}{experiment.26.2}
+\contentsline {chapter}{\nonumberline Wednesday, 9 November 2016}{50}{chapter*.28}
+\contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3}{50}{experiment.27.1}
+\contentsline {experiment}{\numberline {2}Details from research meeting}{50}{experiment.27.2}
+\contentsline {chapter}{\nonumberline Thursday, 10 November 2016}{51}{chapter*.29}
+\contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3}{51}{experiment.28.1}
+\contentsline {experiment}{\numberline {2}Things to do for school}{51}{experiment.28.2}
