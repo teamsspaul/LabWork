@@ -88,4 +88,7 @@
 \contentsline {chapter}{\nonumberline Tuesday, 15 November 2016}{55}{chapter*.32}
 \contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3}{55}{experiment.31.1}
 \contentsline {experiment}{\numberline {2}Cycle experiment, round 2, replicate of 3, ALPHA preparation}{55}{experiment.31.2}
-\contentsline {experiment}{\numberline {3}Process Experiment (continuation from cycle experiment)}{55}{experiment.31.3}
+\contentsline {experiment}{\numberline {3}Process Experiment (continuation from cycle experiment)}{57}{experiment.31.3}
+\contentsline {experiment}{\numberline {4}Cycle experiment, round 2, replicate of 3}{60}{experiment.31.4}
+\contentsline {chapter}{\nonumberline Wednesday, 16 November 2016}{61}{chapter*.33}
+\contentsline {experiment}{\numberline {1}Details from research meeting}{61}{experiment.32.1}
