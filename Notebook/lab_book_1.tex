@@ -101,6 +101,10 @@
 \newexperiment{ResearchMeeting}{Details from research meeting}
 \newexperiment{Cycle_X3_round_2}{Cycle experiment, round 2,
   replicate of 3}
+\newexperiment{Cycle_X3_round_2_alpha}{Cycle experiment, round 2,
+  replicate of 3, ALPHA preparation}
+\newexperiment{Process_X3}{Process Experiment (continuation from
+  cycle experiment)}
 \newexperiment{School}{Things to do for school}
 %\newexperiment{shorthand}{Description of the experiment}
 
@@ -2057,11 +2061,150 @@ $\boxed{Stock}$}
 \experiment{School}
 \begin{todolist}
 \item{Find variances}
-\item{Learn how to use ORIGEN, and run it}
-\item{Learn how to change the things in ORIGEN}
+\item[\done]{Learn how to use ORIGEN, and run it}
+\item[\done]{Learn how to change the things in ORIGEN}
 \item{Come up with chaos polynomial plan}
-\item{Do a write up for McClarren...so it looks like
+\item[\done]{Do a write up for McClarren...so it looks like
   I am doing work for his class}
+\end{todolist}
+
+
+%------------------------------------------------------------------------
+%	LAB BOOK da
+%-----------------------------------------------------------------------
+
+\labday{Monday, 14 November 2016}
+
+\experiment{Cycle_X3_round_2}
+
+\begin{todolist}
+\item[\done]{Finish Efficiency count on face of detector}
+\item[\done]{Analyze results...something is very fishy}
+  \begin{itemize}
+  \item{The \tss{137}Cs results look very small 10\tss{-5}.
+    Which we were hoping they would be around 0.01}
+  \item{The other results had higher D-values across the board
+    maybe due to geometric differences, maybe not}
+  \end{itemize}
+\item[\done]{Counted $\boxed{8\ or\ C}$, $\boxed{9\ or\ C}$,
+  and $\boxed{10\ or\ C}$ on the face of the detector (only needed
+  to count each like 10 minutes or so (40\% dead time)}
+  \begin{itemize}
+  \item{To check and see if geometry is the issue (although these
+    high dead times would probably give incorrect results - as
+    Dr. Burns pointed out)}
+  \end{itemize}
+\item[\done]{Analyzed results from above counts, they increased
+  the D-values to something more reasonable (similiar to the first
+  experiment), but \tss{137}Cs is still acting like a punk
+  ($\sim$ 10\tss{-5})}
+  \begin{itemize}
+  \item{Also noticed that Series 9 is a little funky...its always
+    higher in D calculations by a large portion (except for Cs,
+    where its lower)}
+  \item{Frustrating!}
+  \item{Dr. Kitcher brought up the issue that could be correcting to
+    the wrong value (in series 6) - should find literature values}
+  \item{Dr. Burns brought up that the fact that I didn't centrifuge
+    the samples during the last step could be the issue}
+  \item{Web of Knowledge, Web of Science, Periodic Table.com}
+  \end{itemize}
+\item[\done]{Recreate organic samples of $\boxed{8\ or\ C}$,
+  $\boxed{9\ or\ C}$, and $\boxed{10\ or\ C}$.
+  and count $\boxed{10\ or\ C}$ overnight}
+  \begin{itemize}
+  \item{Transfered above vials into glovebox - after parafilm wrapping}
+  \item{Took all solution out of above vials, and put into original
+    containers (labeled the same without the C - $\boxed{8\ or}$ as
+    opposed to $\boxed{8\ or\ C}$)}
+  \item{Centrifuged both C and non-C containers for 5 minutes on
+    highest setting (33)}
+  \item{Repipetted out 250 $\mu$l out of non-C containers into C
+    containers}
+  \item{Put C containers into 15 ml centrifuge tube}
+  \item{Transfer out of glovebox and clean}
+  \end{itemize}
+\item[\done]{Dr. Burns found a reference with some useful data,
+  \href{http://www.tandfonline.com/doi/abs/10.1080/07366298508918529}
+       {Link}, table from reference below}
+\end{todolist}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{l l}
+\toprule
+Element & D-Value\\ 
+Ru & $\boxed{0.04}$\\
+Rh & 0.01\\
+Pd & 0.09\\
+Nd & 0.04\\
+Ce & $\boxed{0.02}$\\
+Sr & 0.00\\
+Sm & 0.07\\
+Cs & $\boxed{0.01}$\\
+\bottomrule
+\end{tabular}
+\caption{Values from Paper, 1.4 M U (much higher than ours),
+ and 3 M HNO\tsbs{3} (ours is at 4 M)}
+\end{center}
+\end{table}  
+\begin{itemize}
+\item{Ru, and Ce match from our experimental results from the first
+  experiment,
+  and Cs is around 0.01...which is what we are looking for,
+  Sr there is no number (except that its small, which is in line
+  with our first experiments). I also want to point out, no error bars,
+  Dr. Folden would be not be happy, these numbers don't mean anything}
+\end{itemize}
+\begin{todolist}
+\item[\done]{Looking at geometric differences between calibration
+  source at 0 cm and 26 cm. and also between $\boxed{10\ or}$ at
+  0 cm and 26 cm.}
+  \begin{itemize}
+  \item{Noticed there is a trend, might be able to use}
+  \item{Also noticed that I counted my \tss{152}Eu source at
+    26 cm for a short time (1.9 live time hours)...
+    will start count for that in
+    the morning and count while doing the experiment,
+    maybe that will fix some problems. The reason for this
+    short count time, is I feel lots of pressure to finish}
+  \end{itemize}
+\end{todolist}
+
+
+%------------------------------------------------------------------------
+%	LAB BOOK da
+%-----------------------------------------------------------------------
+
+\labday{Tuesday, 15 November 2016}
+
+\experiment{Cycle_X3_round_2}
+
+\begin{todolist}
+\item[\done]{Stop count of $\boxed{10\ or\ C}$ around 5:50 am}
+\item[\done]{Start efficency count at 26 cm around 5:50 am}
+\item[\done]{Analyze results from $\boxed{10\ or\ C}$}
+  \begin{itemize}
+  \item{Counts for Ce, look better, Eu look better,
+    Ru look worse, Cs look better (but still one order of magnitude
+    off}
+  \item{Looking into the count rates, some peaks change by
+    alot between the first and second count of $\boxed{10\ or\ C}$
+    and the second...WHY!?}
+  \end{itemize}
+\end{todolist}
+
+\experiment{Cycle_X3_round_2_alpha}
+\begin{todolist}
+\item{Make alpha sample of stock, make 3}
+\item{Make alpha sample of each aqueous}
+\item{Make alpha sample of each organic phase}
+\end{todolist}
+
+\experiment{Process_X3}
+\begin{todolist}
+\item{Combine all aqueous phases together}
+\item{Contact all aqueous phases with second organic phase}
+\item{do separation}
 \end{todolist}
 
 
