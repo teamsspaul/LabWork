@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.30)  15 NOV 2016 14:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.30)  18 NOV 2016 11:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -637,7 +637,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [10
 
-] <Figures/Process_1_Mess_Up.png, id=582, 680.5425pt x 1258.7025pt>
+] <Figures/Process_1_Mess_Up.png, id=604, 680.5425pt x 1258.7025pt>
 File: Figures/Process_1_Mess_Up.png Graphic file (type png)
 
 <use Figures/Process_1_Mess_Up.png>
@@ -660,7 +660,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 575.
 
 
-<Figures/Extraction_Process_1_First_3_Counts.png, id=594, 405.01312pt x 532.238
+<Figures/Extraction_Process_1_First_3_Counts.png, id=616, 405.01312pt x 532.238
 43pt>
 File: Figures/Extraction_Process_1_First_3_Counts.png Graphic file (type png)
  <use Figures/Extraction_Process_1_First_3_Counts.png>
@@ -670,7 +670,7 @@ n input line 619.
  [13
 
 ]
-<Figures/Back_Extraction_Process_1_Last_3_Counts.png, id=600, 507.39563pt x 515
+<Figures/Back_Extraction_Process_1_Last_3_Counts.png, id=622, 507.39563pt x 515
 .67656pt>
 File: Figures/Back_Extraction_Process_1_Last_3_Counts.png Graphic file (type pn
 g)
@@ -872,7 +872,7 @@ Overfull \hbox (3.15239pt too wide) in paragraph at lines 1896--1903
 
 [47
 
-] <Figures/Cycle_x3_round_2.png, id=790, 889.82437pt x 1519.92844pt>
+] <Figures/Cycle_x3_round_2.png, id=813, 889.82437pt x 1519.92844pt>
 File: Figures/Cycle_x3_round_2.png Graphic file (type png)
 
 <use Figures/Cycle_x3_round_2.png>
@@ -913,76 +913,80 @@ l.2187 \labday{Tuesday, 15 November 2016}
                                          ]
 chapter without number
 
-Overfull \hbox (10.74356pt too wide) in paragraph at lines 2207--2220
+Overfull \hbox (10.74356pt too wide) in paragraph at lines 2210--2224
 []\OT1/cmr/m/n/10.95 Label vials: $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (14.65785pt too wide) in paragraph at lines 2207--2220
+Overfull \hbox (14.65785pt too wide) in paragraph at lines 2210--2224
 []$\OT1/cmr/m/n/10.95 , $[]$, $[]$. La-bel Chips: $[]$, $[]$,
  []
 
 
-Overfull \hbox (27.49284pt too wide) in paragraph at lines 2207--2220
+Overfull \hbox (27.49284pt too wide) in paragraph at lines 2210--2224
 []$\OT1/cmr/m/n/10.95 , $[]$, $[]$, $[]$, $[]$, $[]$, $[]$ 
  []
 
 [55
 
 ] [56]
-Overfull \hbox (3.2129pt too wide) in paragraph at lines 2373--2380
+chapter without number
+[57
+
+] [58]
+Overfull \hbox (3.2129pt too wide) in paragraph at lines 2420--2427
 []\OT1/cmr/m/n/10.95 Label vials, $[]$, $[]$, $[]$, $[]$ $[]$, $[]$, $[]$,
  []
 
-[57pdfTeX warning (ext4): destination with the same identifier (name{table.31.1
+[59pdfTeX warning (ext4): destination with the same identifier (name{table.32.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2383 \item{
-             Transfer:]
-Overfull \hbox (14.09196pt too wide) in paragraph at lines 2423--2426
+l.2445   \end{itemize}
+                      ]
+Overfull \hbox (14.09196pt too wide) in paragraph at lines 2470--2473
 []\OT1/cmr/m/n/10.95 Transfer out $[]$, $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 File: Figures/Cycle_x3_round_2.png Graphic file (type png)
 <use Figures/Cycle_x3_round_2.png>
-Package pdftex.def Info: Figures/Cycle_x3_round_2.png used on input line 2437.
+Package pdftex.def Info: Figures/Cycle_x3_round_2.png used on input line 2484.
 (pdftex.def)             Requested size: 334.60571pt x 571.54884pt.
- [58]
+ [60]
 Overfull \vbox (15.42862pt too high) has occurred while \output is active []
 
 
-[59pdfTeX warning (ext4): destination with the same identifier (name{figure.31.
+[61pdfTeX warning (ext4): destination with the same identifier (name{figure.32.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2442 
-       ] [60]
+l.2489 
+       ] [62]
 chapter without number
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2560.
-[61
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2608.
+[63
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2560.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2608.
  (./lab_book_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2560.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2560.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2608.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2608.
 
 Package rerunfilecheck Info: File `lab_book_1.out' has not changed.
-(rerunfilecheck)             Checksum: 197F862F98087908A0D51EA65FF5E4B2;7702.
+(rerunfilecheck)             Checksum: F4383133FDE7952CEE98175B15701A1B;8126.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2560.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2608.
  ) 
 Here is how much of TeX's memory you used:
- 9295 strings out of 494953
- 141474 string characters out of 6180977
- 397028 words of memory out of 5000000
- 12228 multiletter control sequences out of 15000+600000
+ 9306 strings out of 494953
+ 141645 string characters out of 6180977
+ 397087 words of memory out of 5000000
+ 12232 multiletter control sequences out of 15000+600000
  17087 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  47i,15n,68p,288b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1001,10 +1005,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on lab_book_1.pdf (66 pages, 472740 bytes).
+Output written on lab_book_1.pdf (68 pages, 475414 bytes).
 PDF statistics:
- 966 PDF objects out of 1000 (max. 8388607)
- 865 compressed objects within 9 object streams
- 220 named destinations out of 1000 (max. 500000)
- 773 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 999 PDF objects out of 1000 (max. 8388607)
+ 896 compressed objects within 9 object streams
+ 227 named destinations out of 1000 (max. 500000)
+ 805 words of extra memory for PDF output out of 10000 (max. 10000000)
 
