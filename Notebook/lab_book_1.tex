@@ -106,6 +106,8 @@
 \newexperiment{Process_X3}{Process Experiment (continuation from
   cycle experiment)}
 \newexperiment{School}{Things to do for school}
+\newexperiment{56_run}{Experiment to double check \tss{137}Cs
+  using combined aqueous series 5 and 6, 56}
 %\newexperiment{shorthand}{Description of the experiment}
 
 %----------------------------------------------------------------------
@@ -1073,7 +1075,7 @@ John also mentioned two good techniques, that should be noted:
   \item{500 $\mu$l of 4 M HNO\tsbs{3} + 500 $\mu$l of 30 vol.\%
     TBP}
   \end{itemize}
-\item[\done]{Centrifuge samples for 30,000 rpm for 5 minutes}
+\item[\done]{Centrifuge samples for 3000 rpm for 5 minutes}
 \item[\done]{Separate phases for samples}
   \begin{itemize}
   \item{A total of 4 drops were dropped in this process}
@@ -1242,7 +1244,7 @@ John also mentioned two good techniques, that should be noted:
 \item{\st{Remove XX $\mu$l organic and XX $\mu$l aqueous
   from $\boxed{Ex\ Buddy}$} (No longer necessary)}
 \item[\done]{Centrifuge $\boxed{5\ Or}$, $\boxed{6\ Or}$, \st{$\boxed{7\ Or}$}
-  \st{$\boxed{Ex\ Buddy}$}, 30,000 rpm for 5 minutes}
+  \st{$\boxed{Ex\ Buddy}$}, 3,000 rpm for 5 minutes}
 \end{todolist}
 \begin{todolist}
 \item[\done]{Vials labeled $\boxed{5\ AqII}$, 
@@ -2132,14 +2134,23 @@ $\boxed{Stock}$}
 \end{todolist}
 Quick calculation for molarity of uranium in samples
 \begin{align*}
-  \frac{0.0129\ \text{g DUO\tsbs{2}}\cdot 0.88}{0.005\
-    \text{Liters}}=&2.27\\
-  =&2.2704\ \text{M}\cdot \frac{0.5\ ml}{5\ ml}\\
-  =&0.23\ \text{M U}
+  \frac{0.0129\ \text{g DUO\tsbs{2}}\cdot 0.88 \cdot
+  \frac{1}{238}}{0.005\
+    \text{Liters}}=&0.009539M\\
+  &0.009539\ \text{M}\cdot \frac{0.5\ ml}{2.5\ ml}\\
+  =&0.001908\ \text{M U}
+\end{align*}
+Quick calculation for saturation of uranyl nitrate in water
+at 20 \tss{o}C.
+\begin{align*}
+  \frac{122\ \text{g}}{\text{g}}=\frac{122\ \text{g}}{\text{g}}
+    \cdot \frac{1000\ ml}{L}\cdot\frac{mol}{394.04\ g}\approx
+    3.09 \text{M}
 \end{align*}
 \begin{table}[H]
 \begin{center}
-\caption{Values from Paper, 1.4 M U (much higher than ours),
+  \caption{Values from Paper, 1.4 M U (much higher than ours
+    2 mM),
  and 3 M HNO\tsbs{3} (ours is at 4 M)}
 \begin{tabular}{l l}
 \toprule
@@ -2155,7 +2166,27 @@ Cs & $\boxed{0.01}$\\
 \bottomrule
 \end{tabular}
 \end{center}
-\end{table}  
+\end{table}
+The below figure shows that as the concentration
+HNO\tsbs{3} increases from 3 to 4, we shouldn't expect
+a huge difference between reference and our values.
+Literature values should have some difference between 0\%
+uranium saturation to 45\% saturation (reference)
+
+\begin{figure}[H] % Example of including images
+\begin{center}
+  \includegraphics[width=0.8\linewidth]
+                  {Figures/D_Values_Variations}
+\end{center}
+\caption{D value plots from Reactor handbook}
+\label{fig:D_V_handbook}
+\end{figure}
+
+
+
+
+
+
 \begin{itemize}
 \item{Ru, and Ce match from our experimental results from the first
   experiment,
@@ -2233,7 +2264,7 @@ Cs & $\boxed{0.01}$\\
   \begin{itemize}
   \item{Rework calculations with new eff...didn't help much}
   \end{itemize}
-\item[\done]{Start $\boxed{8\ or}$ count}
+\item[\done]{Start $\boxed{9\ or}$ count}
 \item[\done]{Spend all night making spreadsheet to calculate
   how much volume would be optimal for contamination in
   each series}
@@ -2244,6 +2275,8 @@ Cs & $\boxed{0.01}$\\
   \item{Also determined geometric differences between calculating
     activity at 0 cm as opposed to 26 cm - there wasn't much
     of a difference}
+  \item{Also, need to complete recounts for $\boxed{8\ or\ C}$ and
+    $\boxed{9\ or\ C}$}
   \end{itemize}
 \end{todolist}
 
@@ -2253,19 +2286,30 @@ Cs & $\boxed{0.01}$\\
 %	LAB BOOK da
 %-----------------------------------------------------------------------
 
-\labday{Wednesday, 15 November 2016}
+\labday{Wednesday, 16 November 2016}
+
+\begin{todolist}
+\item[\done]{Transfer in the glovebox a blue 2.5 ml vial
+  (also hold smaller conical
+  vials) holder - sorry Mary, it makes things much easier to
+  have something to hold your vials}
+\item[\done]{Transfer smaller pipette tips into glovebox}
+\item[\done]{take out the trash in the glovebox}
+\end{todolist}
 
 \experiment{Cycle_X3_round_2}
 
 \begin{todolist}
-\item[\done]{Begin count $\boxed{9\ or}$}
+\item[\done]{Finish count $\boxed{9\ or}$}
+\item[\done]{Begin count $\boxed{8\ or}$ (9:44 am)}
 \end{todolist}
 
 
 \experiment{Cycle_X3_round_2_alpha}
 
 \begin{todolist}
-\item{Make alpha sample of stock, make 3 (
+  
+\item[\done]{Make alpha sample of stock, make 3 (
       Pipette Errors - assume 20 $\mu$l error 1\%,
       10 $\mu$l error 1.2\%, 390 $\mu$l error 2\%, 890 $\mu$l error 1\%)}
 \end{todolist}
@@ -2293,9 +2337,9 @@ Cs & $\boxed{0.01}$\\
 \begin{todolist}
 
   
-\item{Make alpha sample of each aqueous}
+\item[\done]{Make alpha sample of each aqueous}
 \begin{todolist}
-\item{- $\boxed{8\ aq}$}
+\item[\done]{- $\boxed{8\ aq}$}
 \end{todolist}
 \begin{center}
 10+/-0.12 $\mu$l of $\boxed{8\ aq}$ (4 M HNO\tsbs{3}) [smaller pipette]\\
@@ -2304,13 +2348,21 @@ Cs & $\boxed{0.01}$\\
 =\\
 0.4+/-0.0078 ml of $\sim$ 0 M HNO\tsbs{3} $\boxed{8\ aq\ Dillution}$
 \end{center}
+\begin{itemize}
+\item{$\boxed{8\ aq}$ transfer contaminated gloves (had the blue
+  push cap) and the vial accidentally fell}
+\end{itemize}
 \vspace{0.3cm}
 \begin{center}
   20+/-0.2 $\mu$l of $\boxed{8\ aq\ Dillution}$ dropped onto
   $\boxed{8\ aq\ Chip}$
 \end{center}
 \begin{todolist}
-\item{- $\boxed{9\ aq}$}
+\item[\done]{- $\boxed{9\ aq}$}
+  \begin{itemize}
+  \item{$\boxed{9\ aq}$ and $\boxed{10\ aq}$ centrifuged, so
+    no contamination on glovebox gloves like above}
+  \end{itemize}
 \end{todolist}
 \begin{center}
 10+/-0.12 $\mu$l of $\boxed{9\ aq}$ (4 M HNO\tsbs{3}) [smaller pipette]\\
@@ -2325,7 +2377,7 @@ Cs & $\boxed{0.01}$\\
   $\boxed{9\ aq\ Chip}$
 \end{center}
 \begin{todolist}
-\item{- $\boxed{10\ aq}$}
+\item[\done]{- $\boxed{10\ aq}$}
 \end{todolist}
 \begin{center}
 10+/-0.12 $\mu$l of $\boxed{10\ aq}$ (4 M HNO\tsbs{3}) [smaller pipette]\\
@@ -2341,73 +2393,235 @@ Cs & $\boxed{0.01}$\\
 \end{center}
 
 
-\item{Make alpha sample of each organic phase}
+\item[\done]{Make alpha sample of each organic phase}
 \begin{todolist}
-\item{- $\boxed{8\ or}$}
+\item[\done]{- $\boxed{8\ or}$}
 \end{todolist}
 \begin{center}
-10+/-0.12 $\mu$l of $\boxed{8\ or}$ (4 M HNO\tsbs{3}) [smaller pipette]\\
+10+/-0.12 $\mu$l of $\boxed{8\ or}$ (30\% TBP) [smaller pipette]\\
 +\\
-890+/-8.9 $\mu$l of DI water (leftover in glovebox)\\
+890+/-8.9 $\mu$l of 30\% TBP (leftover in glovebox)\\
 =\\
-0.9+/-0.0089 ml of $\sim$ 0 M HNO\tsbs{3} $\boxed{8\ or\ Dillution}$
+0.9+/-0.0089 ml of 30\% TBP $\boxed{8\ or\ Dillution}$
 \end{center}
 \vspace{0.3cm}
 \begin{center}
   20+/-0.2 $\mu$l of $\boxed{8\ or\ Dillution}$ dropped onto
   $\boxed{8\ or\ Chip}$
 \end{center}
+\begin{itemize}
+\item{\textbf{Spilled some organic on inner ring??
+    of $\boxed{8\ or\ Chip}$, question because hard to see in
+    glovebox}}
+\end{itemize}
 \begin{todolist}
-\item{- $\boxed{9\ or}$}
+\item[\done]{- $\boxed{9\ or}$}
 \end{todolist}
 \begin{center}
-10+/-0.12 $\mu$l of $\boxed{9\ or}$ (4 M HNO\tsbs{3}) [smaller pipette]\\
+10+/-0.12 $\mu$l of $\boxed{9\ or}$ (30\% TBP) [smaller pipette]\\
 +\\
-890+/-8.9 $\mu$l of DI water (leftover in glovebox)\\
+890+/-8.9 $\mu$l of 30\% TBP (leftover in glovebox)\\
 =\\
-0.9+/-0.0089 ml of $\sim$ 0 M HNO\tsbs{3} $\boxed{9\ or\ Dillution}$
+0.9+/-0.0089 ml of 30\% TBP $\boxed{9\ or\ Dillution}$
 \end{center}
 \vspace{0.3cm}
 \begin{center}
-  20+/-0.2 $\mu$l of $\boxed{9\ or\ Dillution}$ dropped onto
+  \textbf{10}+/-0.12 $\mu$l of $\boxed{9\ or\ Dillution}$ dropped onto
   $\boxed{9\ or\ Chip}$
 \end{center}
+\begin{itemize}
+\item{\textbf{Changed volume on chip because $\boxed{8\ or\ Chip}$
+    potentially spilled over the inner ring}}
+\end{itemize}
 \begin{todolist}
-\item{- $\boxed{10\ or}$}
+\item[\done]{- $\boxed{10\ or}$}
 \end{todolist}
 \begin{center}
-10+/-0.12 $\mu$l of $\boxed{10\ or}$ (4 M HNO\tsbs{3}) [smaller pipette]\\
+10+/-0.12 $\mu$l of $\boxed{10\ or}$ (30\% TBP) [smaller pipette]\\
 +\\
-890+/-8.9 $\mu$l of DI water (leftover in glovebox)\\
+890+/-8.9 $\mu$l of 30\% TBP (leftover in glovebox)\\
 =\\
-0.9+/-0.0089 ml of $\sim$ 0 M HNO\tsbs{3} $\boxed{10\ or\ Dillution}$
+0.9+/-0.0089 ml of 30\% TBP $\boxed{10\ or\ Dillution}$
 \end{center}
 \vspace{0.3cm}
 \begin{center}
-  20+/-0.2 $\mu$l of $\boxed{10\ or\ Dillution}$ dropped onto
+  \textbf{10}+/-0.12 $\mu$l of $\boxed{10\ or\ Dillution}$ dropped onto
   $\boxed{10\ or\ Chip}$
 \end{center}
+\begin{itemize}
+\item{\textbf{Changed volume on chip because $\boxed{8\ or\ Chip}$
+    potentially spilled over the inner ring}}
+\end{itemize}
+\item[\done]{\textbf{Note: Centrifuged all dillution vials before making
+    alpha samples, which means that first all dillutions were made,
+    then all alpha samples were made}}
+\item[\done]{The above 7 alpha samples take up space in the
+  glovebox, and I didn't want to disturb the samples (moving them
+  screws them up) so I let them dry overnight}
+\end{todolist}
+
+
+\experiment{Process_X3}
+\begin{todolist}
+\item[\done]{Combine all aqueous phases together (done with disposable
+pipetets)}
+  \begin{todolist}
+  \item[\done]{$\boxed{8\ aq\ C}+\boxed{8\ mix}\ \rightarrow\ \boxed{8\ aq}$
+    (take all of first and add to second)}
+  \item[\done]{$\boxed{9\ aq\ C}+\boxed{9\ mix}\ \rightarrow\ \boxed{9\ aq}$}
+  \item[\done]{$\boxed{10\ aq\ C}+\boxed{10\ mix}\ \rightarrow\ \boxed{10\ aq}$}
+  \end{todolist}
+\end{todolist}
+
+\experiment{ResearchMeeting}
+
+\begin{itemize}
+\item{Just present D-Values at research meeting}
+\item{Things didn't add up so well}
+\item{Dr. Chirayath didn't like my \tss{137}Cs values,
+  looked at the first experiment, the one where
+  I messed up, and liked the 110 value, now I
+  am getting 10\tss{-5}...why?}
+\item{Dr. Burns suggested to increase the volume
+  of the extraction phase (organic) to pin
+  down the \tss{137}Cs values}
+\item{Dr. Folden also said that we should average
+  the percent extraction values, not the D-values,
+  because D values vary widly at the ends (shown in
+  next figure)}
+\end{itemize}
+\begin{equation*}
+  \text{Fraction Extracted}=\frac{\text{Mass Organic}}{\text{Mass Initial}}
+\end{equation*}
+\begin{itemize}
+\item{Dr. Chirayath said to continue process}
+\item{Jeremy had interesting results, the flux spectra
+  turned from kind of fast to thermal, Gd burned out}
+\end{itemize}
+
+\begin{figure}[H] % Example of including images
+\begin{center}
+  \includegraphics[width=0.8\linewidth]
+                  {Figures/Percent_Extraction_vs_D_Value_log}
+\end{center}
+\caption{Percent extraction versus D value on log scale}
+\label{fig:P_Ext}
+\end{figure}
+
+
+%------------------------------------------------------------------------
+%	LAB BOOK day
+%-----------------------------------------------------------------------
+
+\labday{Thursday, 17 November 2016}
+
+\experiment{56_run}
+
+In order to capture the D-value for \tss{137}Cs,
+an experiment was proposed. Our problem with measuring
+\tss{137}Cs is that its D-value and activity are so low
+that we aren't getting good statistics for its answer,
+and the answer we are getting is not the answer we want,
+we are getting something around 10\tss{-5}, and the answer
+is more probably around 0.01.
+\vspace{0.3cm}
+
+It was proposed to take an old series (series 5 or 6), and
+perform an extraction with a larger volume of organic,
+so that more \tss{137}Cs could be extracted, and therefore
+better statistics on all the calculations. Some notes
+are copied down from hand calculations for the experiment.
+\begin{itemize}
+\item{$\boxed{5\ aq}$ has 461 $\mu$l, 4.47 $\mu$Ci, $\sim$ 3.6\% dead time}
+\item{$\boxed{6\ aq}$ has 469 $\mu$l, 4.40 $\mu$Ci, $\sim$ 3.6\% dead time,
+  this vial is also a little milky, meaning there is a small amount
+  of organic in there}
+\item{Both above vials should were in fumehood}
+\item{Some evaporation happened in $\boxed{Stock}$,
+  I know this because the activity density changed from
+  $\boxed{Stock}$ and $\boxed{Stock\ add}$.}
+\item{If we take 800 $\mu$l total (after mixing $\boxed{5\ aq}$
+  and $\boxed{6\ aq}$), then we could expect $\sim$ 8.87 $\mu$l
+  (about 200 cps),
+  of \tss{137}Cs with $\sim$ 6\% dead time}
+\item{If we want 3 cps in the final organic
+  (about an hour of count time) and if I assume the D-value
+  is 0.01 (which Dr. Chirayath insists), (3/200 $\sim$ 1.5\%
+  of the counts)}
+\end{itemize}
+\begin{align*}
+  \%=&\frac{1}{1+\frac{V_a}{V_o}\frac{1}{D}}\\
+  =&\frac{1}{1+\frac{1}{2}\frac{1}{0.01}}=0.019
+\end{align*}
+This means if we double the volume of the organic, then
+we should get a decent count rate so as to count \tss{137}Cs
+and get good statistics with an hour count. This is IF
+the D-value is 0.01, as Dr. Chirayath insists.
+\begin{itemize}
+\item{Dr. Burns came by and said, instead of 2x the organic volume,
+  should do 10x, to make sure we get all the counts!}
+\item{Okay! Sounds good! We will for sure get the right answer
+  now! We also rederived the D-value equation}
+\end{itemize}
+With conservation of mass, and using values from the two phases,
+\begin{align*}
+  \text{\% Extracted}=&\frac{[\frac{CPS}{V_{m}}]_o\cdot V_{co}}
+       {[\frac{CPS}{V_{m}}]_o\cdot V_{co}+
+         [\frac{CPS}{V_{m}}]_a\cdot V_{ca}}\\~\\
+       \frac{1}{\text{\% Extracted}}
+       =&\frac{[\frac{CPS}{V_{m}}]_o\cdot V_{co}+
+         [\frac{CPS}{V_{m}}]_a\cdot V_{ca}}
+       {[\frac{CPS}{V_{m}}]_o\cdot V_{co}}\\~\\
+       =&1+\frac{[\frac{CPS}{V_m}]_a\cdot V_{ca}}
+       {[\frac{CPS}{V_m}]_o\cdot V_{co}}\\~\\
+       =&1+\frac{1}{D}\cdot\frac{V_{ca}}{V_{co}}\\~\\
+       \frac{1}{\frac{V_{co}}{V_{ca}}\left(\frac{1}{\text{\% Extracted}}-1
+       \right)}
+       =&D
+\end{align*}
+Where $V_m$ is the measured volume for the count, $V_{co}$ is
+the volume of the organic contact and $V_{ao}$ is the volume
+of the aqueous contact. 
+
+\begin{todolist}
+\item[\done]{Combine $\boxed{5\ aq}$ and $\boxed{6\ aq}$
+  into a 15 ml vial labeded $\boxed{56}$.}
+\item[\done]{Start count $\boxed{56}$ at 26 cm}
+\end{todolist}
+
+\experiment{Cycle_X3_round_2}
+
+\begin{todolist}
+\item[\done]{Finish count $\boxed{8\ or}$ ($\sim$ 9:45 am)
+  about this time another count was started - vial 56,
+  described above}
+\item[\done]{Analyzed last two organics, put into excel
+  sheet}
+  \begin{itemize}
+  \item{All samples of organic, after mixing organic parts together,
+    redrawing 250 $\mu$l and recounting, increased in activity.
+    This could support the conclusion that some aqueous passed
+    to the main organic, and when the 250 $\mu$l was first drawn,
+    was on the bottom of the vial. When the 250 $\mu$l was second
+    drawn, it had time to dissolve into the TBP, because
+    HNO\tsbs{3} is slightly soluble in TBP (
+    Nuclear Chemical Engeineering pg 160)}
+  \end{itemize}
 \end{todolist}
 
 \experiment{Process_X3}
 \begin{todolist}
-\item{Combine all aqueous phases together}
-  \begin{todolist}
-  \item{$\boxed{8\ aq\ C}\ \rightarrow\ \boxed{8\ aq}$ (take all of first
-  and add to second)}
-  \item{$\boxed{9\ aq\ C}\ \rightarrow\ \boxed{9\ aq}$}
-  \item{$\boxed{10\ aq\ C}\ \rightarrow\ \boxed{10\ aq}$}
-  \end{todolist}
-\item{Measure volumes of all aqueous phases}
+\item[\done]{Measure volumes of all aqueous phases, $\boxed{8\ aq}$
+     $\boxed{9\ aq}$, $\boxed{10\ aq}$}
 \begin{table}[H]
   \begin{center}
     \caption{Volumes for combined aqueous phases}
     \begin{tabular}{l l l}
       \toprule
       Series & Aqueous (8,9, or 10)\\ 
-      8 & \\
-      9 & \\
-      10 & \\
+      8 & 397 +/- 7.94\\
+      9 & \st{386} 389 +/- 7.78 (after centrifuge)\\
+      10 & 395 +/- 7.9\\
       \bottomrule
     \end{tabular}
   \end{center}
@@ -2417,63 +2631,66 @@ Cs & $\boxed{0.01}$\\
 Second Contact...
 
 \begin{todolist}
-\item{Label vials,
+\item[\done]{Label vials,
   $\boxed{8\ aqII}$,  $\boxed{8\ aqII\ C}$,  $\boxed{8\ orII}$,
   $\boxed{8\ orII\ C}$
   $\boxed{9\ aqII}$,  $\boxed{9\ aqII\ C}$,  $\boxed{9\ orII}$,
   $\boxed{9\ orII\ C}$
   $\boxed{10\ aqII}$, $\boxed{10\ aqII\ C}$, $\boxed{10\ orII}$,
   $\boxed{10\ orII\ C}$ (smaller 2.5 ml tubes)}
-\item{Will reuse $\boxed{8\ mix}$, $\boxed{9\ mix}$,
-  $\boxed{10\ mix}$ (smaller 1 ml tubes from John Burns,
-  have conical bottoms, makes more minute separations easier)}
-\item{Transfer:
+  \begin{itemize}
+  \item{Will reuse $\boxed{8\ mix}$, $\boxed{9\ mix}$,
+    $\boxed{10\ mix}$ (smaller 1 ml tubes from John Burns,
+    have conical bottoms, makes more minute separations easier)}
+  \end{itemize}
+  
+\item[\done]{Transfer:
   $\boxed{8\ aqII}$,  $\boxed{8\ aqII\ C}$,  $\boxed{8\ orII}$,
   $\boxed{8\ orII\ C}$
   $\boxed{9\ aqII}$,  $\boxed{9\ aqII\ C}$,  $\boxed{9\ orII}$,
   $\boxed{9\ orII\ C}$
   $\boxed{10\ aqII}$, $\boxed{10\ aqII\ C}$, $\boxed{10\ orII}$,
   $\boxed{10\ orII\ C}$.
-  (3 clear push caps, and 9 blue
-  push caps). Also with 6 15 ml centrifuge tubes}
-\item{Add 400 $\mu$l of $\boxed{TBP}$ to $\boxed{8}$, $\boxed{9}$, and $\boxed{10}$ each}
-\item{Vortex mix $\boxed{8}$ for 15 minutes on pulse mode}
-\item{Vortex mix $\boxed{9}$ for 15 minutes on pulse mode}
-\item{Vortex mix $\boxed{10}$ for 15 minutes on pulse mode}
+  (3 clear push caps, and 6 blue push caps
+  6 red push caps). Also with 6 15 ml centrifuge tubes}
+\item[\done]{Add 397 $\mu$l of $\boxed{TBP}$ to $\boxed{8\ aq}$}
+\item[\done]{Add 389 $\mu$l of $\boxed{TBP}$ to $\boxed{9\ aq}$}
+\item[\done]{Add 396 $\mu$l of $\boxed{TBP}$ to $\boxed{10\ aq}$}
+\item[\done]{Vortex mix $\boxed{8\ aq}$ for 15 minutes on pulse mode}
+\item[\done]{Centrifuge $\boxed{8\ aq}$ with $\boxed{Buddy}$ at 3,300
+  rpm for 10 minutes}
   \begin{itemize}
-  \item{Switched to push caps for each of the above}
+  \item{Decieded after this to wait, and centrifuge them all together}
   \end{itemize}
-\item{Centrifuge $\boxed{8}$, $\boxed{9}$, and $\boxed{10}$
+\item[\done]{Vortex mix $\boxed{9\ aq}$ for 15 minutes on pulse mode}
+\item[\done]{Vortex mix $\boxed{10\ aq}$ for 15 minutes on pulse mode}
+\item[\done]{Centrifuge $\boxed{8}$, $\boxed{9}$, and $\boxed{10}$
   with $\boxed{Buddy}$ on 3300 rpm, for 5 minutes}
-\item{During the vortex mixing and the centrifuge
-  practice the transfer in the fumehood}
-  \begin{itemize}
-  \item{Was able to get about XX ml of aqueous phase and XX ml of
-    organic phase}
-  \end{itemize}
-\item{Pipette with disposable pipette the aqueous phase
-  first, then the organic (for all three vials),
+\item{\st{During the vortex mixing and the centrifuge
+  practice the transfer in the fumehood} Prayed instead}
+\item[\done]{Pipette with disposable pipette the organic phase
+  first, then the aqueous (for all three vials),
   as much as so that there is no mixing.
   Then transferred the boundary to a smaller vial, centrifuged,
   and separated further. Counting solutions were
   also prepared of 250 $\mu$l of each of the solutions
-  \textbf{Remember to centrifuge}.
+\textbf{Remembered to centrifuge and to be VERY careful to not mix phases}.
   A picture will be provided for the whole process for $\boxed{8}$
   on the following page \textbf{Modify picture for this provess}
   , below are specific notes about what
   occured during the experiment.}
   \begin{itemize}
-  \item{-}
-  \vspace{3cm}
+  \item{$\boxed{8\ aq}$ was 248 $\mu$l pipetted to $\boxed{8\ aqII\ C}$
+  instead of 250 $\mu$l?}
   \end{itemize}
-\item{Measure volumes of everything}
-\item{Transfer out $\boxed{8\ orII\ C}$, $\boxed{8\ aqII\ C}$,
+\item{\st{Measure volumes of everything}}
+\item[\done]{Transfer out $\boxed{8\ orII\ C}$, $\boxed{8\ aqII\ C}$,
   $\boxed{9\ orII\ C}$, $\boxed{9\ aqII\ C}$, $\boxed{10\ orII\ C}$,
   $\boxed{10\ aqII\ C}$, in 15 ml centrifuge tubes}
-\item{Radiac wash the above tubes, and store in fumehood behind
+\item[\done]{Radiac wash the above tubes, and store in fumehood behind
   lead - wait to count}
-\item{Clean stuff in glovebox}
-\item{Start count XXXXX ?? pm}
+\item[\done]{Clean stuff in glovebox}
+\item{Start count $\boxed{9\ orII\ C}$ at 0 cm 4:06 pm}
 \end{todolist}
 
 
@@ -2481,7 +2698,7 @@ Second Contact...
 \begin{figure}[H] % Example of including images
 \begin{center}
   \includegraphics[width=0.8\linewidth]
-                  {Figures/Cycle_x3_round_2}
+                  {Figures/Cycle_x3_round_2_extraction_2}
 \end{center}
 \caption{Extraction three times round 2 experimental setup}
 \label{fig:example2}
@@ -2489,25 +2706,22 @@ Second Contact...
 
 
 
-\experiment{Cycle_X3_round_2}
-\begin{todolist}
-\item{Finish Eff Count}
-\item{Start $\boxed{8\ or}$ count}
-\end{todolist}
-
-
 %------------------------------------------------------------------------
 %	LAB BOOK day
 %-----------------------------------------------------------------------
 
-\labday{Wednesday, 16 November 2016}
+\labday{Friday, 18 November 2016}
 
-\experiment{ResearchMeeting}
 
-\begin{itemize}
-\item{Just present D-Values at research meeting}
-\item{Things didn't add up so well}
-\end{itemize}
+\experiment{Process_X3}
+
+\begin{todolist}
+\item[\done]{End count $\boxed{9\ orII\ C}$}
+\item[\done]{Start count $\boxed{8\ orII\ C}$ at 0 cm 8:56 am}
+\item[\done]{End count $\boxed{8\ orII\ C}$}
+\item[\done]{Start count $\boxed{10\ orII\ C}$ at 0 cm 1:04 pm}
+\end{todolist}
+
 
 %----------------------------------------------------------------------
 %	Examples

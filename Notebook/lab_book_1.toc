@@ -85,14 +85,16 @@
 \contentsline {experiment}{\numberline {2}Things to do for school}{52}{experiment.29.2}
 \contentsline {chapter}{\nonumberline Monday, 14 November 2016}{53}{chapter*.31}
 \contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3}{53}{experiment.30.1}
-\contentsline {chapter}{\nonumberline Tuesday, 15 November 2016}{55}{chapter*.32}
-\contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3}{55}{experiment.31.1}
-\contentsline {experiment}{\numberline {2}Cycle experiment, round 2, replicate of 3, ALPHA preparation (also Mass Spec preparation}{55}{experiment.31.2}
-\contentsline {experiment}{\numberline {3}Cycle experiment, round 2, replicate of 3}{55}{experiment.31.3}
-\contentsline {chapter}{\nonumberline Wednesday, 15 November 2016}{57}{chapter*.33}
-\contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3}{57}{experiment.32.1}
-\contentsline {experiment}{\numberline {2}Cycle experiment, round 2, replicate of 3, ALPHA preparation (also Mass Spec preparation}{57}{experiment.32.2}
-\contentsline {experiment}{\numberline {3}Process Experiment (continuation from cycle experiment)}{59}{experiment.32.3}
-\contentsline {experiment}{\numberline {4}Cycle experiment, round 2, replicate of 3}{62}{experiment.32.4}
-\contentsline {chapter}{\nonumberline Wednesday, 16 November 2016}{63}{chapter*.34}
-\contentsline {experiment}{\numberline {1}Details from research meeting}{63}{experiment.33.1}
+\contentsline {chapter}{\nonumberline Tuesday, 15 November 2016}{56}{chapter*.32}
+\contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3}{56}{experiment.31.1}
+\contentsline {experiment}{\numberline {2}Cycle experiment, round 2, replicate of 3, ALPHA preparation (also Mass Spec preparation}{56}{experiment.31.2}
+\contentsline {experiment}{\numberline {3}Cycle experiment, round 2, replicate of 3}{56}{experiment.31.3}
+\contentsline {chapter}{\nonumberline Wednesday, 16 November 2016}{58}{chapter*.33}
+\contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3}{58}{experiment.32.1}
+\contentsline {experiment}{\numberline {2}Cycle experiment, round 2, replicate of 3, ALPHA preparation (also Mass Spec preparation}{58}{experiment.32.2}
+\contentsline {experiment}{\numberline {3}Process Experiment (continuation from cycle experiment)}{60}{experiment.32.3}
+\contentsline {experiment}{\numberline {4}Details from research meeting}{61}{experiment.32.4}
+\contentsline {chapter}{\nonumberline Thursday, 17 November 2016}{62}{chapter*.34}
+\contentsline {experiment}{\numberline {1}Experiment to double check \textsuperscript {137}Cs using combined aqueous series 5 and 6, 56}{62}{experiment.33.1}
+\contentsline {experiment}{\numberline {2}Cycle experiment, round 2, replicate of 3}{63}{experiment.33.2}
+\contentsline {experiment}{\numberline {3}Process Experiment (continuation from cycle experiment)}{64}{experiment.33.3}
