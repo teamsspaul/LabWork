@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.30)  22 NOV 2016 10:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.30)  22 NOV 2016 10:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -901,13 +901,13 @@ chapter without number
 chapter without number
 [53
 
-] <Figures/D_Values_Variations.png, id=944, 728.7225pt x 551.05875pt>
+] <Figures/D_Values_Variations.png, id=944, 728.7225pt x 508.14844pt>
 File: Figures/D_Values_Variations.png Graphic file (type png)
 
 <use Figures/D_Values_Variations.png>
 Package pdftex.def Info: Figures/D_Values_Variations.png used on input line 217
 9.
-(pdftex.def)             Requested size: 334.60571pt x 253.02762pt.
+(pdftex.def)             Requested size: 334.60571pt x 233.32466pt.
  [54pdfTeX warning (ext4): destination with the same identifier (name{table.30.
 1}) has been already used, duplicate ignored
 
@@ -944,7 +944,7 @@ chapter without number
 [58
 
 ] [59] [60]
-<Figures/Percent_Extraction_vs_D_Value_log.pdf, id=979, 794.97pt x 433.62pt>
+<Figures/Percent_Extraction_vs_D_Value_log.pdf, id=980, 794.97pt x 433.62pt>
 File: Figures/Percent_Extraction_vs_D_Value_log.pdf Graphic file (type pdf)
 
 <use Figures/Percent_Extraction_vs_D_Value_log.pdf>
@@ -991,7 +991,7 @@ Overfull \hbox (14.09196pt too wide) in paragraph at lines 2705--2708
  []
 
 
-<Figures/Cycle_x3_round_2_extraction_2.png, id=1058, 889.82437pt x 1163.0953pt>
+<Figures/Cycle_x3_round_2_extraction_2.png, id=1059, 889.82437pt x 1163.0953pt>
 File: Figures/Cycle_x3_round_2_extraction_2.png Graphic file (type png)
 <use Figures/Cycle_x3_round_2_extraction_2.png>
 Package pdftex.def Info: Figures/Cycle_x3_round_2_extraction_2.png used on inpu
@@ -1094,9 +1094,9 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on lab_book_1.pdf (77 pages, 617736 bytes).
+Output written on lab_book_1.pdf (77 pages, 619005 bytes).
 PDF statistics:
- 1208 PDF objects out of 1440 (max. 8388607)
+ 1209 PDF objects out of 1440 (max. 8388607)
  1046 compressed objects within 11 object streams
  259 named destinations out of 1000 (max. 500000)
  956 words of extra memory for PDF output out of 10000 (max. 10000000)
