@@ -2944,13 +2944,13 @@ on the pips detector.
 
 \experiment{56_run}
 \begin{todolist}
-\item{Stop count $\boxed{56\ orII}$}
+\item[\done]{Stop count $\boxed{56\ orII}$}
 \item{Analyze data from 56 experiment}
 \end{todolist}
 
 \experiment{Process_X3}
 \begin{todolist}
-\item{Start Count $\boxed{10\ aqII\ C}$}
+\item[\done]{Start Count $\boxed{10\ aqII\ C}$}
 \item{Analyze second extraction data}
 \end{todolist}
 
@@ -2959,8 +2959,97 @@ Note all alpha counts were done on the 9mm height setting
 on the pips detector.
 \begin{todolist}
 \item{End Count $\boxed{8\ or\ Chip}$}
+  \begin{itemize}
+  \item{Accidentally cleared data...stupid, recounting}
+  \end{itemize}
+\item[\done]{Start count $\boxed{8\ or\ Chip}$ again}
 \item{Analyze Data from alpha spectrum}
 \end{todolist}
+
+\experiment{Process1_Fail_Counting_Analysis}
+
+So I keep getting 10\tss{-5} for Cs, but the first
+experiment I got 110...what is with that.
+Went back, I realized for that first experiment I forgot
+to subtract background, which changed the 110 number
+to 10\tss{-4}. Ah that explains it...but that is still
+an order of magnitude off. What is the deal?
+
+My ratio of numbers is first solution over last solution.
+I am comparing this number to a D value, which they aren't
+exactly the same. So I went through the math, assuming a D
+value of 10\tss{-5} and found what the ratio of first solution
+to last solution should be...and that number is...10\tss{-4}.
+WOAH! Math works, yes! Talked to Dr. Chirayath about this,
+we looked up a paper and their number was 10\tss{-4}. They
+are reporting a different D-value though, that needs to convert
+with densities of solutions (luckily enough they report that
+information). Which should give us the same numbers.
+
+Now the final question, why is the first number I reported
+so much different from this final number? I think the answer
+lies in centrifuging...if we assume a small aqueous contaminant,
+then we should have agreement with our published paper.
+
+Also this will show that there is nothing wrong with my published
+paper, we reported a \textbf{DF} value for a \textbf{process},
+we described our process very well, and the small contamination
+was a result of the process.
+
+
+%------------------------------------------------------------------------
+%	LAB BOOK day
+%-----------------------------------------------------------------------
+
+\labday{Break 24-27, November 2016}
+
+\experiment{Process_X3}
+\begin{todolist}
+\item[\done]{Stop Count $\boxed{10\ aqII\ C}$}
+\item[\done]{Start Count $\boxed{8\ aqII\ C}$}
+\end{todolist}
+
+\experiment{Cycle_X3_round_2_alpha}
+Note all alpha counts were done on the 9mm height setting
+on the pips detector.
+\begin{todolist}
+\item[\done]{Stop count $\boxed{8\ or\ Chip}$ SAVE! shut down alpha
+  detector}
+\end{todolist}
+
+\experiment{School}
+
+\begin{todolist}
+\item[\done]{Worked on project for NUEN647...still
+  have a long way to go, but hopefully can finish in a
+  week}
+\end{todolist}
+
+%------------------------------------------------------------------------
+%	LAB BOOK day
+%-----------------------------------------------------------------------
+
+\labday{Monday 28, November 2016}
+
+\experiment{56_run}
+\begin{todolist}
+\item{Analyze data from 56 experiment}
+\item{Review Dr. Chirayath's paper}
+\item{Review my old paper and see why its going wonky}
+\end{todolist}
+
+\experiment{Process_X3}
+\begin{todolist}
+\item[\done]{Stop count $\boxed{8\ aqII\ C}$}
+\item[\done]{Start background count}
+\item{Analyze second extraction data}
+\end{todolist}
+
+\experiment{Cycle_X3_round_2_alpha}
+\begin{todolist}
+\item{Analyze Data from alpha spectrum}
+\end{todolist}
+
 
 
 %----------------------------------------------------------------------
