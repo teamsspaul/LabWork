@@ -3053,22 +3053,137 @@ on the pips detector.
 
 \experiment{56_run}
 \begin{todolist}
-\item{Analyze data from 56 experiment}
-\item{Review Dr. Chirayath's paper}
-\item{Review my old paper and see why its going wonky}
+\item[\done]{Analyze data from 56 experiment}
+  \begin{itemize}
+  \item{Had to count the aqueous phase first, then analyzed}
+  \item{Results support a D value for Cs to be around 10\tss{-5}}
+  \item{Some of the D-values for other elements were somewhat different}
+  \end{itemize}
+\item[\done]{Review Dr. Chirayath's paper}
+  \begin{table}[H]
+    \begin{center}
+      \caption{Summarize Paper}
+      \begin{tabular}{ |c|c|c|c| }
+        \hline
+         & D-Value (them) & D-Value (us) \\
+        \hline
+        Ru & 0.0024 & 0.05 \\
+        Ce & 0.0047 & 0.03 \\
+        Cs & 1.3e-4 & 3e-5 \\
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{table}
+
+    \begin{table}[H]
+      \begin{center}
+      \caption{Comparison}
+      \begin{tabular}{ |c|c|c|c| }
+        \hline
+        Condition & (them) & (us) & Effect (theirs should be)\\
+        \hline
+        Temp & 333 K & 298 & Lower (less 'bonding')\\
+        HNO\tsbs{3} & 3.9 M & 4 M & Same \\
+        U & 0.12 M & 0.002 M & Lower (TBP taken up)\\
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{table}
+
+    The difference between 1e-4 and 5e-5 is the difference
+    between 99.99\% and 99.995\%, a small difference.
+  
+  \item[\done]{Review my old paper and see why its going wonky}
+    \begin{itemize}
+    \item{Reconcile document}
+    \item{With 2.35 $\mu$l of aqueous in organic, which would be
+      0.43\% of the aqueous phase, All DF values (except 1) that we are
+      measuring by Gamma would be similiar (within error) to
+      what we are currently getting for D.}
+    \item{The exception is Ru, which would be consistent if we
+      were getting a D value of 0.01, instead we are getting a D-value
+      of 0.03-0.07. Which is a difference between 99\% and
+      93-97\%.}
+    \end{itemize}
 \end{todolist}
 
 \experiment{Process_X3}
 \begin{todolist}
 \item[\done]{Stop count $\boxed{8\ aqII\ C}$}
 \item[\done]{Start background count}
-\item{Analyze second extraction data}
+\item[\done]{Analyze second extraction data}
+  \begin{itemize}
+  \item{Used count from 250 $\mu$l and scaled up to the 390s (volume)}
+  \item{Noticed some D-values were significantly higher
+    in the second extraction - tried VERY hard not to contaminate}
+  \item{Ce 0.03 $\rightarrow$ 0.12  (97\% to 89\% [in aq])}
+  \item{Eu 0.06 $\rightarrow$ 0.22  (94\% to 82\% [in aq])}
+  \item{Am 0.04 $\rightarrow$ 0.18  (96\% to 84\% [in aq])}
+  \item{Ru 0.05 to 0.07}
+  \item{Cs 3e-5 3e-5}
+  \item{Sb 0.002 to 0.003}
+  \end{itemize}
+  \begin{itemize}
+  \item{Maybe difference of species in solution cause
+    difference in D-vlaues?}
+  \item{A paper I found stated that some D-values fall considerably
+    with addition of uranyl nitrite to system, because TBP is
+    taken up}
+  \item{From 0 M to 0.004 M D of Zr changed from 0.055 0.05}
+  \item{We change from 0.002 to 0.000083 M (guess)}
+  \item{Also note that the previous paper was published with
+    0.001 M U}
+  \item{Another paper says that Ce is extracted via Ce(NO\tsbs{3})\tsbs{3}
+    $\cdot$3TBP}
+  \end{itemize}
 \end{todolist}
+
+
+
+%------------------------------------------------------------------------
+%	LAB BOOK day
+%-----------------------------------------------------------------------
+
+\labday{Tuesday 29, November 2016}
+
+Some of yesterday over lapped to today, also it took
+me a while to work out the alpha analysis.
 
 \experiment{Cycle_X3_round_2_alpha}
 \begin{todolist}
-\item{Analyze Data from alpha spectrum}
+\item[\done]{Analyze Data from alpha spectrum}
+  \begin{itemize}
+  \item{\tss{239}Pu and \tss{240}Pu have over lapping peaks,
+    if we assume that the 93\% is 239 and the rest is 240,
+    we get the results shown in Alpha\_Results, also using the
+    following equation for a sum peak.}
+    \begin{equation*}
+      g_1=\frac{CPS\cdot M_1}{\epsilon N_A[\lambda_1+\lambda_2(1/N\%_1-1)]}
+    \end{equation*}
+  \item{Subtracted grass from aqueous phases}
+  \item{Results...are way off}
+  \end{itemize}
 \end{todolist}
+
+
+%------------------------------------------------------------------------
+%	LAB BOOK day
+%-----------------------------------------------------------------------
+
+\labday{Wednesday 30, November 2016}
+
+\begin{todolist}
+\item[\done]{Update notebook}
+\item[\done]{Mess around some with some of the resuls to make
+  them look better}
+\item{Compile things to present to meeting}
+\item{Talk about not working the month of December}
+\end{todolist}
+
+
+\experiment{ResearchMeeting}
+
+
 
 
 
