@@ -102,12 +102,15 @@
 \newexperiment{Cycle_X3_round_2}{Cycle experiment, round 2,
   replicate of 3}
 \newexperiment{Cycle_X3_round_2_alpha}{Cycle experiment, round 2,
-  replicate of 3, ALPHA preparation (also Mass Spec preparation}
+  replicate of 3, ALPHA preparation for
+  extraction 1 (also Mass Spec preparation)}
 \newexperiment{Process_X3}{Process Experiment (continuation from
   cycle experiment)}
 \newexperiment{School}{Things to do for school}
 \newexperiment{56_run}{Experiment to double check \tss{137}Cs
   using combined aqueous series 5 and 6, 56}
+\newexperiment{Cycle_X3_round_2_alpha_ex2}{Cycle experiment, round 2,
+  replicate of 3, ALPHA EXTRACTION II (also Mass Spec preparation)}
 %\newexperiment{shorthand}{Description of the experiment}
 
 %----------------------------------------------------------------------
@@ -3177,7 +3180,20 @@ me a while to work out the alpha analysis.
 \item[\done]{Mess around some with some of the resuls to make
   them look better}
 \item[\done]{Compile things to present to meeting}
-\item{Talk about the upcoming months}
+  \begin{itemize}
+  \item{equations used}
+    \begin{equation*}
+      D=\frac{1}{\frac{V_o}{V_a}\left(\frac{1}{0\%}-1\right)}
+    \end{equation*}
+    \begin{equation*}
+      O\%=\frac{1}{\frac{1}{\frac{v_o}{v_a}D}+1}
+    \end{equation*}
+    Err for calculating $O\%$ from D value
+    \begin{equation*}
+       \sigma_{O\%}=\frac{\sigma_{D}}{(D+1)^2}
+    \end{equation*}
+  \end{itemize}
+\item[\done]{Talk about the upcoming months}
   \begin{itemize}
   \item{Concerned about alpha sample not giving reulsts expected,
     after second extraction want to do alpha samples, but I want to
@@ -3235,6 +3251,7 @@ Not chronological order.
   \item{Really low organic counts}
   \item{Should I wait on third extraction for this?}
   \end{itemize}
+\item[\done]{Analyze alpha results from Mess up}
 \item[\done]{Finish counts for first extraction}
 \item[\done]{Second extraction}
 \item[\done]{Count second extraction}
@@ -3246,6 +3263,162 @@ Not chronological order.
 If everything worked out the first time, and made sense,
 things would move a lot quicker, problem is, there is
 always a problem. 
+
+
+%------------------------------------------------------------------------
+%	LAB BOOK day
+%-----------------------------------------------------------------------
+
+\labday{Thursday 1, December 2016}
+
+\begin{todolist}
+\item{Check on the items from Research meeting}
+  \begin{todolist}
+  \item[\done]{Check for alpha calculation, mass or atom percent}
+    \begin{itemize}
+    \item{I was using mass percent as atom percent for \tss{239}Pu and \tss{240}Pu}
+    \item{Updated my calculation, and did not change the results much}
+    \end{itemize}
+  \item[\done]{Email Dr. Folden asking about an IA position for CHEM102,
+    hopefully it will pay for tuition and insurance}
+  \item[\done]{Dr. Chirayath said that maybe they remove all FP at once,
+    and increase recovery later, maybe its a one shot thing}
+  \item[\done]{Check on $^{106}Ru\rightarrow^{106}Rh$, are we in secular equilibrium?}
+    \begin{itemize}
+    \item{\tss{106}Ru decays to the ground state of \tss{106}Rh, which has a 30 second half-life
+      \href{http://www.nucleide.org/DDEP_WG/Nuclides/Ru-106_tables.pdf}{Decay Scheme}}
+    \item{Did quick silly calculation, yes we are in secular equilibrium}
+      \begin{equation*}
+        N_h=\frac{\lambda_uN_{uo}}{\lambda_h-\lambda_u}
+        \left(e^{-\lambda_ut}-e^{-\lambda_ht}\right)
+        +N_{ho}e^{-\lambda_ht}
+      \end{equation*}
+    \end{itemize}
+  \item[\done]{Check on Molarity of TBP, its 2 mols of TBP per 1 M uranium,
+    will this change the extraction?}
+    \begin{itemize}
+    \item{$\rho_{TBP}=0.9790$, $\rho_{kerosene}=0.775-0.840$}
+    \item{TBP was made with 15 ml TBP + 35 ml kerosene}
+      \begin{equation*}
+        15\ \text{ml TBP}\cdot\frac{0.9790\ \text{g}}{\text{ml}}
+        \cdot\frac{\text{mol}}{266.32\ \text{M TBP}}\cdot
+        \frac{1}{0.05\ \text{L}}=1.1028\ \text{M U}
+      \end{equation*}
+      Before we calcualted molarity of uranium in the solution is
+      0.002 M Uranium, which goes to 0.0001 M uranium.
+    \end{itemize}
+  \end{todolist}
+\item{What if nitric acid concentration changes, and we change D-values?}
+\item{What is the saturation of Urynal nitrate in TBP?}
+  \begin{itemize}
+  \item{Dr. Burns says not to worry about it, we have 500 times more
+    TBP, I tend to agree}
+  \end{itemize}
+\item{Got paper for Ruthenium and Zr chemistry, they have
+  some interesting equations on page 20/46, should look into,
+  but need to do some stuff in the lab}
+\end{todolist}
+
+\experiment{Cycle_X3_round_2_alpha_ex2}
+
+\begin{todolist}
+\item{Label vials:
+  $\boxed{8\ aqII\ Dillution}$,
+  $\boxed{9\ aqII\ Dillution}$,
+  $\boxed{10\ aqII\ Dillution}$,
+  $\boxed{8\ orII\ Dillution}$,
+  $\boxed{9\ orII\ Dillution}$,
+  $\boxed{10\ orII\ Dillution}$.
+  Do not label chips at this time, just dillute samples
+  for mass spec}
+\item{Also transfer 3 red and 4 blue push caps for smaller vials}
+\item{Transfer all above vials and chips into glovebox}
+
+  
+\item{Make alpha sample of each aqueous}
+\begin{todolist}
+\item{- $\boxed{8\ aqII}$}
+\end{todolist}
+\begin{center}
+10+/-0.12 $\mu$l of $\boxed{8\ aqII}$ (4 M HNO\tsbs{3}) [smaller pipette]\\
++\\
+390+/-7.8 $\mu$l of DI water (leftover in glovebox)\\
+=\\
+0.4+/-0.0078 ml of $\sim$ 0 M HNO\tsbs{3} $\boxed{8\ aqII\ Dillution}$
+\end{center}
+
+\begin{todolist}
+\item{- $\boxed{9\ aqII}$}
+\end{todolist}
+\begin{center}
+10+/-0.12 $\mu$l of $\boxed{9\ aqII}$ (4 M HNO\tsbs{3}) [smaller pipette]\\
++\\
+390+/-7.8 $\mu$l of DI water (leftover in glovebox)\\
+=\\
+0.4+/-0.0078 ml of $\sim$ 0 M HNO\tsbs{3} $\boxed{9\ aqII\ Dillution}$
+\end{center}
+
+\begin{todolist}
+\item{- $\boxed{10\ aqII}$}
+\end{todolist}
+\begin{center}
+10+/-0.12 $\mu$l of $\boxed{10\ aqII}$ (4 M HNO\tsbs{3}) [smaller pipette]\\
++\\
+390+/-7.8 $\mu$l of DI water (leftover in glovebox)\\
+=\\
+0.4+/-0.0078 ml of $\sim$ 0 M HNO\tsbs{3} $\boxed{10\ aqII\ Dillution}$
+\end{center}
+
+\item{Make alpha sample of each organic phase}
+\begin{todolist}
+\item{- $\boxed{8\ orII}$}
+\end{todolist}
+\begin{center}
+10+/-0.12 $\mu$l of $\boxed{8\ orII}$ (30\% TBP) [smaller pipette]\\
++\\
+890+/-8.9 $\mu$l of 30\% TBP (leftover in glovebox)\\
+=\\
+0.9+/-0.0089 ml of 30\% TBP $\boxed{8\ orII\ Dillution}$
+\end{center}
+
+\begin{todolist}
+\item{- $\boxed{9\ orII}$}
+\end{todolist}
+\begin{center}
+10+/-0.12 $\mu$l of $\boxed{9\ orII}$ (30\% TBP) [smaller pipette]\\
++\\
+890+/-8.9 $\mu$l of 30\% TBP (leftover in glovebox)\\
+=\\
+0.9+/-0.0089 ml of 30\% TBP $\boxed{9\ orII\ Dillution}$
+\end{center}
+
+\begin{todolist}
+\item{- $\boxed{10\ orII}$}
+\end{todolist}
+\begin{center}
+10+/-0.12 $\mu$l of $\boxed{10\ orII}$ (30\% TBP) [smaller pipette]\\
++\\
+890+/-8.9 $\mu$l of 30\% TBP (leftover in glovebox)\\
+=\\
+0.9+/-0.0089 ml of 30\% TBP $\boxed{10\ orII\ Dillution}$
+\end{center}
+
+
+\end{todolist}  
+
+
+\experiment{Process_X3}
+
+\begin{todolist}
+\item{Prepare samples for third extraction}
+\end{todolist}
+
+\experiment{56_run}
+
+\begin{todolist}
+\item{Do a third extraction of 56, measureing volume,
+  and using the original TBP}
+\end{todolist}
 
 
 %----------------------------------------------------------------------
