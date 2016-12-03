@@ -34,75 +34,68 @@ start_time = time.time()
 import Functions as fun
 
 #######################################################
-# With known Molarity and volume of a solution
-# how much, and of what concentration
-# do we need to combine with a second solution
-# to get a final solution of known concentration
-# and volume
+# What volumes to you need to get final solution of
+# x concentration and y molarity
+# You know the initial molarities, the final volume
+# and molarity
 #######################################################
-N=100
-Range=0.1
 
 Temperature=ufloat(24.8,3)
 gramsOmol=ufloat(63.0130,0.0012)
 dfDen=pd.read_csv('../Data/Nitric_Acid.csv')
 
-#M1=ufloat(15.43,0.06)
-M1=ufloat(4,0.13)
-m1=fun.ConvertMol(True,M1,gramsOmol,dfDen,Temperature)
-#m1=ufloat(35.5,0.5)
-Vol1=ufloat(0.01,0.0003)
-#M2=ufloat(0,0)
-#m2=ufloat(0,0)
+PipettError=0.001 #Depends on volume preparing
 
-M3=ufloat(2,0.02)
+#M1=ufloat(15.43,0.06)
+M1=ufloat(15.35,0.13)
+m1=fun.ConvertMol(True,M1,gramsOmol,dfDen,Temperature)
+
+M2=ufloat(0,0)
+m2=ufloat(0,0)
+
+#M3=ufloat(1.14,0.08)
+#M3=ufloat(4.06,0) #For Fe(II) pre solution
+M3=ufloat(4,0)
 m3=fun.ConvertMol(True,M3,gramsOmol,dfDen,Temperature)
-Vol3=ufloat(1,0.025)
+#Vol3=ufloat(2.048,0.026)
+#Vol3=ufloat(40,0)
+Vol3=ufloat(10,0)
 
 WtConcentration1=fun.GetWt(m1,gramsOmol)
-#WtConcentration2=fun.GetWt(m2,gramsOmol)
+WtConcentration2=fun.GetWt(m2,gramsOmol)
 WtConcentration3=fun.GetWt(m3,gramsOmol)
-
+    
 p1=fun.GetDensity(Temperature,WtConcentration1,dfDen)
+p2=fun.GetDensity(Temperature,WtConcentration2,dfDen)
 p3=fun.GetDensity(Temperature,WtConcentration3,dfDen)
 
-A=M3*Vol3-M1*Vol1
-B=(1-WtConcentration3)*Vol3*p3-(1-WtConcentration1)*Vol1*p1
-C=B/A
+A=(1-WtConcentration1)*p1
+B=(1-WtConcentration2)*p2
+b1=(1-WtConcentration3)*Vol3*p3
+b2=M3*Vol3
 
-M2Guess=(M3*Vol3-M1*Vol1)/(Vol3-Vol1)
-M2Range=np.linspace(M2Guess-M2Guess*Range,M2Guess+M2Guess*Range,N)
-Compare=[]
+C1=M2-M1/A
+C2=b2-(M1*b1)/A
+Vol2=C2/C1
+Vol1=(b1-B*Vol2)/A
 
-for M2i in M2Range:
-    m2i=fun.ConvertMol(True,M2i,gramsOmol,dfDen,Temperature)
-    Wt2i=fun.GetWt(m2i,gramsOmol)
-    p2i=fun.GetDensity(Temperature,Wt2i,dfDen)
-    Compare.append(abs(C-((1-Wt2i)*p2i)/M2i))
-    V2i=A/M2i
-    if Compare==0:
-        break
+Vol1=ufloat(Vol1.nominal_value,Vol1.nominal_value*PipettError)
+Vol2=ufloat(Vol2.nominal_value,Vol2.nominal_value*PipettError)
 
-M2=M2Range[Compare.index(min(Compare))]
-m2=fun.ConvertMol(True,M2,gramsOmol,dfDen,Temperature)
-Wt2=fun.GetWt(m2,gramsOmol)
-p2=fun.GetDensity(Temperature,Wt2,dfDen)
-V2=A/M2
-
-    
-#Check if we are correct
-mc3,pc3,Vc3,Wtc3,Mc3=fun.NewConcentration(m1,m2,gramsOmol,
-                                          Temperature,dfDen,
-                                          Vol1,V2)
-#print(M2Guess,M2i,min(M2Range),max(M2Range))
+#Check calculation
 #print(M3,Vol3)
-#print(Mc3,Vc3)
 
-#Print out answer
+m3,p3,Vol3,Wt,M3=fun.NewConcentration(m1,m2,gramsOmol,
+                                Temperature,dfDen,
+                                Vol1,Vol2)
+
+#print(M3,Vol3)
+
 print("Combine "+str(Vol1)+" ml of "+str(M1)+\
-      " M solution with "+str(V2)+\
+      " M solution with "+str(Vol2)+\
       " ml of "+str(M2)+" M solution, to get "+str(Vol3)+" ml of "+\
       str(M3)+" M solution")
+
 
 ###################### Time To execute #################
 

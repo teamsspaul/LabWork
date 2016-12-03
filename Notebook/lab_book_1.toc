@@ -131,5 +131,8 @@
 \contentsline {experiment}{\numberline {1}Details from research meeting}{80}{experiment.42.1}
 \contentsline {chapter}{\nonumberline Thursday 1, December 2016}{81}{chapter*.44}
 \contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3, ALPHA EXTRACTION II (also Mass Spec preparation)}{82}{experiment.43.1}
-\contentsline {experiment}{\numberline {2}Process Experiment (continuation from cycle experiment)}{83}{experiment.43.2}
-\contentsline {experiment}{\numberline {3}Experiment to double check \textsuperscript {137}Cs using combined aqueous series 5 and 6, 56}{83}{experiment.43.3}
+\contentsline {experiment}{\numberline {2}Things to do for school}{82}{experiment.43.2}
+\contentsline {chapter}{\nonumberline Friday 2, December 2016}{83}{chapter*.45}
+\contentsline {experiment}{\numberline {1}Cycle experiment, round 2, replicate of 3, ALPHA EXTRACTION II (also Mass Spec preparation)}{83}{experiment.44.1}
+\contentsline {experiment}{\numberline {2}Process Experiment (continuation from cycle experiment)}{84}{experiment.44.2}
+\contentsline {experiment}{\numberline {3}Experiment to double check \textsuperscript {137}Cs using combined aqueous series 5 and 6, 56}{84}{experiment.44.3}
