@@ -149,3 +149,6 @@
 \contentsline {experiment}{\numberline {5}Things to Check}{90}{experiment.48.5}
 \contentsline {chapter}{\nonumberline Wednesday 7, December 2016}{91}{chapter*.50}
 \contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{91}{experiment.49.1}
+\contentsline {experiment}{\numberline {2}Details from research meeting}{96}{experiment.49.2}
+\contentsline {chapter}{\nonumberline Thursday 8, December 2016}{97}{chapter*.51}
+\contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{97}{experiment.50.1}
