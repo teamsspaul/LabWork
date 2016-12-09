@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.2)  7 DEC 2016 21:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.30)  8 DEC 2016 22:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **lab_book_1.tex
 (./lab_book_1.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
 (./labbook.cls
 Document Class: labbook 2003/05/20 v1.1 LaTeX2e labbook document class
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -307,7 +307,7 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gin@req@height=\dimen120
 \Gin@req@width=\dimen121
 )
-(/home/teamsspaul/texmf/tex/latex/lipsum/lipsum.sty
+(/home/paul/texmf/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count110
 )
@@ -315,24 +315,24 @@ Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup4
 )
-(/home/teamsspaul/texmf/tex/latex/amsmath/amsmath.sty
+(/home/paul/texmf/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-(/home/teamsspaul/texmf/tex/latex/amsmath/amstext.sty
+(/home/paul/texmf/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/home/teamsspaul/texmf/tex/latex/amsmath/amsgen.sty
+(/home/paul/texmf/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen122
 ))
-(/home/teamsspaul/texmf/tex/latex/amsmath/amsbsy.sty
+(/home/paul/texmf/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen123
 )
-(/home/teamsspaul/texmf/tex/latex/amsmath/amsopn.sty
+(/home/paul/texmf/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count111
@@ -373,7 +373,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
-(/home/teamsspaul/texmf/tex/latex/soul/soul.sty
+(/home/paul/texmf/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks23
 \SOUL@lasttoken=\toks24
@@ -385,7 +385,7 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen132
 \SOUL@ulht=\dimen133
 )
-(/home/teamsspaul/texmf/tex/latex/enumitem/enumitem.sty
+(/home/paul/texmf/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip53
 \enit@outerparindent=\dimen134
@@ -518,14 +518,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./lab_book_1.toc [2
+{/home/paul/.texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./lab_book_1.toc [
+2
 
-] [3] [4] [5] [6])
+] [3] [4]
+[5] [6])
 \tf@toc=\write5
 \openout5 = `lab_book_1.toc'.
 
-
-[7]
+ [7]
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -636,7 +637,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [10
 
-] <Figures/Process_1_Mess_Up.png, id=913, 680.5425pt x 1258.7025pt>
+] <Figures/Process_1_Mess_Up.png, id=974, 680.5425pt x 1258.7025pt>
 File: Figures/Process_1_Mess_Up.png Graphic file (type png)
 
 <use Figures/Process_1_Mess_Up.png>
@@ -659,7 +660,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 581.
 
 
-<Figures/Extraction_Process_1_First_3_Counts.png, id=926, 405.01312pt x 532.238
+<Figures/Extraction_Process_1_First_3_Counts.png, id=987, 405.01312pt x 532.238
 43pt>
 File: Figures/Extraction_Process_1_First_3_Counts.png Graphic file (type png)
  <use Figures/Extraction_Process_1_First_3_Counts.png>
@@ -669,7 +670,7 @@ n input line 625.
  [13
 
 ]
-<Figures/Back_Extraction_Process_1_Last_3_Counts.png, id=932, 507.39563pt x 515
+<Figures/Back_Extraction_Process_1_Last_3_Counts.png, id=993, 507.39563pt x 515
 .67656pt>
 File: Figures/Back_Extraction_Process_1_Last_3_Counts.png Graphic file (type pn
 g)
@@ -871,7 +872,7 @@ Overfull \hbox (3.15239pt too wide) in paragraph at lines 1902--1909
 
 [47
 
-] <Figures/Cycle_x3_round_2.png, id=1121, 889.82437pt x 1519.92844pt>
+] <Figures/Cycle_x3_round_2.png, id=1182, 889.82437pt x 1519.92844pt>
 File: Figures/Cycle_x3_round_2.png Graphic file (type png)
 
 <use Figures/Cycle_x3_round_2.png>
@@ -903,7 +904,7 @@ chapter without number
 chapter without number
 [53
 
-] <Figures/D_Values_Variations.png, id=1155, 728.7225pt x 508.14844pt>
+] <Figures/D_Values_Variations.png, id=1215, 728.7225pt x 508.14844pt>
 File: Figures/D_Values_Variations.png Graphic file (type png)
 
 <use Figures/D_Values_Variations.png>
@@ -941,7 +942,7 @@ chapter without number
 [58
 
 ] [59] [60]
-<Figures/Percent_Extraction_vs_D_Value_log.pdf, id=1191, 794.97pt x 433.62pt>
+<Figures/Percent_Extraction_vs_D_Value_log.pdf, id=1251, 794.97pt x 433.62pt>
 File: Figures/Percent_Extraction_vs_D_Value_log.pdf Graphic file (type pdf)
 
 <use Figures/Percent_Extraction_vs_D_Value_log.pdf>
@@ -988,7 +989,7 @@ Overfull \hbox (14.09196pt too wide) in paragraph at lines 2710--2713
  []
 
 
-<Figures/Cycle_x3_round_2_extraction_2.png, id=1269, 889.82437pt x 1163.0953pt>
+<Figures/Cycle_x3_round_2_extraction_2.png, id=1330, 889.82437pt x 1163.0953pt>
 File: Figures/Cycle_x3_round_2_extraction_2.png Graphic file (type png)
 <use Figures/Cycle_x3_round_2_extraction_2.png>
 Package pdftex.def Info: Figures/Cycle_x3_round_2_extraction_2.png used on inpu
@@ -1207,7 +1208,7 @@ Overfull \hbox (40.12857pt too wide) in paragraph at lines 3819--3823
  []
 
 [93]
-<Figures/Cycle_x3_round_2_extraction_3.png, id=1416, 885.3075pt x 1502.61375pt>
+<Figures/Cycle_x3_round_2_extraction_3.png, id=1476, 885.3075pt x 1502.61375pt>
 File: Figures/Cycle_x3_round_2_extraction_3.png Graphic file (type png)
 <use Figures/Cycle_x3_round_2_extraction_3.png>
 Package pdftex.def Info: Figures/Cycle_x3_round_2_extraction_3.png used on inpu
@@ -1226,18 +1227,23 @@ l.3841
         <./Figures/Cycle_x3_round_2_extraction_3.png>] [96]
 chapter without number
 
-Overfull \hbox (36.36003pt too wide) in paragraph at lines 3875--3892
+Overfull \hbox (36.36003pt too wide) in paragraph at lines 3878--3895
 []$\OT1/cmr/m/n/10.95 , $[]$ $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (79.5813pt too wide) in paragraph at lines 3875--3892
+Overfull \hbox (79.5813pt too wide) in paragraph at lines 3878--3895
 []$\OT1/cmr/m/n/10.95 , $[]$, $[]$, $[]$, $[]$
  []
 
 
-Overfull \hbox (54.032pt too wide) in paragraph at lines 3893--3910
+Overfull \hbox (54.032pt too wide) in paragraph at lines 3898--3915
 []$\OT1/cmr/m/n/10.95 , $[]$ $[]$, $[]$, $[]$, $[]$, $[]$,
+ []
+
+
+Overfull \hbox (10.05258pt too wide) in paragraph at lines 3898--3915
+[]$\OT1/cmr/m/n/10.95 , $[]$, $[]$, $[]$. With old/new $[]$,
  []
 
 [97
@@ -1247,21 +1253,21 @@ Overfull \hbox (54.032pt too wide) in paragraph at lines 3893--3910
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3970     1
-            .0+/-0.006 ml of $\sim$]
-Overfull \hbox (32.98076pt too wide) in paragraph at lines 4033--4036
+l.3980   \item[\done]
+                     {- $\boxed{8\ aqIV}$}] [99]
+Overfull \hbox (32.98076pt too wide) in paragraph at lines 4051--4054
 []\OT1/cmr/m/n/10.95 Transfer out $[]$, $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
-[99]
-Overfull \hbox (24.98117pt too wide) in paragraph at lines 4039--4043
+
+Overfull \hbox (24.98117pt too wide) in paragraph at lines 4057--4061
 []\OT1/cmr/m/n/10.95 Centrifuge $[]$, $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 File: Figures/Cycle_x3_round_2_extraction_3.png Graphic file (type png)
 <use Figures/Cycle_x3_round_2_extraction_3.png>
 Package pdftex.def Info: Figures/Cycle_x3_round_2_extraction_3.png used on inpu
-t line 4053.
+t line 4069.
 (pdftex.def)             Requested size: 334.60571pt x 567.9268pt.
  [100]
 Overfull \vbox (11.80658pt too high) has occurred while \output is active []
@@ -1272,29 +1278,56 @@ Overfull \vbox (11.80658pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.4058 
-       ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4157.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4157.
+l.4074 
+       ] [102]
+chapter without number
+[103
+
+]
+chapter without number
+[104
+
+]
+chapter without number
+
+Overfull \hbox (47.19803pt too wide) in paragraph at lines 4153--4159
+[]\OT1/cmr/m/n/10.95 Transfer $[]$, $[]$, $[]$, $[]$, $[]$, $[]$,
+ []
+
+[105
+
+] [106pdfTeX warning (ext4): destination with the same identifier (name{table.5
+3.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.4218 \labday{Monday 8, December 2016}
+                                       ]
+chapter without number
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4327.
+[107
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4327.
  (./lab_book_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4157.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4157.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4327.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4327.
 
 Package rerunfilecheck Info: File `lab_book_1.out' has not changed.
-(rerunfilecheck)             Checksum: 476D09B88F449FDBA54F0FF732EA86CF;13888.
+(rerunfilecheck)             Checksum: A14D105958A6F756A8F9275F3C46E2ED;14882.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4157.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4327.
  ) 
 Here is how much of TeX's memory you used:
- 9519 strings out of 493029
- 145279 string characters out of 6136234
- 405664 words of memory out of 5000000
- 12570 multiletter control sequences out of 15000+600000
+ 9554 strings out of 494953
+ 145605 string characters out of 6180977
+ 402837 words of memory out of 5000000
+ 12331 multiletter control sequences out of 15000+600000
  17690 words of font info for 69 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  47i,15n,68p,288b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share
@@ -1312,10 +1345,10 @@ msfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on lab_book_1.pdf (108 pages, 787829 bytes).
+Output written on lab_book_1.pdf (114 pages, 772756 bytes).
 PDF statistics:
- 1588 PDF objects out of 1728 (max. 8388607)
- 1388 compressed objects within 14 object streams
- 348 named destinations out of 1000 (max. 500000)
- 1273 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1685 PDF objects out of 1728 (max. 8388607)
+ 1478 compressed objects within 15 object streams
+ 371 named destinations out of 1000 (max. 500000)
+ 1369 words of extra memory for PDF output out of 10000 (max. 10000000)
 

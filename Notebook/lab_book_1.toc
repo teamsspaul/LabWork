@@ -152,3 +152,15 @@
 \contentsline {experiment}{\numberline {2}Details from research meeting}{96}{experiment.49.2}
 \contentsline {chapter}{\nonumberline Thursday 8, December 2016}{97}{chapter*.51}
 \contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{97}{experiment.50.1}
+\contentsline {experiment}{\numberline {2}Things to Check}{102}{experiment.50.2}
+\contentsline {chapter}{\nonumberline Friday 9, December 2016}{103}{chapter*.52}
+\contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{103}{experiment.51.1}
+\contentsline {experiment}{\numberline {2}Things to do for school}{103}{experiment.51.2}
+\contentsline {chapter}{\nonumberline Satuday 10, December 2016}{104}{chapter*.53}
+\contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{104}{experiment.52.1}
+\contentsline {experiment}{\numberline {2}Things to do for school}{104}{experiment.52.2}
+\contentsline {chapter}{\nonumberline Sunday 8, December 2016}{105}{chapter*.54}
+\contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{105}{experiment.53.1}
+\contentsline {experiment}{\numberline {2}Things to do for school}{106}{experiment.53.2}
+\contentsline {chapter}{\nonumberline Monday 8, December 2016}{107}{chapter*.55}
+\contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{107}{experiment.54.1}
