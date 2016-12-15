@@ -159,8 +159,17 @@
 \contentsline {chapter}{\nonumberline Satuday 10, December 2016}{104}{chapter*.53}
 \contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{104}{experiment.52.1}
 \contentsline {experiment}{\numberline {2}Things to do for school}{104}{experiment.52.2}
-\contentsline {chapter}{\nonumberline Sunday 8, December 2016}{105}{chapter*.54}
+\contentsline {chapter}{\nonumberline Sunday 11, December 2016}{105}{chapter*.54}
 \contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{105}{experiment.53.1}
-\contentsline {experiment}{\numberline {2}Things to do for school}{106}{experiment.53.2}
-\contentsline {chapter}{\nonumberline Monday 8, December 2016}{107}{chapter*.55}
-\contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{107}{experiment.54.1}
+\contentsline {experiment}{\numberline {2}Things to do for school}{105}{experiment.53.2}
+\contentsline {chapter}{\nonumberline Monday 12, December 2016}{106}{chapter*.55}
+\contentsline {experiment}{\numberline {1}Things to do for school}{106}{experiment.54.1}
+\contentsline {chapter}{\nonumberline Tuesday 13, December 2016}{107}{chapter*.56}
+\contentsline {experiment}{\numberline {1}Things to do for school}{107}{experiment.55.1}
+\contentsline {chapter}{\nonumberline Wednesday 14, December 2016}{108}{chapter*.57}
+\contentsline {experiment}{\numberline {1}Things to do for school}{108}{experiment.56.1}
+\contentsline {chapter}{\nonumberline Thursday 15, December 2016}{109}{chapter*.58}
+\contentsline {chapter}{\nonumberline Friday 16, December 2016}{111}{chapter*.59}
+\contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{111}{experiment.58.1}
+\contentsline {chapter}{\nonumberline Saturday 16, December 2016}{112}{chapter*.60}
+\contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{112}{experiment.59.1}
