@@ -171,5 +171,11 @@
 \contentsline {chapter}{\nonumberline Thursday 15, December 2016}{109}{chapter*.74}
 \contentsline {chapter}{\nonumberline Friday 16, December 2016}{112}{chapter*.76}
 \contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{112}{experiment.58.1}
-\contentsline {chapter}{\nonumberline Saturday 16, December 2016}{117}{chapter*.79}
-\contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{117}{experiment.59.1}
+\contentsline {experiment}{\numberline {2}Things we need to buy}{117}{experiment.58.2}
+\contentsline {experiment}{\numberline {3}Process Experiment (continuation from cycle experiment)}{117}{experiment.58.3}
+\contentsline {chapter}{\nonumberline Saturday 17, December 2016}{118}{chapter*.79}
+\contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{118}{experiment.59.1}
+\contentsline {chapter}{\nonumberline Sunday 18, December 2016}{119}{chapter*.80}
+\contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{119}{experiment.60.1}
+\contentsline {chapter}{\nonumberline Monday 19, December 2016}{120}{chapter*.81}
+\contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{120}{experiment.61.1}
