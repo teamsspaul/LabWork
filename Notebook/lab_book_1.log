@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.30)  16 DEC 2016 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.2)  19 DEC 2016 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **lab_book_1.tex
 (./lab_book_1.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (./labbook.cls
 Document Class: labbook 2003/05/20 v1.1 LaTeX2e labbook document class
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -307,7 +307,7 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gin@req@height=\dimen120
 \Gin@req@width=\dimen121
 )
-(/home/paul/texmf/tex/latex/lipsum/lipsum.sty
+(/home/teamsspaul/texmf/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count110
 )
@@ -315,24 +315,24 @@ Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup4
 )
-(/home/paul/texmf/tex/latex/amsmath/amsmath.sty
+(/home/teamsspaul/texmf/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-(/home/paul/texmf/tex/latex/amsmath/amstext.sty
+(/home/teamsspaul/texmf/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/home/paul/texmf/tex/latex/amsmath/amsgen.sty
+(/home/teamsspaul/texmf/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen122
 ))
-(/home/paul/texmf/tex/latex/amsmath/amsbsy.sty
+(/home/teamsspaul/texmf/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen123
 )
-(/home/paul/texmf/tex/latex/amsmath/amsopn.sty
+(/home/teamsspaul/texmf/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count111
@@ -373,7 +373,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
-(/home/paul/texmf/tex/latex/soul/soul.sty
+(/home/teamsspaul/texmf/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks23
 \SOUL@lasttoken=\toks24
@@ -419,7 +419,7 @@ Package caption Info: KOMA-Script document class.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 )
-(/home/paul/texmf/tex/latex/enumitem/enumitem.sty
+(/home/teamsspaul/texmf/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip53
 \enit@outerparindent=\dimen141
@@ -568,7 +568,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-{/home/paul/.texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./lab_book_1.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./lab_book_1.toc
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
 (Font)              Font shape `U/wasy/m/n' tried instead on input line 2.
@@ -1314,37 +1314,37 @@ chapter without number
 ]
 chapter without number
 
-Overfull \hbox (1.8326pt too wide) in paragraph at lines 4655--4674
+Overfull \hbox (1.8326pt too wide) in paragraph at lines 4658--4677
 []\OT1/cmr/m/n/10.95 Label vials, $[]$, $[]$, $[]$ (spe-cial) [], $[]$ $[]$,
  []
 
 
-Overfull \hbox (12.19402pt too wide) in paragraph at lines 4655--4674
+Overfull \hbox (12.19402pt too wide) in paragraph at lines 4658--4677
 []$\OT1/cmr/m/n/10.95 , $[]$ (spe-cial), $[]$ $[]$, $[]$, $[]$
  []
 
 
-Overfull \hbox (25.47104pt too wide) in paragraph at lines 4655--4674
+Overfull \hbox (25.47104pt too wide) in paragraph at lines 4658--4677
 \OT1/cmr/m/n/10.95 (spe-cial), $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (8.99586pt too wide) in paragraph at lines 4655--4674
+Overfull \hbox (8.99586pt too wide) in paragraph at lines 4658--4677
 []$\OT1/cmr/m/n/10.95 , $[]$, $[]$ (smaller 2.5 ml tubes)
  []
 
 
-Overfull \hbox (12.19402pt too wide) in paragraph at lines 4675--4695
+Overfull \hbox (12.19402pt too wide) in paragraph at lines 4678--4698
 []$\OT1/cmr/m/n/10.95 , $[]$ (spe-cial), $[]$ $[]$, $[]$, $[]$
  []
 
 
-Overfull \hbox (25.47104pt too wide) in paragraph at lines 4675--4695
+Overfull \hbox (25.47104pt too wide) in paragraph at lines 4678--4698
 \OT1/cmr/m/n/10.95 (spe-cial), $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (8.99586pt too wide) in paragraph at lines 4675--4695
+Overfull \hbox (8.99586pt too wide) in paragraph at lines 4678--4698
 []$\OT1/cmr/m/n/10.95 , $[]$, $[]$ (smaller 2.5 ml tubes)
  []
 
@@ -1354,18 +1354,18 @@ Overfull \hbox (8.99586pt too wide) in paragraph at lines 4675--4695
 File: Figures/Cycle_x3_round_2_extraction_3.png Graphic file (type png)
  <use Figures/Cycle_x3_round_2_extraction_3.png>
 Package pdftex.def Info: Figures/Cycle_x3_round_2_extraction_3.png used on inpu
-t line 4871.
+t line 4874.
 (pdftex.def)             Requested size: 334.60571pt x 567.9268pt.
  [123]
 Overfull \vbox (7.72653pt too high) has occurred while \output is active []
 
 
 [124]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4978.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4978.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4981.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4981.
  (./lab_book_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4978.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4978.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4981.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4981.
 
 Package rerunfilecheck Info: File `lab_book_1.out' has not changed.
 (rerunfilecheck)             Checksum: 6C6BA8F1EBA2F5F8A54500A289635226;16088.
@@ -1373,15 +1373,15 @@ Package rerunfilecheck Info: File `lab_book_1.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4978.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4981.
  ) 
 Here is how much of TeX's memory you used:
- 10913 strings out of 494953
- 168205 string characters out of 6180977
- 426152 words of memory out of 5000000
- 13609 multiletter control sequences out of 15000+600000
+ 10913 strings out of 493029
+ 168325 string characters out of 6136234
+ 430991 words of memory out of 5000000
+ 13860 multiletter control sequences out of 15000+600000
  25657 words of font info for 98 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  47i,15n,68p,288b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share
@@ -1401,7 +1401,7 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/zapfding/uzdr.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/wasy2-ps/wasy10.pfb>
-Output written on lab_book_1.pdf (132 pages, 814684 bytes).
+Output written on lab_book_1.pdf (132 pages, 839852 bytes).
 PDF statistics:
  1865 PDF objects out of 2073 (max. 8388607)
  1636 compressed objects within 17 object streams
