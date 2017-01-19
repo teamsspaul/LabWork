@@ -187,4 +187,4 @@
 \contentsline {experiment}{\numberline {1}Process Experiment (continuation from cycle experiment)}{131}{experiment.64.1}
 \contentsline {chapter}{\nonumberline Thursday January 19th, 2017}{132}{chapter*.89}
 \contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{132}{experiment.65.1}
-\contentsline {experiment}{\numberline {2}Work that is paying me this semester}{132}{experiment.65.2}
+\contentsline {experiment}{\numberline {2}Work that is paying me this semester}{134}{experiment.65.2}

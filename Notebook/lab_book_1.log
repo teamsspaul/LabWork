@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.12)  18 JAN 2017 22:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.12)  19 JAN 2017 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1416,14 +1416,39 @@ chapter without number
 
 ]
 chapter without number
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5308.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5190--5201
+
+ []
+
+
+Overfull \hbox (40.61258pt too wide) in paragraph at lines 5204--5216
+[]\OT1/cmr/m/n/10.95 Label vials, $[]$, $[]$, $[]$, $[]$,
+ []
+
+
+Overfull \hbox (31.15294pt too wide) in paragraph at lines 5216--5228
+[]\OT1/cmr/m/n/10.95 Transfer: $[]$, $[]$, $[]$, $[]$,
+ []
+
+
+Overfull \hbox (34.1535pt too wide) in paragraph at lines 5216--5228
+\OT1/cmr/m/n/10.95 with (their own spin cap) $[]$, $[]$, $[]$, $[]$, $[]$,
+ []
+
 [132
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5308.
+Overfull \hbox (34.00264pt too wide) in paragraph at lines 5303--5312
+[]\OT1/cmr/m/n/10.95 Transfer in glove-box $[]$, $[]$, $[]$, $[]$, $[]$,
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5433.
+[133] [134]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5433.
  (./lab_book_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5308.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5308.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5433.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5433.
 
 Package rerunfilecheck Info: File `lab_book_1.out' has not changed.
 (rerunfilecheck)             Checksum: 947779B8BB7149847CAD48737ADB7362;16960.
@@ -1431,11 +1456,11 @@ Package rerunfilecheck Info: File `lab_book_1.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5308.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5433.
  ) 
 Here is how much of TeX's memory you used:
- 10951 strings out of 494953
- 168845 string characters out of 6180977
+ 10953 strings out of 494953
+ 168861 string characters out of 6180977
  426466 words of memory out of 5000000
  13624 multiletter control sequences out of 15000+600000
  25657 words of font info for 98 fonts, out of 8000000 for 9000
@@ -1459,10 +1484,10 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/zapfding/uzdr.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/wasy2-ps/wasy10.pfb>
-Output written on lab_book_1.pdf (140 pages, 856938 bytes).
+Output written on lab_book_1.pdf (142 pages, 862863 bytes).
 PDF statistics:
- 1957 PDF objects out of 2073 (max. 8388607)
- 1719 compressed objects within 18 object streams
- 438 named destinations out of 1000 (max. 500000)
+ 1966 PDF objects out of 2073 (max. 8388607)
+ 1726 compressed objects within 18 object streams
+ 440 named destinations out of 1000 (max. 500000)
  1561 words of extra memory for PDF output out of 10000 (max. 10000000)
 
