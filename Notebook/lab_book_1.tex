@@ -5199,9 +5199,78 @@ Then checking whether the results for mass of \tss{238}Pu and \tss{241}Am
 made sense (which required another estimate - as well as some calculations
 from the mass spec).\\
 
+\textbf{Some notes from the above}
+\begin{equation*}
+\text{Dilution Factor}=\frac{\text{Final Volume}}{\text{Initial Volume}}
+\end{equation*}
+Vials 8,9,10 dilute by another factor of 2 (really liked by detector).\\
+Vials 8aq, 9aq, and 10aq Diluted by another factor of 4\\~\\
+
+\begin{center}
+\textbf{Mass Spec results comparison to 30G trace original}
+\end{center}
+Calculation expample for 5.63E-8 factor (assuming the density is 1.127 g, because
+we don't know the volume they measured, just the mass)
+\begin{equation*}
+  \frac{ng}{g\ sample}\cdot0.0443\ \text{g sample}\cdot\frac{5.0\text{ ml (for 1/10)}}
+       {0.039308\ \text{ml sent}}\cdot10\text{ (for other 10 parts)}\cdot
+       \frac{10^{-9}\ g}{ng}=\frac{n}{\ sample}\cdot5.63E-8
+\end{equation*}
+Below is a table for masses in the stock for each mass bin.
+Assuming mass ratios for a typical PWR at the same burnup (used below calculation)
+\begin{equation*}
+  \frac{6.02E23\text{ atoms}}{136\text{ g \tss{137}Cs}}\cdot
+  \frac{\text{fission}}{0.06 \text{ atoms \tss{137}Cs}}
+  \cdot\frac{200\ MeV}{\text{fission}}\cdot\frac{1.602E-19\ MJ}{MeV}\cdot\frac{1\ day}{86400\ s}
+\end{equation*}
+\begin{equation*}
+  =27.1674\frac{MW\cdot day}{\text{g \tss{137}Cs}}
+\end{equation*}
+If we assume that burnup is 4000 MWd/t, then grams of \tss{137}Cs per ton HM should be 147.235.
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{l l l l}
+\toprule
+\textbf{Mass Bin} & \textbf{ng/g}& \textbf{x 5.63E-8 (g)} & \textbf{Constituents w Mass Frac}\\
+\toprule
+238 & 277000 & 0.0156 & \tss{238}U$\sim$1 \tss{238}Pu 6.44E-7\\
+239 & 4330 & 2.44E-4 & \tss{239}Pu$\sim$1\\
+240 & 362  & 2.04E-5 & \tss{240}Pu$\sim$1\\
+241 & 150  & 8.45E-6 & \tss{241}Pu 0.9965 \tss{241}Am 3.53E-3\\
+242 & 8.71 & 4.91E-7 & \tss{242}Pu 0.9952 \tss{242}Cm 4.75E-3\\
+243 & 0.15 & 8.34E-9 & \tss{243}Am 0.9993 \tss{243}Cm 6.83E-4\\
+& & & \tss{238}Pu 0.8565\tss{241}Am 0.14346\\
+& & & \tss{239}Pu 92.29 \tss{240}Pu 0.07711\\
+\bottomrule
+\end{tabular}
+\caption{The effects of treatments X and Y on the four groups studied.}
+\label{tab:treatments_xy}
+\end{center}
+\end{table}
+
+Below is summary for the alpha peaks 
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{l l l l}
+\toprule
+\textbf{Peak} & \textbf{Isotopes}& \textbf{Half-Life (years)} \\
+\toprule
+1st & \tss{239}Pu \tss{240}Pu & 24,110; 6,561\\
+2nd & \tss{238}Pu \tss{241}Am & 87.7; 432.6\\
+3rd & \tss{243}Cm & 29.1\\
+4th & \tss{242}Cm & 0.446\\
+\bottomrule
+\end{tabular}
+\caption{The effects of treatments X and Y on the four groups studied.}
+\label{tab:treatments_xy}
+\end{center}
+\end{table}
+
+
+
 \textbf{Prepare for dilution}
 \begin{todolist}
-\item{Label vials,
+\item[\done]{Label vials,
   $\boxed{8,9,10\ DilutionII}$,
   $\boxed{8\ aq\ DilutionII}$,
   $\boxed{9\ aq\ DilutionII}$,
@@ -5213,7 +5282,7 @@ from the mass spec).\\
   $\boxed{9aq\ ChipII}$,
   $\boxed{10aq\ ChipII}$,
   (little chips to dissolve solutions onto)}
-\item{Transfer:
+\item[\done]{Transfer:
   $\boxed{8,9,10\ DilutionII}$,
   $\boxed{8\ aq\ DilutionII}$,
   $\boxed{9\ aq\ DilutionII}$,
@@ -5225,13 +5294,12 @@ from the mass spec).\\
   $\boxed{8aq\ ChipII}$,
   $\boxed{9aq\ ChipII}$,
   $\boxed{10aq\ ChipII}$, into glovebox in large plastic bag}
-\item{Transfer in small pipettes}
 \end{todolist}
 
 \textbf{Perform Dilution and make chips}
 
 \begin{todolist}
-\item{Main solution Dilution}
+\item[\done]{Main solution Dilution}
 \begin{center}
   0.5+/-0.0075 ml of $\boxed{8,9,10\ Dilution}$ (0 M HNO\tsbs{3})
   [smaller pipette]\\
@@ -5242,21 +5310,21 @@ from the mass spec).\\
 \end{center}
 \vspace{0.3cm}
 \begin{center}
-  20+/-0.2 $\mu$l of $\boxed{8,9,10\ aq\ DilutionII}$ dropped onto
+  20+/-0.2 $\mu$l of $\boxed{8,9,10\ DilutionII}$ dropped onto
   $\boxed{8\ ChipII}$
 \end{center}
 \begin{center}
-  20+/-0.2 $\mu$l of $\boxed{8,9,10\ aq\ DilutionII}$ dropped onto
+  20+/-0.2 $\mu$l of $\boxed{8,9,10\ DilutionII}$ dropped onto
   $\boxed{9\ ChipII}$
 \end{center}
 \begin{center}
-  20+/-0.2 $\mu$l of $\boxed{8,9,10\ aq\ DilutionII}$ dropped onto
+  20+/-0.2 $\mu$l of $\boxed{8,9,10\ DilutionII}$ dropped onto
   $\boxed{10\ ChipII}$
 \end{center}
 
-\item{Make second dilution of each aqueous (ExI)}
+\item[\done]{Make second dilution of each aqueous (ExI)}
   \begin{todolist}
-  \item{- $\boxed{8\ aq}$}
+  \item[\done]{- $\boxed{8\ aq}$}
   \end{todolist}
   \begin{center}
     125+/-3.75 $\mu$l of $\boxed{8\ aq\ Dilution}$
@@ -5267,8 +5335,12 @@ from the mass spec).\\
     0.5+/-0.0084 ml of $\sim$
     0 M HNO\tsbs{3} $\boxed{8\ aq\ DilutionII}$
   \end{center}
+  \begin{center}
+  20+/-0.2 $\mu$l of $\boxed{8\ aq\ DilutionII}$ dropped onto
+  $\boxed{8\ Aq\ ChipII}$
+  \end{center}
   \begin{todolist}
-  \item{- $\boxed{9\ aq}$}
+  \item[\done]{- $\boxed{9\ aq}$}
   \end{todolist}
   \begin{center}
     125+/-3.75 $\mu$l of $\boxed{9\ aq\ Dilution}$
@@ -5279,8 +5351,12 @@ from the mass spec).\\
     0.5+/-0.0084 ml of $\sim$
     0 M HNO\tsbs{3} $\boxed{9\ aqBIII\ Dilution}$
   \end{center}
+  \begin{center}
+  20+/-0.2 $\mu$l of $\boxed{9\ aq\ DilutionII}$ dropped onto
+  $\boxed{9\ Aq\ ChipII}$
+  \end{center}
   \begin{todolist}
-  \item{- $\boxed{10\ aq}$}
+  \item[\done]{- $\boxed{10\ aq}$}
   \end{todolist}
   \begin{center}
     125+/-3.75 $\mu$l of $\boxed{10\ aq\ Dilution}$
@@ -5291,16 +5367,17 @@ from the mass spec).\\
     0.5+/-0.0084 ml of $\sim$
     0 M HNO\tsbs{3} $\boxed{10\ aqBIII\ Dilution}$
   \end{center}
+  \begin{center}
+  20+/-0.2 $\mu$l of $\boxed{10\ aq\ DilutionII}$ dropped onto
+  $\boxed{10\ Aq\ ChipII}$
+  \end{center}
 \end{todolist}
 
-\textbf{Count Alpha Sample}
-\begin{todolist}
-\item{Start alpha count $\boxed{8\ ChipII}$}
-\end{todolist}
+\textbf{Let Chips Dry}
 
 \textbf{Combine final aqueous}
 \begin{todolist}
-\item{Transfer in glovebox $\boxed{8\ aqBIIIC}$,
+\item[\done]{Transfer in glovebox $\boxed{8\ aqBIIIC}$,
   $\boxed{9\ aqBIIIC}$,
   $\boxed{10\ aqBIIIC}$,
   $\boxed{8\ aqBIIC}$,
@@ -5309,25 +5386,72 @@ from the mass spec).\\
   $\boxed{8\ aqBC}$,
   $\boxed{9\ aqBC}$,
   $\boxed{10\ aqBC}$}
-\item{Combine all 8, 9 10 solutions into their respective stream
-  in $\boxed{8\ aqB}$, $\boxed{9\ aq}$, and $\boxed{10\ aq}$}
-\item{Transfer out $\boxed{8\ aq}$, $\boxed{9\ aq}$, and $\boxed{10\ aq}$}
-\item{Start count for $\boxed{8\ aq}$}
+\item[\done]{Combine all 8, 9 10 solutions into their respective stream
+  in $\boxed{8\ aqBC}$, $\boxed{9\ aqBC}$, and $\boxed{10\ aqBC}$}
+\item[\done]{Transfer out $\boxed{8\ aqBC}$, $\boxed{9\ aqBC}$, and $\boxed{10\ aqBC}$}
+\item[\done]{Recount $\boxed{8\ aq\ BIII}$ (short count time - then combined)}
 \end{todolist}
-
-Count Final aqueous
-
-
-
-Transfer all samples to twist cap
-
-Analyze resuls
-Finish proposal
 
 \experiment{CHEMLAB}
 
-Attend Lab trainning.
+Attend Lab trainning. Took a lot longer than expected, but now trained to train the
+youngins
 
+
+
+
+%-----------------------------------------------------------------
+%	LAB BOOK day
+%---------------------------------------------------------------
+
+\labday{Friday January 20th, 2017}
+
+\experiment{Alpha_and_MassSpec}
+
+\begin{todolist}
+\item[\done]{Start alpha count $\boxed{9\ aq\ ChipII}$}
+\item[\done]{Start count for $\boxed{8\ aqB\ tot}$}
+\item[\done]{Stop alpha count $\boxed{9\ aq\ ChipII}$}
+\item[\done]{Start alpha count $\boxed{8\ ChipII}$}  
+\end{todolist}
+
+\textbf{Transfer all samples to twist cap.} \\
+
+This was a very long process of
+relabeling all the dilution solutions, and putting them in smaller vials
+with twist tops. They are now all stored in the fumehood by extraction
+step (a big 50 ml tube for each step)\\
+
+\textbf{Credit card fraud and lost student ID, left early to take care of}
+
+
+%-----------------------------------------------------------------
+%	LAB BOOK day
+%---------------------------------------------------------------
+
+\labday{Saturday January 21, 2017}
+
+\experiment{Alpha_and_MassSpec}
+
+\textbf{Counting}
+\begin{todolist}
+\item[\done]{Stop alpha count $\boxed{8\ ChipII}$}
+\item[\done]{Start alpha count $\boxed{9\ ChipII}$}
+\item[\done]{Stop alpha count $\boxed{9\ ChipII}$}
+\item[\done]{Start alpha count $\boxed{10\ ChipII}$}
+\item{Stop alpha count $\boxed{10\ ChipII}$}
+\item{Start alpha count $\boxed{8\ Aq\ ChipII}$}
+  
+\item[\done]{Stop gamma count for $\boxed{8\ aqB\ tot}$}
+\item[\done]{Start gamma count $\boxed{9\ aqB\ tot}$}
+\end{todolist}
+
+\textbf{Analyze Results}
+
+Modified alpha spec program to calculate Cm.
+Analyzed magic concentration for Pu.
+
+Finish proposal
 
 
 %----------------------------------------------------------------------

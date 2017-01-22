@@ -1,4 +1,4 @@
-o#!/usr/bin/env python3
+#!/usr/bin/env python3
 
 """
 FractionAM converts atom fractions to mass fractions
