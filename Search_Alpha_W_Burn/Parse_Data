@@ -1,0 +1,299 @@
+#!/usr/bin/env python3
+"""
+This program will pull x-section information from the 
+brookhaven site. I know this is janky, but its the easiest
+fastest way for me to do it. 
+"""
+############################################################
+############### Import Packages ############################
+############################################################
+
+
+import requests
+from bs4 import BeautifulSoup
+import re
+import numpy as np
+import pandas as pd
+import Calculations as Calcs
+
+############################################################
+#################### Open Link #############################
+############################################################
+
+#Might have to update these URLs
+#Meaning they expire.
+#google ENDF, pick the brookhaven link
+#Search for the x-section you want, click the sigma symbol
+#then interpolate the data so there is a 'Lin-Lin'
+url_to_scrape='http://nucleardata.nuclear.lu.se/toi/Alpha.asp?sql=&Min=5000&Max=5200'
+url_to_scrape='http://nucleardata.nuclear.lu.se/toi/Alpha.asp?sql=&Min=4000&Max=6000'
+Name="five0to2"
+
+MaxProtons=100
+MinProtons=90
+MinYield=40
+MaxIsotope=1000
+MinIsotope=236
+NotProtons=[]
+Symbols=["Pu","Am"] #For calculation of activity
+#Symbols=[]
+ShowOnly=True
+ShowOnlyList=["Pu","Am"]
+
+df = pd.read_csv('Data/AtomicWeights.csv')
+
+
+#not sure what these two lines do, but it
+#gets all the information from the URL, and saves
+#it in a soup type...thingy
+r = requests.get(url_to_scrape)
+soup = BeautifulSoup(r.text,"lxml")
+
+#Find the index of our starting point
+x=soup.prettify().find('Parent')
+
+#print(soup.prettify()[x:-1])
+
+#Save all the information in a long list
+LongList=soup.prettify()[x+3:-1].split('<sup>')
+
+#open the output file
+#output=open(Name+'.csv',"w")
+
+#Lists of isotopes
+Isotopes=np.array([])
+Energies={}
+Yield={}
+HalfLife={}
+
+#Modify the data, and store in file
+for i in range(0,len(LongList)):
+        
+        #Make each section with an isotope a list, store in string infor we want
+        Data=LongList[i].split("\n")
+        Str=''
+        for j in range(0,len(Data)):
+                if "<td>" in Data[j]:
+                        #Format the zaid
+                        if "<b>" in Data[j+1]:
+                                nuke=re.sub('<','',Data[j+2])
+                                nuke=re.sub('>','',nuke)
+                                nuke=re.sub('"','',nuke)
+                                nuke=nuke.split("=")[2]
+                                Str=Str+nuke
+                                #print(nuke)
+                        else:
+                                Str=Str+Data[j+1].strip()+","
+                                #print(Data[j+1].strip())
+
+        #Str has the half-life energy and yield info
+        List=Str.split(",")
+        #Modify the half life to be in seconds (also remove extra text)
+        if len(List)>1:
+                List[2]=re.sub('\xa0','',List[2])
+                List[2]=re.sub('~','',List[2])
+                if "u" in List[2] or 'ms' in List[2]:
+                        unit=List[2][-2:]
+                        Time=float(List[2][0:-2])
+                else:
+                        unit=List[2][-1]
+                        Time=float(List[2][0:-1])
+                if unit=='m':
+                        Time=Time*60
+                elif unit=='s':
+                        Time=Time
+                elif unit=='us':
+                        Time=Time*10**(-6)
+                elif unit=='ms':
+                        Time=Time*10**(-3)
+                elif unit=='h':
+                        Time=Time*60*60
+                elif unit=='d':
+                        Time=Time*60*60*24
+                elif unit=='y':
+                        Time=Time*60*60*24*365.25
+                else:
+                        print("Unknown time unit")
+                        print(unit)
+                        print(Time)
+                        print(List)
+                        quit()
+                List[2]='%.3e' % Time 
+
+        #Modify the yield
+        if len(List)>1:
+                List[1]=re.sub('&lt;','',List[1])
+                List[1]=re.sub('~','',List[1])
+                List[1]=re.sub('</td>','',List[1])
+                List[1]=re.sub('\(','',List[1])
+                List[1]=re.sub('\)','',List[1])
+                List[1]=re.sub('calc','',List[1])
+                List[1]=re.sub('syst','',List[1])
+                List[1]=re.sub('\&gt;','',List[1])
+
+        #I uess we don't have to modify energy, but if we did List[0] mods
+        if len(List)>1:
+                List[0]=re.sub('\(calc\)','',List[0])
+        
+        #Make a list of unique isotopes
+        Add=True
+        if len(List)>1:
+                for iso in Isotopes:
+                        if List[3]==iso:
+                                Add=False
+                if Add:
+                        #Isotopes.append(List[3])
+                        Isotopes=np.append(Isotopes,List[3])
+                        Energies[List[3]]=List[0]+","
+                        Yield[List[3]]=List[1]+","
+                        HalfLife[List[3]]=List[2]
+                else:
+                        E=Energies[List[3]]
+                        Energies[List[3]]=E+List[0]+','
+                        Y=Yield[List[3]]
+                        Yield[List[3]]=Y+List[1]+","
+
+
+def StrtoFloat(List):
+        List2=[]
+        for item in List:
+                if len(item)==0:
+                        item="0"
+                List2.append(float(item))
+        return(List2)
+
+def LargerThan(List,Check):
+        Larger=False
+        for item in List:
+                if item>=Check:
+                        Larger=True
+        return(Larger)
+
+def FindSymbol(NumofProtons,df):
+        """
+        This function will find the element symbol, based on number of
+        protons.
+        """
+        for i in range(0,len(df.Protons)):
+                if str(df.Protons[i])==str(NumofProtons):
+                        Symbol=df.Symbol[i]
+                        break
+        
+        try:
+                Symbol
+        except NameError:
+                print("Could not find Symbol for Modfication zaid")
+                quit()
+
+        return(Symbol)
+
+
+import os
+
+def ProCheck(List,Protons):
+        Go=True
+        for item in List:
+                if item==Protons:
+                        Go=False
+        return(Go)
+
+def SymbolCheck(List,Symbol):
+        Go=False
+        for item in List:
+                if Symbol==item:
+                        Go=True
+        return(Go)
+
+
+nt_Rational,Nuclides,Atom_Mass,Nuclide_Names=Calcs.AllCalcs()
+
+for isotope in Isotopes:
+        Yieldstr=Yield[isotope]
+        Yieldstr=Yieldstr.rsplit(',', 1)[0] #Remove last instance
+        #YieldList=Yield[isotope].split(',')
+        YieldList=Yieldstr.split(',')
+
+        Energystr=Energies[isotope]
+        Energystr=Energystr.rsplit(',',1)[0] #remove last instance
+        #EnergyList=Energies[isotope].split(',')
+        EnergyList=Energystr.split(',')
+
+        Yieldfloat=StrtoFloat(YieldList)
+
+        Protons=int(isotope[0:2])
+        Isotope=int(isotope[3:])
+        symbol=FindSymbol(Protons,df)
+        
+        #Printing only thins in correct range
+        C1=Protons<=MaxProtons and ProCheck(NotProtons,Protons) and Protons>=MinProtons;
+        C1=C1 and Isotope<=MaxIsotope and Isotope>=MinIsotope
+        #Print only certain elements
+        if ShowOnly:
+                AnotherLogic=SymbolCheck(ShowOnlyList,symbol)
+        else:
+                AnotherLogic=True
+        C1=C1 and AnotherLogic
+
+        
+        if LargerThan(Yieldfloat,MinYield) and C1:
+        
+                #EnergyYield=zip(EnergyList,YieldList)
+                Y=YieldList
+                X=EnergyList
+                Y=StrtoFloat(YieldList)
+                X=StrtoFloat(EnergyList)
+                
+                print(isotope,symbol)
+        
+                #Sort by Alpha Yield
+                #(the reversed makes it highest to low)
+                print("Eneries",[x for (y,x) in reversed(sorted(zip(Y,X)))])
+                print("Yields",[y for (y,x) in reversed(sorted(zip(Y,X)))])
+
+
+                #For the mass produced in our burnup range (estimate)
+                Isotope=str(Isotope)
+                Protons=str(Protons)
+                if int(Isotope)>300:
+                        if symbol=="Hg":
+                                addon="1"
+                        else:
+                                addon="2"
+                        Isotope=addon+str(Isotope)[1:]
+                        Massstr=Protons+Isotope+"1"
+                else:
+                        Massstr=Protons+Isotope+"0"
+
+                #print("Mass string to check ",Massstr)
+                if SymbolCheck(Symbols,symbol):
+                        #tmp = float(os.popen("./Calculations "+Massstr).read())
+                        tmp=Calcs.f.Print2(Massstr,nt_Rational,Nuclides,Atom_Mass,Nuclide_Names)
+                        tmp=float(tmp)
+                        if tmp == 0:
+                                print("Could Not Find Isotope in burn list, returning 0")
+                        Mass=0.0129*(10**(-6))*(0.5/5)*(0.4/2.5) #Mass of HM in sample in tons
+                        print("Bq Estimate (0.4 ml of 2.5 ml vat made) ",
+                              (np.log(2)/float(HalfLife[isotope]))*tmp*Mass)
+                #tmp = os.popen("./Calculations "+Massstr).read()
+                #print("Bq Estimate",(np.log(2)/float(HalfLife[isotope]))*float(tmp))
+                print("")
+                #print("")
+                #Sort by Alpha energy
+                #print([x for (x,y) in sorted(zip(X,Y))])
+                #print([y for (x,y) in sorted(zip(X,Y))])
+
+        
+        #print(EnergyYield)
+        
+        #print(isotope)
+        #print(YieldList)
+        #print(EnergyList)
+        #print(HalfLife[isotope])
+        #print(Str)
+                #print (Data[j])
+        #Data[0]=str(float(Data[0])*1e-6)
+        #print(",".join(Data),file=output
+        #quit()
+#print(Isotopes)
+#Isotopes=np.unique(Isotopes)
+#print(Isotopes)
