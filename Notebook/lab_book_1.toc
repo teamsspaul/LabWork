@@ -196,3 +196,16 @@
 \contentsline {chapter}{\nonumberline Sunday January 22, 2017}{138}{chapter*.94}
 \contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{138}{experiment.68.1}
 \contentsline {chapter}{\nonumberline Monday January 23, 2017}{139}{chapter*.95}
+\contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{139}{experiment.69.1}
+\contentsline {chapter}{\nonumberline Tuesday January 24, 2017}{141}{chapter*.96}
+\contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{141}{experiment.70.1}
+\contentsline {experiment}{\numberline {2}Work that is paying me this semester}{142}{experiment.70.2}
+\contentsline {chapter}{\nonumberline Wednesday January 25, 2017}{143}{chapter*.101}
+\contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{143}{experiment.71.1}
+\contentsline {experiment}{\numberline {2}Details from research meeting}{143}{experiment.71.2}
+\contentsline {experiment}{\numberline {3}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{143}{experiment.71.3}
+\contentsline {chapter}{\nonumberline Thursday January 26, 2017}{145}{chapter*.102}
+\contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{145}{experiment.72.1}
+\contentsline {experiment}{\numberline {2}Work that is paying me this semester}{145}{experiment.72.2}
+\contentsline {chapter}{\nonumberline Friday January 27, 2017}{146}{chapter*.103}
+\contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{146}{experiment.73.1}
