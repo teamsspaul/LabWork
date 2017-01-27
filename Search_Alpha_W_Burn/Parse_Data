@@ -25,20 +25,21 @@ import Calculations as Calcs
 #google ENDF, pick the brookhaven link
 #Search for the x-section you want, click the sigma symbol
 #then interpolate the data so there is a 'Lin-Lin'
-url_to_scrape='http://nucleardata.nuclear.lu.se/toi/Alpha.asp?sql=&Min=5000&Max=5200'
-url_to_scrape='http://nucleardata.nuclear.lu.se/toi/Alpha.asp?sql=&Min=4000&Max=6000'
+url_to_scrape='http://nucleardata.nuclear.lu.se/toi/Alpha.asp?sql=&Min=4900&Max=6000'
+#url_to_scrape='http://nucleardata.nuclear.lu.se/toi/Alpha.asp?sql=&Min=4000&Max=6000'
 Name="five0to2"
 
 MaxProtons=100
 MinProtons=90
-MinYield=40
+MinYield=-100
 MaxIsotope=1000
-MinIsotope=236
+MinIsotope=209
 NotProtons=[]
-Symbols=["Pu","Am"] #For calculation of activity
+Symbols=[] #For calculation of activity
 #Symbols=[]
-ShowOnly=True
-ShowOnlyList=["Pu","Am"]
+ShowOnly=False
+ShowOnlyList=["Pu"]
+MinHalfLife=-1*365.25*24*60*60 #Seconds
 
 df = pd.read_csv('Data/AtomicWeights.csv')
 
@@ -233,6 +234,9 @@ for isotope in Isotopes:
         else:
                 AnotherLogic=True
         C1=C1 and AnotherLogic
+        
+        
+        C1=C1 and MinHalfLife<=float(HalfLife[isotope])
 
         
         if LargerThan(Yieldfloat,MinYield) and C1:
@@ -249,7 +253,7 @@ for isotope in Isotopes:
                 #(the reversed makes it highest to low)
                 print("Eneries",[x for (y,x) in reversed(sorted(zip(Y,X)))])
                 print("Yields",[y for (y,x) in reversed(sorted(zip(Y,X)))])
-
+                print("Half-life ",float(HalfLife[isotope])/(365.25*24*60*60), "years")
 
                 #For the mass produced in our burnup range (estimate)
                 Isotope=str(Isotope)
@@ -274,6 +278,9 @@ for isotope in Isotopes:
                         Mass=0.0129*(10**(-6))*(0.5/5)*(0.4/2.5) #Mass of HM in sample in tons
                         print("Bq Estimate (0.4 ml of 2.5 ml vat made) ",
                               (np.log(2)/float(HalfLife[isotope]))*tmp*Mass)
+                        #Print random isotope
+                        #tmp2=Calcs.f.Print2('942410',nt_Rational,Nuclides,Atom_Mass,Nuclide_Names)
+                        #print((np.log(2)/4.50958E8)*float(tmp2)*Mass)
                 #tmp = os.popen("./Calculations "+Massstr).read()
                 #print("Bq Estimate",(np.log(2)/float(HalfLife[isotope]))*float(tmp))
                 print("")
