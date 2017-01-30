@@ -209,3 +209,5 @@
 \contentsline {experiment}{\numberline {2}Work that is paying me this semester}{145}{experiment.72.2}
 \contentsline {chapter}{\nonumberline Friday January 27, 2017}{146}{chapter*.103}
 \contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{146}{experiment.73.1}
+\contentsline {chapter}{\nonumberline Sunday January 29, 2017}{147}{chapter*.104}
+\contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{147}{experiment.74.1}
