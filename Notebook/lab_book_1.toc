@@ -211,3 +211,16 @@
 \contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{146}{experiment.73.1}
 \contentsline {chapter}{\nonumberline Sunday January 29, 2017}{147}{chapter*.104}
 \contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{147}{experiment.74.1}
+\contentsline {chapter}{\nonumberline Monday January 30, 2017}{148}{chapter*.105}
+\contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{148}{experiment.75.1}
+\contentsline {experiment}{\numberline {2}Work that is paying me this semester}{148}{experiment.75.2}
+\contentsline {chapter}{\nonumberline Tuesday January 31, 2017}{149}{chapter*.106}
+\contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{149}{experiment.76.1}
+\contentsline {experiment}{\numberline {2}Work that is paying me this semester}{149}{experiment.76.2}
+\contentsline {chapter}{\nonumberline Wednesday Feb 1, 2017}{150}{chapter*.107}
+\contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{150}{experiment.77.1}
+\contentsline {experiment}{\numberline {2}Details from research meeting}{151}{experiment.77.2}
+\contentsline {chapter}{\nonumberline Thursday February 1, 2017}{152}{chapter*.109}
+\contentsline {experiment}{\numberline {1}Work that is paying me this semester}{152}{experiment.78.1}
+\contentsline {experiment}{\numberline {2}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{152}{experiment.78.2}
+\contentsline {experiment}{\numberline {3}Documents and things for graduation}{152}{experiment.78.3}

@@ -122,6 +122,7 @@
   phases}
 \newexperiment{CHEMLAB}{Work that is paying me this semester}
 \newexperiment{Buy}{Things we need to buy}
+\newexperiment{Grad}{Documents and things for graduation}
 %\newexperiment{shorthand}{Description of the experiment}
 
 %----------------------------------------------------------------------
@@ -5668,7 +5669,7 @@ They didn't, but we have some good things to work on moving forward
 
 \begin{todolist}
 \item[\done]{Make sample of $\boxed{8\ BExI\ Dilution}$ by dropping
-  10 $\mu$l of $boxed{8\ BExI\ Dilution}$ onto $\boxed{8\ BExI\ Chip}$}
+  10 $\mu$l of $\boxed{8\ BExI\ Dilution}$ onto $\boxed{8\ BExI\ Chip}$}
 \item[\done]{Let above chip dry}
 \item[\done]{Start count of $\boxed{8\ BExI\ Chip}$}
 \item[\done]{Look into Mass spec calculations, because there were accusations
@@ -5754,6 +5755,231 @@ of my day, should count for something.
   \frac{\text{Na}}{\text{M}}\cdot\lambda\cdot\epsilon
 \end{equation*}
 
+
+
+
+%-----------------------------------------------------------------
+%	LAB BOOK day
+%---------------------------------------------------------------
+
+\labday{Monday January 30, 2017}
+
+\experiment{Alpha_and_MassSpec}
+
+\textbf{Notes On working through calculation}
+\begin{itemize}
+\item{Finish the redo of the alpha calculations, \tss{239}Pu and \tss{240}Pu
+  didn't change much, I also solidified my mass spec calculations, which
+  I think are right}
+\item{My alpha and gamma results weren't giving major agreement for \tss{241}Am,
+  Kevin said he was getting better agreement when he got rid of the 39-40 keV
+  calibration point...I did that, and it helps a bunch. The 45 keV calibration
+  point has a count rate of something like 0.69, if you double this, then your alpha
+  and gamma results would be in agreement, but this is dishonest}
+\item{This means that 17-34\% of the 241 mass bin is \tss{241}Am}
+\item{Also today reworked the alpha calibration, thinking it might be the issue,
+  but I found that Kevin did it relatively correctly, I made a spread sheet,
+  I also used the following equation (below), amount of a second isotope when it has
+  another isotope feeding it, and when the isotope itself decays, and when you start with
+some of the isotope to begin with}
+\item{I am looking at the ``drift'' on the energy bins in the calibration dudes...
+  and I am wondering what it is due to}
+\item{Also calculating how much plutonium I get in the final solutions}
+\end{itemize}
+\begin{equation*}
+  N_2=\frac{\lambda_1N_{1o}}{\lambda_2-\lambda_1}\left[e^{-\lambda_1t}-e^{-\lambda_2t}\right]
+  +N_{2o}e^{-\lambda_2t}
+\end{equation*}
+\begin{itemize}
+\item{Also used the two below equations for the calibration calculations}
+\end{itemize}
+\begin{equation*}
+\frac{\text{Total Bq}}{\text{Tot Atoms}}=\sum At\%_i\lambda_i\ \ \text{For Pu}
+\end{equation*}
+\begin{equation*}
+\text{\% Activity}_i=\frac{N_i\lambda_i}{\text{Tot Activity}}\ \ \text{For Cm}
+\end{equation*}
+
+
+
+\experiment{CHEMLAB}
+
+Also Prep for this weeks and next weeks lab...I'm kind of nervous about it
+
+
+%-----------------------------------------------------------------
+%	LAB BOOK day
+%---------------------------------------------------------------
+
+\labday{Tuesday January 31, 2017}
+
+\experiment{Alpha_and_MassSpec}
+
+\textbf{Notes On working through calculation}
+\begin{itemize}
+\item{Figured out what was going on, the detector had drifted in energy
+  calibration while counting, which brought up the four peaks, we got the
+  4-peak calibration source and recalibrated}
+\item{Also looked at efficiency, and it changed some, but not a lot}
+\end{itemize}
+
+\experiment{CHEMLAB}
+
+Taught 6 hours of lab today
+
+
+%-----------------------------------------------------------------
+%	LAB BOOK day
+%---------------------------------------------------------------
+
+\labday{Wednesday Feb 1, 2017}
+
+\experiment{Alpha_and_MassSpec}
+\begin{todolist}
+\item[\done]{Measure final volume of final aqueous solutions}
+  \begin{itemize}
+  \item{Estimated final volumes to be 1950 $\mu$l $\pm$100 $\mu$l}
+  \item{Does this make sense? See table below for total volumes of each phase,
+  yes these numbers kind of make sense.}
+  \end{itemize}
+\end{todolist}
+
+\begin{table}[H]
+\caption{Volume, in $\mu$l, of solution added to organic for each back extraction}
+\begin{tabular}{l l l l}
+\toprule
+\textbf{Back Extraction I} & \textbf{Back Extraction II} & \textbf{Back Extraction III}
+& \textbf{Total}\\
+\toprule
+888 & 760 & 618 & 2266\\
+912 & 765 & 620 & 2297\\
+863 & 765 & 620 & 2254\\
+\bottomrule
+\end{tabular}
+\label{tab:treatments_xy}
+\end{table}
+
+\begin{todolist}
+\item[\done]{Make Alpha chip of $\boxed{8\ BExaqII\ Dilution}$}
+\begin{center}
+  10+/-0.1 $\mu$l of $\boxed{8\ BExAqII\ Dilution}$ dropped onto
+  $\boxed{8\ BExAqII\ Chip}$
+\end{center}
+\item[\done]{Make Alpha chip of $\boxed{8\ BExaqIII\ Dilution}$}
+\begin{center}
+  10+/-0.1 $\mu$l of $\boxed{8\ BExAqIII\ Dilution}$ dropped onto
+  $\boxed{8\ BExAqIII\ Chip}$
+\end{center}
+\item[\done]{Start count of $\boxed{8\ BExII\ Chip}$}
+  \begin{itemize}
+  \item{Count rates are pretty low}
+  \end{itemize}
+\item[\done]{Make dilutions of total aqueous solutions}
+  \begin{todolist}
+  \item[\done]{- $\boxed{8\ aq\ tot}$}
+  \end{todolist}
+  \begin{center}
+    10+/-0.1 $\mu$l of $\boxed{8\ aq\ tot}$
+    (4 M HNO\tsbs{3})\\
+    +\\
+    990+/-9.9 $\mu$l of DI water (leftover in glovebox)\\
+  =\\
+  1+/-0.01 ml of $\sim$
+  0 M HNO\tsbs{3} $\boxed{8\ aq\ tot\ Dilution}$
+\end{center}
+\begin{center}
+  10+/-0.1 $\mu$l of $\boxed{8\ aq\ tot\ Dilution}$ dropped onto
+  $\boxed{8\ Aq\ tot\ Chip}$
+\end{center}
+\begin{itemize}
+\item{Not completely centered}
+\end{itemize}
+
+  \begin{todolist}
+  \item[\done]{- $\boxed{9\ aq\ tot}$}
+  \end{todolist}
+  \begin{center}
+    10+/-0.1 $\mu$l of $\boxed{9\ aq\ tot}$
+    (4 M HNO\tsbs{3})\\
+    +\\
+    990+/-9.9 $\mu$l of DI water (leftover in glovebox)\\
+  =\\
+  1+/-0.01 ml of $\sim$
+  0 M HNO\tsbs{3} $\boxed{9\ aq\ tot\ Dilution}$
+\end{center}
+\begin{center}
+  10+/-0.1 $\mu$l of $\boxed{9\ aq\ tot\ Dilution}$ dropped onto
+  $\boxed{9\ Aq\ tot\ Chip}$
+\end{center}
+\begin{itemize}
+\item{Not completely centered}
+\end{itemize}
+  \begin{todolist}
+  \item[\done]{- $\boxed{10\ aq\ tot}$}
+  \end{todolist}
+  \begin{center}
+    10+/-0.1 $\mu$l of $\boxed{10\ aq\ tot}$
+    (4 M HNO\tsbs{3})\\
+    +\\
+    990+/-9.9 $\mu$l of DI water (leftover in glovebox)\\
+  =\\
+  1+/-0.01 ml of $\sim$
+  0 M HNO\tsbs{3} $\boxed{10\ aq\ tot\ Dilution}$
+\end{center}
+\begin{center}
+  10+/-0.1 $\mu$l of $\boxed{10\ aq\ tot\ Dilution}$ dropped onto
+  $\boxed{10\ Aq\ tot\ Chip}$
+\end{center}
+\begin{itemize}
+\item{Not completely centered}
+\end{itemize}
+\end{todolist}
+
+
+\begin{itemize}
+\item{Redid calculations for alpha spectra, found that things
+  aren't good, but at least are consistent}
+\item{Went to research meeting, presented results, and surprisingly,
+  they will let me continue, hopefully I will graduate soon}
+\end{itemize}
+
+\experiment{ResearchMeeting}{Details from research meeting}
+\textbf{To Do for this week}
+\begin{itemize}
+\item{List of bulleted items}
+\item{At least 2 journal paper references}
+\item{Set up meeting with Gayle to ask about the project, these results are not so good}
+\item{Send 50$\mu$l of sample, our results aren't the best}
+\end{itemize}
+
+
+
+
+%-----------------------------------------------------------------
+%	LAB BOOK day
+%---------------------------------------------------------------
+
+\labday{Thursday February 1, 2017}
+
+
+\experiment{CHEMLAB}
+
+Taught 3 hours, did training for 3 hours, and worked on prelab
+
+
+\experiment{Alpha_and_MassSpec}
+\begin{todolist}
+\item[\done]{Stop alpha $\boxed{8\ BExII\ Chip}$ count}
+\item[\done]{Start alpha $\boxed{8\ BExIII\ Chip}$ count, really low count rate}
+\end{todolist}
+
+\experiment{Grad}
+
+\begin{todolist}
+\item{Calculate out when I will graduate and tell hiring person that is when
+  I will start}
+\item{Write 3 pages of proposal}
+\end{todolist}
 
 
 %----------------------------------------------------------------------

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.12)  30 JAN 2017 00:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.12)  2 FEB 2017 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -481,23 +481,26 @@ LaTeX Warning: Label `fig:example_figure' multiply defined.
 
 LaTeX Warning: Label `fig:example_figure' multiply defined.
 
+
+LaTeX Warning: Label `tab:treatments_xy' multiply defined.
+
 )
 \openout1 = `lab_book_1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
 \AtBeginShipoutBox=\box32
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
@@ -507,7 +510,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 143.
 )
-Package hyperref Info: Link coloring ON on input line 128.
+Package hyperref Info: Link coloring ON on input line 129.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -517,9 +520,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count126
 )
-LaTeX Info: Redefining \ref on input line 128.
-LaTeX Info: Redefining \pageref on input line 128.
-LaTeX Info: Redefining \nameref on input line 128.
+LaTeX Info: Redefining \ref on input line 129.
+LaTeX Info: Redefining \pageref on input line 129.
+LaTeX Info: Redefining \nameref on input line 129.
 
 (./lab_book_1.out) (./lab_book_1.out)
 \@outlinefile=\write4
@@ -556,25 +559,25 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 145.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 146.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 145.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 146.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 145.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 146.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 145.
+LaTeX Font Info:    Try loading font information for U+msa on input line 146.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 145.
+LaTeX Font Info:    Try loading font information for U+msb on input line 146.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -594,19 +597,19 @@ LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
 
 [2
 
-] [3] [4] [5] [6] [7] [8])
+] [3] [4] [5] [6] [7] [8] [9])
 \tf@toc=\write5
 \openout5 = `lab_book_1.toc'.
 
- [9]
+ [10]
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 161.
+(hyperref)                removing `\\' on input line 162.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 161.
+(hyperref)                removing `\\' on input line 162.
 
 
 Class scrbook Warning: \float@addtolists detected!
@@ -623,13 +626,13 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 165.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 166.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 165.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 166.
  [1
 
 
@@ -637,11 +640,11 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 285.
+(hyperref)                removing `\\' on input line 286.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 285.
+(hyperref)                removing `\\' on input line 286.
 
 [4
 
@@ -649,37 +652,37 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 354.
+(hyperref)                removing `\\' on input line 355.
 
 [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 391--395
+Underfull \hbox (badness 10000) in paragraph at lines 392--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 391--395
+Underfull \hbox (badness 10000) in paragraph at lines 392--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--399
+Underfull \hbox (badness 10000) in paragraph at lines 397--400
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--399
+Underfull \hbox (badness 10000) in paragraph at lines 397--400
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--405
+Underfull \hbox (badness 10000) in paragraph at lines 401--406
 
  []
 
 
-Overfull \hbox (7.63692pt too wide) in paragraph at lines 400--405
+Overfull \hbox (7.63692pt too wide) in paragraph at lines 401--406
 \OT1/cmr/m/n/10.95 Solve it-er-a-tively (where $\OML/cmm/m/it/10.95 M[]$ \OT1/c
 mr/m/n/10.95 de-ter-mines $\OML/cmm/m/it/10.95 ^^Z[]$\OT1/cmr/m/n/10.95 ) with 
 first guess of: $\OML/cmm/m/it/10.95 M[] \OT1/cmr/m/n/10.95 = []$ 
@@ -691,7 +694,7 @@ first guess of: $\OML/cmm/m/it/10.95 M[] \OT1/cmr/m/n/10.95 = []$
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 412.
+(hyperref)                removing `\\' on input line 413.
 
 [8
 
@@ -699,15 +702,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 492.
+(hyperref)                removing `\\' on input line 493.
 
 [10
 
-] <Figures/Process_1_Mess_Up.png, id=1230, 680.5425pt x 1258.7025pt>
+] <Figures/Process_1_Mess_Up.png, id=1304, 680.5425pt x 1258.7025pt>
 File: Figures/Process_1_Mess_Up.png Graphic file (type png)
 
 <use Figures/Process_1_Mess_Up.png>
-Package pdftex.def Info: Figures/Process_1_Mess_Up.png used on input line 580.
+Package pdftex.def Info: Figures/Process_1_Mess_Up.png used on input line 581.
 (pdftex.def)             Requested size: 355.51976pt x 657.54445pt.
  [11]
 Overfull \vbox (97.34418pt too high) has occurred while \output is active []
@@ -717,36 +720,36 @@ Overfull \vbox (97.34418pt too high) has occurred while \output is active []
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 591.
+(hyperref)                removing `\\' on input line 592.
 
 
-<Figures/Extraction_Process_1_First_3_Counts.png, id=1242, 405.01312pt x 532.23
+<Figures/Extraction_Process_1_First_3_Counts.png, id=1316, 405.01312pt x 532.23
 843pt>
 File: Figures/Extraction_Process_1_First_3_Counts.png Graphic file (type png)
  <use Figures/Extraction_Process_1_First_3_Counts.png>
 Package pdftex.def Info: Figures/Extraction_Process_1_First_3_Counts.png used o
-n input line 635.
+n input line 636.
 (pdftex.def)             Requested size: 209.12778pt x 274.82458pt.
  [13
 
 ]
-<Figures/Back_Extraction_Process_1_Last_3_Counts.png, id=1248, 507.39563pt x 51
+<Figures/Back_Extraction_Process_1_Last_3_Counts.png, id=1322, 507.39563pt x 51
 5.67656pt>
 File: Figures/Back_Extraction_Process_1_Last_3_Counts.png Graphic file (type pn
 g)
  <use Figures/Back_Extraction_Process_1_Last_3_Counts.png>
 Package pdftex.def Info: Figures/Back_Extraction_Process_1_Last_3_Counts.png us
-ed on input line 644.
+ed on input line 645.
 (pdftex.def)             Requested size: 209.12778pt x 212.53822pt.
  [14 <./Figures/Extraction_Process_1_First_3_Counts.png> <./Figures/Back_Extrac
 tion_Process_1_Last_3_Counts.png>]
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 654.
+(hyperref)                removing `\\' on input line 655.
 
 
-Overfull \hbox (11.53252pt too wide) in paragraph at lines 665--668
+Overfull \hbox (11.53252pt too wide) in paragraph at lines 666--669
 []\OT1/cmr/m/n/10.95 Used ex-cel sheet from John Burns for ef-fi-ciency cal-i-b
 ra-tion of Eu-152 source...will
  []
@@ -757,7 +760,7 @@ ra-tion of Eu-152 source...will
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 713.
+(hyperref)                removing `\\' on input line 714.
 
 [17
 
@@ -765,7 +768,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 781.
+(hyperref)                removing `\\' on input line 782.
 
 [19
 
@@ -774,7 +777,7 @@ chapter without number
 [20
 
 ]
-Overfull \hbox (78.75644pt too wide) in paragraph at lines 851--853
+Overfull \hbox (78.75644pt too wide) in paragraph at lines 852--854
 []\OT1/cmr/m/n/10.95 Put data into spreed sheet ``C:/Rad[]Detection/Calibration
 /Gamma/Eff[]cal[]summary[]Eu-
  []
@@ -788,17 +791,17 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 895--922
+Underfull \hbox (badness 10000) in paragraph at lines 896--923
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 895--922
+Underfull \hbox (badness 10000) in paragraph at lines 896--923
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 895--922
+Underfull \hbox (badness 10000) in paragraph at lines 896--923
 
  []
 
@@ -808,11 +811,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 895--922
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 942.
+(hyperref)                removing `\\' on input line 943.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 942.
+(hyperref)                removing `\\' on input line 943.
 
 [23
 
@@ -820,11 +823,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 998.
+(hyperref)                removing `\\' on input line 999.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 998.
+(hyperref)                removing `\\' on input line 999.
 
 [25
 
@@ -836,11 +839,11 @@ chapter without number
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 1044.
+(hyperref)                removing `\\' on input line 1045.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 1044.
+(hyperref)                removing `\\' on input line 1045.
 
 [27
 
@@ -848,7 +851,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 1182.
+(hyperref)                removing `\\' on input line 1183.
 
 [30
 
@@ -856,12 +859,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 1321.
+(hyperref)                removing `\\' on input line 1322.
 
 [33
 
 ]
-Overfull \hbox (0.53775pt too wide) detected at line 1398
+Overfull \hbox (0.53775pt too wide) detected at line 1399
 \OML/cmm/m/it/10.95 ^^[[] \OT1/cmr/m/n/10.95 = [] \OMS/cmsy/m/n/10.95 ^^A \OML/
 cmm/m/it/10.95 D[]
  []
@@ -870,7 +873,7 @@ cmm/m/it/10.95 D[]
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 1470.
+(hyperref)                removing `\\' on input line 1471.
 
 [36
 
@@ -889,7 +892,7 @@ chapter without number
 ]
 chapter without number
 
-Overfull \hbox (14.26392pt too wide) in paragraph at lines 1671--1674
+Overfull \hbox (14.26392pt too wide) in paragraph at lines 1672--1675
 []\OT1/cmr/m/n/10.95 Added Back-ground Row to Gamma[]Template, call it now Gamm
 a[]Template[]BK,
  []
@@ -911,18 +914,18 @@ chapter without number
 ] [45] [46]
 chapter without number
 
-Overfull \hbox (3.15239pt too wide) in paragraph at lines 1912--1919
+Overfull \hbox (3.15239pt too wide) in paragraph at lines 1913--1920
 []\OT1/cmr/m/n/10.95 Label vials, $[]$, $[]$, $[]$, $[]$ $[]$, $[]$, $[]$, $[]$
  $[]$,
  []
 
 [47
 
-] <Figures/Cycle_x3_round_2.png, id=1438, 889.82437pt x 1519.92844pt>
+] <Figures/Cycle_x3_round_2.png, id=1512, 889.82437pt x 1519.92844pt>
 File: Figures/Cycle_x3_round_2.png Graphic file (type png)
 
 <use Figures/Cycle_x3_round_2.png>
-Package pdftex.def Info: Figures/Cycle_x3_round_2.png used on input line 1986.
+Package pdftex.def Info: Figures/Cycle_x3_round_2.png used on input line 1987.
 (pdftex.def)             Requested size: 334.60571pt x 571.54884pt.
  [48]
 Overfull \vbox (11.34857pt too high) has occurred while \output is active []
@@ -944,22 +947,22 @@ chapter without number
 chapter without number
 [53
 
-] <Figures/D_Values_Variations.png, id=1472, 728.7225pt x 508.14844pt>
+] <Figures/D_Values_Variations.png, id=1545, 728.7225pt x 508.14844pt>
 File: Figures/D_Values_Variations.png Graphic file (type png)
 
 <use Figures/D_Values_Variations.png>
 Package pdftex.def Info: Figures/D_Values_Variations.png used on input line 219
-3.
+4.
 (pdftex.def)             Requested size: 334.60571pt x 233.32466pt.
  [54] [55 <./Figures/D_Values_Variations.png>]
 chapter without number
 
-Overfull \hbox (4.20967pt too wide) in paragraph at lines 2255--2269
+Overfull \hbox (4.20967pt too wide) in paragraph at lines 2256--2270
 []$\OT1/cmr/m/n/10.95 , $[]$, $[]$. La-bel Chips: $[]$, $[]$,
  []
 
 
-Overfull \hbox (27.49284pt too wide) in paragraph at lines 2255--2269
+Overfull \hbox (27.49284pt too wide) in paragraph at lines 2256--2270
 []$\OT1/cmr/m/n/10.95 , $[]$, $[]$, $[]$, $[]$, $[]$, $[]$ 
  []
 
@@ -970,59 +973,59 @@ chapter without number
 [58
 
 ] [59] [60]
-<Figures/Percent_Extraction_vs_D_Value_log.pdf, id=1507, 794.97pt x 433.62pt>
+<Figures/Percent_Extraction_vs_D_Value_log.pdf, id=1581, 794.97pt x 433.62pt>
 File: Figures/Percent_Extraction_vs_D_Value_log.pdf Graphic file (type pdf)
 
 <use Figures/Percent_Extraction_vs_D_Value_log.pdf>
 Package pdftex.def Info: Figures/Percent_Extraction_vs_D_Value_log.pdf used on 
-input line 2524.
+input line 2525.
 (pdftex.def)             Requested size: 334.60571pt x 182.51614pt.
  [61 <./Figures/Percent_Extraction_vs_D_Value_log.pdf>]
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 2548.
+(hyperref)                removing `\mathsurround' on input line 2549.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 2548.
+(hyperref)                removing `\z@' on input line 2549.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 2548.
+(hyperref)                removing `superscript' on input line 2549.
 
 [62
 
 ] [63]
-Overfull \hbox (3.2129pt too wide) in paragraph at lines 2668--2676
+Overfull \hbox (3.2129pt too wide) in paragraph at lines 2669--2677
 []\OT1/cmr/m/n/10.95 Label vials, $[]$, $[]$, $[]$, $[]$ $[]$, $[]$, $[]$,
  []
 
 [64]
-Overfull \hbox (14.09196pt too wide) in paragraph at lines 2720--2723
+Overfull \hbox (14.09196pt too wide) in paragraph at lines 2721--2724
 []\OT1/cmr/m/n/10.95 Transfer out $[]$, $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 
-<Figures/Cycle_x3_round_2_extraction_2.png, id=1586, 889.82437pt x 1163.0953pt>
+<Figures/Cycle_x3_round_2_extraction_2.png, id=1660, 889.82437pt x 1163.0953pt>
 File: Figures/Cycle_x3_round_2_extraction_2.png Graphic file (type png)
 <use Figures/Cycle_x3_round_2_extraction_2.png>
 Package pdftex.def Info: Figures/Cycle_x3_round_2_extraction_2.png used on inpu
-t line 2732.
+t line 2733.
 (pdftex.def)             Requested size: 334.60571pt x 437.36649pt.
  [65] [66 <./Figures/Cycle_x3_round_2_extraction_2.png>]
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 2771.
+(hyperref)                removing `\mathsurround' on input line 2772.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 2771.
+(hyperref)                removing `\z@' on input line 2772.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 2771.
+(hyperref)                removing `superscript' on input line 2772.
 
 [67
 
@@ -1030,15 +1033,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 2838.
+(hyperref)                removing `\mathsurround' on input line 2839.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 2838.
+(hyperref)                removing `\z@' on input line 2839.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 2838.
+(hyperref)                removing `superscript' on input line 2839.
 
 [69
 
@@ -1050,15 +1053,15 @@ chapter without number
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 2920.
+(hyperref)                removing `\mathsurround' on input line 2921.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 2920.
+(hyperref)                removing `\z@' on input line 2921.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 2920.
+(hyperref)                removing `superscript' on input line 2921.
 
 [71
 
@@ -1066,15 +1069,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 2960.
+(hyperref)                removing `\mathsurround' on input line 2961.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 2960.
+(hyperref)                removing `\z@' on input line 2961.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 2960.
+(hyperref)                removing `superscript' on input line 2961.
 
 [73
 
@@ -1086,15 +1089,15 @@ chapter without number
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 3069.
+(hyperref)                removing `\mathsurround' on input line 3070.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 3069.
+(hyperref)                removing `\z@' on input line 3070.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 3069.
+(hyperref)                removing `superscript' on input line 3070.
 
 [76
 
@@ -1109,7 +1112,7 @@ chapter without number
 ] [80]
 chapter without number
 
-Overfull \hbox (30.238pt too wide) in paragraph at lines 3337--3346
+Overfull \hbox (30.238pt too wide) in paragraph at lines 3338--3347
 []\OT1/cmr/m/n/10.95 Label vials: $[]$, $[]$, $[]$, $[]$,
  []
 
@@ -1122,18 +1125,18 @@ chapter without number
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 3454.
+(hyperref)                removing `\mathsurround' on input line 3455.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 3454.
+(hyperref)                removing `\z@' on input line 3455.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 3454.
+(hyperref)                removing `superscript' on input line 3455.
 
 
-Overfull \hbox (7.07082pt too wide) in paragraph at lines 3485--3488
+Overfull \hbox (7.07082pt too wide) in paragraph at lines 3486--3489
 []\OT1/cmr/m/n/10.95 Measured vol-ume of or-ganic by trans-fer-ing from $[]$ to
  $[]$ 
  []
@@ -1154,55 +1157,55 @@ chapter without number
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 3555.
+(hyperref)                removing `\mathsurround' on input line 3556.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 3555.
+(hyperref)                removing `\z@' on input line 3556.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 3555.
+(hyperref)                removing `superscript' on input line 3556.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 3579.
+(hyperref)                removing `\mathsurround' on input line 3580.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 3579.
+(hyperref)                removing `\z@' on input line 3580.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 3579.
+(hyperref)                removing `superscript' on input line 3580.
 
 [89
 
 ] [90]
 chapter without number
 
-Overfull \hbox (54.032pt too wide) in paragraph at lines 3658--3674
+Overfull \hbox (54.032pt too wide) in paragraph at lines 3659--3675
 []$\OT1/cmr/m/n/10.95 , $[]$ $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (54.032pt too wide) in paragraph at lines 3675--3693
+Overfull \hbox (54.032pt too wide) in paragraph at lines 3676--3694
 []$\OT1/cmr/m/n/10.95 , $[]$ $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 [91
 
 ] [92]
-Overfull \hbox (40.12857pt too wide) in paragraph at lines 3829--3833
+Overfull \hbox (40.12857pt too wide) in paragraph at lines 3830--3834
 []\OT1/cmr/m/n/10.95 Centrifuge $[]$, $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 [93]
-<Figures/Cycle_x3_round_2_extraction_3.png, id=1732, 885.3075pt x 1502.61375pt>
+<Figures/Cycle_x3_round_2_extraction_3.png, id=1806, 885.3075pt x 1502.61375pt>
 File: Figures/Cycle_x3_round_2_extraction_3.png Graphic file (type png)
 <use Figures/Cycle_x3_round_2_extraction_3.png>
 Package pdftex.def Info: Figures/Cycle_x3_round_2_extraction_3.png used on inpu
-t line 3846.
+t line 3847.
 (pdftex.def)             Requested size: 334.60571pt x 567.9268pt.
  [94]
 Overfull \vbox (7.72653pt too high) has occurred while \output is active []
@@ -1211,41 +1214,41 @@ Overfull \vbox (7.72653pt too high) has occurred while \output is active []
 [95 <./Figures/Cycle_x3_round_2_extraction_3.png>] [96]
 chapter without number
 
-Overfull \hbox (36.36003pt too wide) in paragraph at lines 3888--3905
+Overfull \hbox (36.36003pt too wide) in paragraph at lines 3889--3906
 []$\OT1/cmr/m/n/10.95 , $[]$ $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (79.5813pt too wide) in paragraph at lines 3888--3905
+Overfull \hbox (79.5813pt too wide) in paragraph at lines 3889--3906
 []$\OT1/cmr/m/n/10.95 , $[]$, $[]$, $[]$, $[]$
  []
 
 
-Overfull \hbox (54.032pt too wide) in paragraph at lines 3908--3925
+Overfull \hbox (54.032pt too wide) in paragraph at lines 3909--3926
 []$\OT1/cmr/m/n/10.95 , $[]$ $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (10.05258pt too wide) in paragraph at lines 3908--3925
+Overfull \hbox (10.05258pt too wide) in paragraph at lines 3909--3926
 []$\OT1/cmr/m/n/10.95 , $[]$, $[]$, $[]$. With old/new $[]$,
  []
 
 [97
 
 ] [98] [99]
-Overfull \hbox (32.98076pt too wide) in paragraph at lines 4061--4064
+Overfull \hbox (32.98076pt too wide) in paragraph at lines 4062--4065
 []\OT1/cmr/m/n/10.95 Transfer out $[]$, $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (24.98117pt too wide) in paragraph at lines 4067--4071
+Overfull \hbox (24.98117pt too wide) in paragraph at lines 4068--4072
 []\OT1/cmr/m/n/10.95 Centrifuge $[]$, $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 File: Figures/Cycle_x3_round_2_extraction_3.png Graphic file (type png)
 <use Figures/Cycle_x3_round_2_extraction_3.png>
 Package pdftex.def Info: Figures/Cycle_x3_round_2_extraction_3.png used on inpu
-t line 4079.
+t line 4080.
 (pdftex.def)             Requested size: 334.60571pt x 567.9268pt.
  [100]
 Overfull \vbox (7.72653pt too high) has occurred while \output is active []
@@ -1278,12 +1281,12 @@ chapter without number
 ]
 chapter without number
 
-Overfull \hbox (39.62433pt too wide) in paragraph at lines 4234--4240
+Overfull \hbox (39.62433pt too wide) in paragraph at lines 4235--4241
 []\OT1/cmr/m/n/10.95 Transfer $[]$, $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (2.89883pt too wide) in paragraph at lines 4264--4267
+Overfull \hbox (2.89883pt too wide) in paragraph at lines 4265--4268
 []\OT1/cmr/m/n/10.95 Transfer $[]$, $[]$, and $[]$, into
  []
 
@@ -1292,17 +1295,17 @@ Overfull \hbox (2.89883pt too wide) in paragraph at lines 4264--4267
 ] [110] [111]
 chapter without number
 
-Overfull \hbox (49.47261pt too wide) in paragraph at lines 4379--4396
+Overfull \hbox (49.47261pt too wide) in paragraph at lines 4380--4397
 []$\OT1/cmr/m/n/10.95 , $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (39.839pt too wide) in paragraph at lines 4397--4415
+Overfull \hbox (39.839pt too wide) in paragraph at lines 4398--4416
 []$ \OT1/cmr/m/n/10.95 (spe-cial), $[]$ $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (51.38885pt too wide) in paragraph at lines 4397--4415
+Overfull \hbox (51.38885pt too wide) in paragraph at lines 4398--4416
 []$\OT1/cmr/m/n/10.95 , $[]$, $[]$, $[]$, $[]$
  []
 
@@ -1312,7 +1315,7 @@ Overfull \hbox (51.38885pt too wide) in paragraph at lines 4397--4415
 File: Figures/Cycle_x3_round_2_extraction_3.png Graphic file (type png)
  <use Figures/Cycle_x3_round_2_extraction_3.png>
 Package pdftex.def Info: Figures/Cycle_x3_round_2_extraction_3.png used on inpu
-t line 4575.
+t line 4576.
 (pdftex.def)             Requested size: 334.60571pt x 567.9268pt.
  [115]
 Overfull \vbox (7.72653pt too high) has occurred while \output is active []
@@ -1329,37 +1332,37 @@ chapter without number
 ]
 chapter without number
 
-Overfull \hbox (1.8326pt too wide) in paragraph at lines 4660--4679
+Overfull \hbox (1.8326pt too wide) in paragraph at lines 4661--4680
 []\OT1/cmr/m/n/10.95 Label vials, $[]$, $[]$, $[]$ (spe-cial) [], $[]$ $[]$,
  []
 
 
-Overfull \hbox (12.19402pt too wide) in paragraph at lines 4660--4679
+Overfull \hbox (12.19402pt too wide) in paragraph at lines 4661--4680
 []$\OT1/cmr/m/n/10.95 , $[]$ (spe-cial), $[]$ $[]$, $[]$, $[]$
  []
 
 
-Overfull \hbox (25.47104pt too wide) in paragraph at lines 4660--4679
+Overfull \hbox (25.47104pt too wide) in paragraph at lines 4661--4680
 \OT1/cmr/m/n/10.95 (spe-cial), $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (8.99586pt too wide) in paragraph at lines 4660--4679
+Overfull \hbox (8.99586pt too wide) in paragraph at lines 4661--4680
 []$\OT1/cmr/m/n/10.95 , $[]$, $[]$ (smaller 2.5 ml tubes)
  []
 
 
-Overfull \hbox (12.19402pt too wide) in paragraph at lines 4680--4700
+Overfull \hbox (12.19402pt too wide) in paragraph at lines 4681--4701
 []$\OT1/cmr/m/n/10.95 , $[]$ (spe-cial), $[]$ $[]$, $[]$, $[]$
  []
 
 
-Overfull \hbox (25.47104pt too wide) in paragraph at lines 4680--4700
+Overfull \hbox (25.47104pt too wide) in paragraph at lines 4681--4701
 \OT1/cmr/m/n/10.95 (spe-cial), $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (8.99586pt too wide) in paragraph at lines 4680--4700
+Overfull \hbox (8.99586pt too wide) in paragraph at lines 4681--4701
 []$\OT1/cmr/m/n/10.95 , $[]$, $[]$ (smaller 2.5 ml tubes)
  []
 
@@ -1369,7 +1372,7 @@ Overfull \hbox (8.99586pt too wide) in paragraph at lines 4680--4700
 File: Figures/Cycle_x3_round_2_extraction_3.png Graphic file (type png)
  <use Figures/Cycle_x3_round_2_extraction_3.png>
 Package pdftex.def Info: Figures/Cycle_x3_round_2_extraction_3.png used on inpu
-t line 4887.
+t line 4888.
 (pdftex.def)             Requested size: 334.60571pt x 567.9268pt.
  [123]
 Overfull \vbox (7.72653pt too high) has occurred while \output is active []
@@ -1378,41 +1381,41 @@ Overfull \vbox (7.72653pt too high) has occurred while \output is active []
 [124]
 chapter without number
 
-Overfull \hbox (30.19609pt too wide) in paragraph at lines 4917--4936
+Overfull \hbox (30.19609pt too wide) in paragraph at lines 4918--4937
 []\OT1/cmr/m/n/10.95 Label vials, $[]$, $[]$, $[]$ (spe-cial) [], $[]$ $[]$,
  []
 
 
-Overfull \hbox (31.74345pt too wide) in paragraph at lines 4917--4936
+Overfull \hbox (31.74345pt too wide) in paragraph at lines 4918--4937
 []$\OT1/cmr/m/n/10.95 , $[]$, $[]$, $[]$
  []
 
 
-Overfull \hbox (20.73645pt too wide) in paragraph at lines 4937--4957
+Overfull \hbox (20.73645pt too wide) in paragraph at lines 4938--4958
 []\OT1/cmr/m/n/10.95 Transfer: $[]$, $[]$, $[]$ (spe-cial) [], $[]$ $[]$,
  []
 
 
-Overfull \hbox (31.74345pt too wide) in paragraph at lines 4937--4957
+Overfull \hbox (31.74345pt too wide) in paragraph at lines 4938--4958
 []$\OT1/cmr/m/n/10.95 , $[]$, $[]$, $[]$
  []
 
 [125
 
 ] [126] [127]
-Overfull \hbox (24.93839pt too wide) in paragraph at lines 5128--5131
+Overfull \hbox (24.93839pt too wide) in paragraph at lines 5129--5132
 []\OT1/cmr/m/n/10.95 Transfer out $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (16.9388pt too wide) in paragraph at lines 5134--5138
+Overfull \hbox (16.9388pt too wide) in paragraph at lines 5135--5139
 []\OT1/cmr/m/n/10.95 Centrifuge $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 File: Figures/Cycle_x3_round_2_extraction_3.png Graphic file (type png)
 <use Figures/Cycle_x3_round_2_extraction_3.png>
 Package pdftex.def Info: Figures/Cycle_x3_round_2_extraction_3.png used on inpu
-t line 5148.
+t line 5149.
 (pdftex.def)             Requested size: 334.60571pt x 567.9268pt.
  [128]
 Overfull \vbox (7.72653pt too high) has occurred while \output is active []
@@ -1429,22 +1432,22 @@ chapter without number
 ]
 chapter without number
 
-Underfull \hbox (badness 10000) in paragraph at lines 5190--5201
+Underfull \hbox (badness 10000) in paragraph at lines 5191--5202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5205--5208
+Underfull \hbox (badness 10000) in paragraph at lines 5206--5209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5205--5208
+Underfull \hbox (badness 10000) in paragraph at lines 5206--5209
 
  []
 
 
-Overfull \hbox (40.11295pt too wide) detected at line 5218
+Overfull \hbox (40.11295pt too wide) detected at line 5219
 [] \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/
 n/10.95 0443 [] \OMS/cmsy/m/n/10.95 ^^A [] ^^A \OT1/cmr/m/n/10.95 10[] \OMS/cms
 y/m/n/10.95 ^^A [] \OT1/cmr/m/n/10.95 = [] \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n
@@ -1455,34 +1458,34 @@ sy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 8
 [132
 
 ]
-Overfull \hbox (40.61258pt too wide) in paragraph at lines 5273--5285
+Overfull \hbox (40.61258pt too wide) in paragraph at lines 5274--5286
 []\OT1/cmr/m/n/10.95 Label vials, $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (31.15294pt too wide) in paragraph at lines 5285--5297
+Overfull \hbox (31.15294pt too wide) in paragraph at lines 5286--5298
 []\OT1/cmr/m/n/10.95 Transfer: $[]$, $[]$, $[]$, $[]$,
  []
 
 
-Overfull \hbox (34.1535pt too wide) in paragraph at lines 5285--5297
+Overfull \hbox (34.1535pt too wide) in paragraph at lines 5286--5298
 \OT1/cmr/m/n/10.95 with (their own spin cap) $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 [133]
-Overfull \hbox (34.00264pt too wide) in paragraph at lines 5380--5389
+Overfull \hbox (34.00264pt too wide) in paragraph at lines 5381--5390
 []\OT1/cmr/m/n/10.95 Transfer in glove-box $[]$, $[]$, $[]$, $[]$, $[]$,
  []
 
 [134] [135]
 chapter without number
 
-Underfull \hbox (badness 10000) in paragraph at lines 5418--5419
+Underfull \hbox (badness 10000) in paragraph at lines 5419--5420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5420--5424
+Underfull \hbox (badness 10000) in paragraph at lines 5421--5425
 
  []
 
@@ -1499,12 +1502,12 @@ chapter without number
 ]
 chapter without number
 
-Underfull \hbox (badness 10000) in paragraph at lines 5565--5566
+Underfull \hbox (badness 10000) in paragraph at lines 5566--5567
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5565--5566
+Underfull \hbox (badness 10000) in paragraph at lines 5566--5567
 
  []
 
@@ -1512,48 +1515,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 5565--5566
 
 ] [140]
 chapter without number
-<Figures/Dilution1_Sample8.JPG, id=1967, 829.59938pt x 328.97906pt>
+<Figures/Dilution1_Sample8.JPG, id=2041, 829.59938pt x 328.97906pt>
 File: Figures/Dilution1_Sample8.JPG Graphic file (type jpg)
 
 <use Figures/Dilution1_Sample8.JPG>
-Package pdftex.def Info: Figures/Dilution1_Sample8.JPG used on input line 5592.
+Package pdftex.def Info: Figures/Dilution1_Sample8.JPG used on input line 5593.
 
 (pdftex.def)             Requested size: 376.42744pt x 149.26906pt.
 
-<Figures/Dilution2_Sample8.JPG, id=1968, 833.36343pt x 329.73187pt>
+<Figures/Dilution2_Sample8.JPG, id=2042, 833.36343pt x 329.73187pt>
 File: Figures/Dilution2_Sample8.JPG Graphic file (type jpg)
 
 <use Figures/Dilution2_Sample8.JPG>
-Package pdftex.def Info: Figures/Dilution2_Sample8.JPG used on input line 5600.
+Package pdftex.def Info: Figures/Dilution2_Sample8.JPG used on input line 5601.
 
 (pdftex.def)             Requested size: 376.42744pt x 148.94147pt.
 
-<Figures/Dilution3_Sample8.JPG, id=1969, 828.09375pt x 333.49594pt>
+<Figures/Dilution3_Sample8.JPG, id=2043, 828.09375pt x 333.49594pt>
 File: Figures/Dilution3_Sample8.JPG Graphic file (type jpg)
 
 <use Figures/Dilution3_Sample8.JPG>
-Package pdftex.def Info: Figures/Dilution3_Sample8.JPG used on input line 5608.
+Package pdftex.def Info: Figures/Dilution3_Sample8.JPG used on input line 5609.
 
 (pdftex.def)             Requested size: 376.42744pt x 151.5984pt.
  [141
 
  <./Figures/Dilution1_Sample8.JPG> <./Figures/Dilution2_Sample8.JPG>]
-<Figures/Dilution4_Sample8.JPG, id=1976, 834.11626pt x 338.01282pt>
+<Figures/Dilution4_Sample8.JPG, id=2051, 834.11626pt x 338.01282pt>
 File: Figures/Dilution4_Sample8.JPG Graphic file (type jpg)
 
 <use Figures/Dilution4_Sample8.JPG>
-Package pdftex.def Info: Figures/Dilution4_Sample8.JPG used on input line 5617.
+Package pdftex.def Info: Figures/Dilution4_Sample8.JPG used on input line 5618.
 
 (pdftex.def)             Requested size: 376.42744pt x 152.54276pt.
  [142 <./Figures/Dilution3_Sample8.JPG> <./Figures/Dilution4_Sample8.JPG>]
 chapter without number
 
-Underfull \hbox (badness 10000) in paragraph at lines 5650--5652
+Underfull \hbox (badness 10000) in paragraph at lines 5651--5653
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5650--5652
+Underfull \hbox (badness 10000) in paragraph at lines 5651--5653
 
  []
 
@@ -1569,28 +1572,44 @@ chapter without number
 
 ]
 chapter without number
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5859.
 [147
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5859.
+chapter without number
+[148
+
+]
+chapter without number
+[149
+
+]
+chapter without number
+[150
+
+] [151]
+chapter without number
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6085.
+[152
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6085.
  (./lab_book_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5859.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5859.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 6085.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6085.
 
 Package rerunfilecheck Info: File `lab_book_1.out' has not changed.
-(rerunfilecheck)             Checksum: A88F0626F8271D995E1EB66CEE25744A;19542.
+(rerunfilecheck)             Checksum: 1333373403072ED0F28F523DF19C02E2;20906.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5859.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6085.
  ) 
 Here is how much of TeX's memory you used:
- 11058 strings out of 494953
- 170524 string characters out of 6180977
- 427671 words of memory out of 5000000
- 13665 multiletter control sequences out of 15000+600000
+ 11098 strings out of 494953
+ 171085 string characters out of 6180977
+ 427767 words of memory out of 5000000
+ 13681 multiletter control sequences out of 15000+600000
  25657 words of font info for 98 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  47i,15n,68p,288b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1612,10 +1631,10 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/zapfding/uzdr.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/wasy2-ps/wasy10.pfb>
-Output written on lab_book_1.pdf (156 pages, 1134321 bytes).
+Output written on lab_book_1.pdf (162 pages, 1145247 bytes).
 PDF statistics:
- 2180 PDF objects out of 2487 (max. 8388607)
- 1920 compressed objects within 20 object streams
- 492 named destinations out of 1000 (max. 500000)
- 1765 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2285 PDF objects out of 2487 (max. 8388607)
+ 2018 compressed objects within 21 object streams
+ 516 named destinations out of 1000 (max. 500000)
+ 1869 words of extra memory for PDF output out of 10000 (max. 10000000)
 

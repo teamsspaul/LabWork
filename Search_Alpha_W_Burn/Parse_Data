@@ -25,20 +25,20 @@ import Calculations as Calcs
 #google ENDF, pick the brookhaven link
 #Search for the x-section you want, click the sigma symbol
 #then interpolate the data so there is a 'Lin-Lin'
-url_to_scrape='http://nucleardata.nuclear.lu.se/toi/Alpha.asp?sql=&Min=4900&Max=6000'
+url_to_scrape='http://nucleardata.nuclear.lu.se/toi/Alpha.asp?sql=&Min=5400&Max=5600'
 #url_to_scrape='http://nucleardata.nuclear.lu.se/toi/Alpha.asp?sql=&Min=4000&Max=6000'
 Name="five0to2"
 
 MaxProtons=100
-MinProtons=90
-MinYield=-100
+MinProtons=1
+MinYield=20
 MaxIsotope=1000
-MinIsotope=209
+MinIsotope=241
 NotProtons=[]
-Symbols=[] #For calculation of activity
+Symbols=["Pu"] #For calculation of activity
 #Symbols=[]
 ShowOnly=False
-ShowOnlyList=["Pu"]
+ShowOnlyList=["Am","Pu"]
 MinHalfLife=-1*365.25*24*60*60 #Seconds
 
 df = pd.read_csv('Data/AtomicWeights.csv')
@@ -278,6 +278,7 @@ for isotope in Isotopes:
                         Mass=0.0129*(10**(-6))*(0.5/5)*(0.4/2.5) #Mass of HM in sample in tons
                         print("Bq Estimate (0.4 ml of 2.5 ml vat made) ",
                               (np.log(2)/float(HalfLife[isotope]))*tmp*Mass)
+                        print("Mass Relative Estimate ",Mass*tmp)
                         #Print random isotope
                         #tmp2=Calcs.f.Print2('942410',nt_Rational,Nuclides,Atom_Mass,Nuclide_Names)
                         #print((np.log(2)/4.50958E8)*float(tmp2)*Mass)
