@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.12)  8 FEB 2017 12:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.12)  8 FEB 2017 17:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1616,13 +1616,13 @@ Overfull \hbox (23.0014pt too wide) in paragraph at lines 6351--6353
 
 [160
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6496.
- [161]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 6496.
+] [161]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6539.
+ [162]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6539.
  (./lab_book_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 6496.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6496.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 6539.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6539.
 
 Package rerunfilecheck Info: File `lab_book_1.out' has not changed.
 (rerunfilecheck)             Checksum: AB15A8E3732D1F51EEF41990710EED4A;22260.
@@ -1630,11 +1630,11 @@ Package rerunfilecheck Info: File `lab_book_1.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6496.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6539.
  ) 
 Here is how much of TeX's memory you used:
- 11142 strings out of 494953
- 171657 string characters out of 6180977
+ 11143 strings out of 494953
+ 171665 string characters out of 6180977
  427782 words of memory out of 5000000
  13697 multiletter control sequences out of 15000+600000
  25657 words of font info for 98 fonts, out of 8000000 for 9000
@@ -1658,10 +1658,10 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/zapfding/uzdr.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/wasy2-ps/wasy10.pfb>
-Output written on lab_book_1.pdf (171 pages, 1159167 bytes).
+Output written on lab_book_1.pdf (172 pages, 1161384 bytes).
 PDF statistics:
- 2408 PDF objects out of 2487 (max. 8388607)
- 2131 compressed objects within 22 object streams
- 544 named destinations out of 1000 (max. 500000)
+ 2412 PDF objects out of 2487 (max. 8388607)
+ 2134 compressed objects within 22 object streams
+ 545 named destinations out of 1000 (max. 500000)
  1981 words of extra memory for PDF output out of 10000 (max. 10000000)
 
