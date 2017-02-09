@@ -238,3 +238,7 @@
 \contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{160}{experiment.83.1}
 \contentsline {experiment}{\numberline {2}Details from research meeting}{160}{experiment.83.2}
 \contentsline {experiment}{\numberline {3}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{161}{experiment.83.3}
+\contentsline {chapter}{\nonumberline Thursday February 9, 2017}{163}{chapter*.115}
+\contentsline {experiment}{\numberline {1}Work that is paying me this semester}{163}{experiment.84.1}
+\contentsline {experiment}{\numberline {2}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{163}{experiment.84.2}
+\contentsline {experiment}{\numberline {3}Documents and things for graduation}{164}{experiment.84.3}
