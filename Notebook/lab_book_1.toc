@@ -242,3 +242,17 @@
 \contentsline {experiment}{\numberline {1}Work that is paying me this semester}{163}{experiment.84.1}
 \contentsline {experiment}{\numberline {2}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{163}{experiment.84.2}
 \contentsline {experiment}{\numberline {3}Documents and things for graduation}{164}{experiment.84.3}
+\contentsline {chapter}{\nonumberline Friday February 10, 2017}{165}{chapter*.116}
+\contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{165}{experiment.85.1}
+\contentsline {experiment}{\numberline {2}Documents and things for graduation}{165}{experiment.85.2}
+\contentsline {chapter}{\nonumberline Saturday February 11, 2017}{166}{chapter*.117}
+\contentsline {experiment}{\numberline {1}Prepare Alpha chips for counting, the mass spec solutions for shipping, count the final combined aqueous phases}{166}{experiment.86.1}
+\contentsline {experiment}{\numberline {2}Work that is paying me this semester}{166}{experiment.86.2}
+\contentsline {chapter}{\nonumberline Sunday February 12, 2017}{167}{chapter*.118}
+\contentsline {experiment}{\numberline {1}Work that is paying me this semester}{167}{experiment.87.1}
+\contentsline {chapter}{\nonumberline Monday February 13, 2017}{168}{chapter*.119}
+\contentsline {experiment}{\numberline {1}Work that is paying me this semester}{168}{experiment.88.1}
+\contentsline {experiment}{\numberline {2}Documents and things for graduation}{168}{experiment.88.2}
+\contentsline {chapter}{\nonumberline Tuesday February 14, 2017}{169}{chapter*.120}
+\contentsline {experiment}{\numberline {1}Work that is paying me this semester}{169}{experiment.89.1}
+\contentsline {experiment}{\numberline {2}Documents and things for graduation}{169}{experiment.89.2}
