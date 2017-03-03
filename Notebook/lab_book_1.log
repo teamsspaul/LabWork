@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.12)  1 MAR 2017 12:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.12)  2 MAR 2017 21:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1714,14 +1714,14 @@ chapter without number
 
 ]
 chapter without number
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7364.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7382.
 [191
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 7364.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 7382.
  (./lab_book_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 7364.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7364.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 7382.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7382.
 
 Package rerunfilecheck Info: File `lab_book_1.out' has not changed.
 (rerunfilecheck)             Checksum: 84EE7E5078A1937C2229E8040B4F9F53;30526.
@@ -1729,7 +1729,7 @@ Package rerunfilecheck Info: File `lab_book_1.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7364.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7382.
  ) 
 Here is how much of TeX's memory you used:
  11370 strings out of 494953
@@ -1757,7 +1757,7 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/zapfding/uzdr.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/wasy2-ps/wasy10.pfb>
-Output written on lab_book_1.pdf (204 pages, 1199996 bytes).
+Output written on lab_book_1.pdf (204 pages, 1200714 bytes).
 PDF statistics:
  3047 PDF objects out of 3580 (max. 8388607)
  2731 compressed objects within 28 object streams
