@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.12)  2 MAR 2017 21:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.12)  7 MAR 2017 12:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -597,11 +597,11 @@ LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
 
 [2
 
-] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12])
+] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13])
 \tf@toc=\write5
 \openout5 = `lab_book_1.toc'.
 
- [13]
+ [14]
 chapter without number
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -706,7 +706,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [10
 
-] <Figures/Process_1_Mess_Up.png, id=1833, 680.5425pt x 1258.7025pt>
+] <Figures/Process_1_Mess_Up.png, id=1948, 680.5425pt x 1258.7025pt>
 File: Figures/Process_1_Mess_Up.png Graphic file (type png)
 
 <use Figures/Process_1_Mess_Up.png>
@@ -723,7 +723,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 592.
 
 
-<Figures/Extraction_Process_1_First_3_Counts.png, id=1846, 405.01312pt x 532.23
+<Figures/Extraction_Process_1_First_3_Counts.png, id=1961, 405.01312pt x 532.23
 843pt>
 File: Figures/Extraction_Process_1_First_3_Counts.png Graphic file (type png)
  <use Figures/Extraction_Process_1_First_3_Counts.png>
@@ -733,7 +733,7 @@ n input line 636.
  [13
 
 ]
-<Figures/Back_Extraction_Process_1_Last_3_Counts.png, id=1852, 507.39563pt x 51
+<Figures/Back_Extraction_Process_1_Last_3_Counts.png, id=1967, 507.39563pt x 51
 5.67656pt>
 File: Figures/Back_Extraction_Process_1_Last_3_Counts.png Graphic file (type pn
 g)
@@ -921,7 +921,7 @@ Overfull \hbox (3.15239pt too wide) in paragraph at lines 1913--1920
 
 [47
 
-] <Figures/Cycle_x3_round_2.png, id=2041, 889.82437pt x 1519.92844pt>
+] <Figures/Cycle_x3_round_2.png, id=2157, 889.82437pt x 1519.92844pt>
 File: Figures/Cycle_x3_round_2.png Graphic file (type png)
 
 <use Figures/Cycle_x3_round_2.png>
@@ -947,7 +947,7 @@ chapter without number
 chapter without number
 [53
 
-] <Figures/D_Values_Variations.png, id=2074, 728.7225pt x 508.14844pt>
+] <Figures/D_Values_Variations.png, id=2190, 728.7225pt x 508.14844pt>
 File: Figures/D_Values_Variations.png Graphic file (type png)
 
 <use Figures/D_Values_Variations.png>
@@ -973,7 +973,7 @@ chapter without number
 [58
 
 ] [59] [60]
-<Figures/Percent_Extraction_vs_D_Value_log.pdf, id=2111, 794.97pt x 433.62pt>
+<Figures/Percent_Extraction_vs_D_Value_log.pdf, id=2225, 794.97pt x 433.62pt>
 File: Figures/Percent_Extraction_vs_D_Value_log.pdf Graphic file (type pdf)
 
 <use Figures/Percent_Extraction_vs_D_Value_log.pdf>
@@ -1007,7 +1007,7 @@ Overfull \hbox (14.09196pt too wide) in paragraph at lines 2721--2724
  []
 
 
-<Figures/Cycle_x3_round_2_extraction_2.png, id=2189, 889.82437pt x 1163.0953pt>
+<Figures/Cycle_x3_round_2_extraction_2.png, id=2304, 889.82437pt x 1163.0953pt>
 File: Figures/Cycle_x3_round_2_extraction_2.png Graphic file (type png)
 <use Figures/Cycle_x3_round_2_extraction_2.png>
 Package pdftex.def Info: Figures/Cycle_x3_round_2_extraction_2.png used on inpu
@@ -1201,7 +1201,7 @@ Overfull \hbox (40.12857pt too wide) in paragraph at lines 3830--3834
  []
 
 [93]
-<Figures/Cycle_x3_round_2_extraction_3.png, id=2336, 885.3075pt x 1502.61375pt>
+<Figures/Cycle_x3_round_2_extraction_3.png, id=2450, 885.3075pt x 1502.61375pt>
 File: Figures/Cycle_x3_round_2_extraction_3.png Graphic file (type png)
 <use Figures/Cycle_x3_round_2_extraction_3.png>
 Package pdftex.def Info: Figures/Cycle_x3_round_2_extraction_3.png used on inpu
@@ -1515,7 +1515,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5566--5567
 
 ] [140]
 chapter without number
-<Figures/Dilution1_Sample8.JPG, id=2571, 829.59938pt x 328.97906pt>
+<Figures/Dilution1_Sample8.JPG, id=2686, 829.59938pt x 328.97906pt>
 File: Figures/Dilution1_Sample8.JPG Graphic file (type jpg)
 
 <use Figures/Dilution1_Sample8.JPG>
@@ -1523,7 +1523,7 @@ Package pdftex.def Info: Figures/Dilution1_Sample8.JPG used on input line 5593.
 
 (pdftex.def)             Requested size: 376.42744pt x 149.26906pt.
 
-<Figures/Dilution2_Sample8.JPG, id=2572, 833.36343pt x 329.73187pt>
+<Figures/Dilution2_Sample8.JPG, id=2687, 833.36343pt x 329.73187pt>
 File: Figures/Dilution2_Sample8.JPG Graphic file (type jpg)
 
 <use Figures/Dilution2_Sample8.JPG>
@@ -1531,7 +1531,7 @@ Package pdftex.def Info: Figures/Dilution2_Sample8.JPG used on input line 5601.
 
 (pdftex.def)             Requested size: 376.42744pt x 148.94147pt.
 
-<Figures/Dilution3_Sample8.JPG, id=2573, 828.09375pt x 333.49594pt>
+<Figures/Dilution3_Sample8.JPG, id=2688, 828.09375pt x 333.49594pt>
 File: Figures/Dilution3_Sample8.JPG Graphic file (type jpg)
 
 <use Figures/Dilution3_Sample8.JPG>
@@ -1541,7 +1541,7 @@ Package pdftex.def Info: Figures/Dilution3_Sample8.JPG used on input line 5609.
  [141
 
  <./Figures/Dilution1_Sample8.JPG> <./Figures/Dilution2_Sample8.JPG>]
-<Figures/Dilution4_Sample8.JPG, id=2580, 834.11626pt x 338.01282pt>
+<Figures/Dilution4_Sample8.JPG, id=2695, 834.11626pt x 338.01282pt>
 File: Figures/Dilution4_Sample8.JPG Graphic file (type jpg)
 
 <use Figures/Dilution4_Sample8.JPG>
@@ -1714,28 +1714,56 @@ chapter without number
 
 ]
 chapter without number
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7382.
 [191
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 7382.
+chapter without number
+[192
+
+]
+chapter without number
+[193
+
+]
+chapter without number
+[194
+
+]
+chapter without number
+[195
+
+]
+chapter without number
+[196
+
+]
+chapter without number
+[197
+
+]
+chapter without number
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7536.
+[198
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 7536.
  (./lab_book_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 7382.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7382.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 7536.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7536.
 
 Package rerunfilecheck Info: File `lab_book_1.out' has not changed.
-(rerunfilecheck)             Checksum: 84EE7E5078A1937C2229E8040B4F9F53;30526.
+(rerunfilecheck)             Checksum: 0AAA38CF5584CB0A4EA12B92E456847E;32565.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7382.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7536.
  ) 
 Here is how much of TeX's memory you used:
- 11370 strings out of 494953
- 174775 string characters out of 6180977
- 429858 words of memory out of 5000000
- 13782 multiletter control sequences out of 15000+600000
+ 11429 strings out of 494953
+ 175596 string characters out of 6180977
+ 429879 words of memory out of 5000000
+ 13805 multiletter control sequences out of 15000+600000
  25657 words of font info for 98 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  47i,15n,68p,288b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1757,10 +1785,10 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/zapfding/uzdr.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/wasy2-ps/wasy10.pfb>
-Output written on lab_book_1.pdf (204 pages, 1200714 bytes).
+Output written on lab_book_1.pdf (212 pages, 1209793 bytes).
 PDF statistics:
- 3047 PDF objects out of 3580 (max. 8388607)
- 2731 compressed objects within 28 object streams
- 687 named destinations out of 1000 (max. 500000)
- 2661 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3206 PDF objects out of 3580 (max. 8388607)
+ 2881 compressed objects within 29 object streams
+ 723 named destinations out of 1000 (max. 500000)
+ 2829 words of extra memory for PDF output out of 10000 (max. 10000000)
 
