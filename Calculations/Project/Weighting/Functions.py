@@ -28,6 +28,9 @@ import random as rn
 import matplotlib.mlab as mlab
 import copy
 import os
+from scipy import interpolate
+from scipy import integrate
+from scipy.integrate import trapz
 
 #############################################################
 ######################### Variables #########################
@@ -49,10 +52,45 @@ Xlabel='E (eV)'   # X label
 XFontSize=18          # X label font size
 XFontWeight="normal"  # "bold" or "normal"
 XScale="log"       # 'linear' or 'log'
+XScale='log'
+
+Xlimits=False                                                # Set xlimits?
+XLim=[10**-5,10**8]                                            # Limits that will be set 
+
+Ylimits=True                                         # Set Ylimits?
+YLim=[0,0.4]                                     # Limits that will be set  
 
 YFontSize=18                    # Y label font size
 YFontWeight="normal"            # "bold" or "normal"
 YScale="log"                 # 'linear' or 'log'
+YScale='linear'
+
+###################################################################################################
+######################################## Markers ##################################################
+###################################################################################################
+
+# These are some colors that I found that are distinct (the last two are repeats)
+# For coloring the points on the plot, these colors will be used
+# http://stackoverflow.com/questions/22408237/named-colors-in-matplotlib
+Colors=["aqua","gray","red","blue","black","green","magenta","indigo","lime","peru","steelblue",
+                "darkorange","salmon","yellow","lime","black"]
+
+# If you want to highlight a specific item, set its alpha value =1 and all others to 0.4
+# You can also change the MarkSize (or just use the highlight option below)
+Alpha_Value=[1  ,1  ,1  ,1  ,1  ,1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1]
+MarkSize=   [8  ,8  ,8  ,8  ,8  ,8,  8,  8,  8,  8,  8,  8,  8,  8,  8,  8]
+
+
+Linewidth=[1  ,1  ,1  ,1  ,1  ,1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1]
+
+MarkerType=["8","s","p","D","*","H","h","d","^",">"] # Can change all these to "." or "" for nothing "x" isn't that good
+# "*" "H" "h" "d" "^" ">" good ones
+# http://matplotlib.org/1.4.1/api/markers_api.html for more options
+
+# Set the line styles
+# More options: http://matplotlib.org/api/lines_api.html#matplotlib.lines.Line2D.set_linestyle
+# LineStyles=["solid","dashed","dash_dot","dotted","."]
+LineStyles=["."]
 
 ################################################################
 ######################### Functions ############################
@@ -80,13 +118,106 @@ def flux(E,Emt,Eme,E0,Ef):
     
     return(F)
 
+#def chi(E,C=0.4865,a=1,b=2):
+def chi(E,C=0.4865,a=1,b=2):
+    """
+    Function for producing a chi spectrum (Energy is a function of MeV not ev)
+    """
+    #a ranges from 0.966 - 1.17 (according to MCNP)
+    #b ranges from 1.4610 - 3.4005
+    #Initialize Flux
+    F=np.zeros(len(E))
+    for i in range(0,len(E)):
+        F[i]=C*np.exp(-E[i]/a)*np.sinh(np.sqrt(b*E[i]))
+    return(F)
 
 
-def plot(x,y,ax,Color,label,fig,Ylabel):
+def VaryChi(E,C,a,b):
+    """
+    This function will produce a plot with varied Chi Values
+    """
+    fig=plt.figure(figsize=f.FigureSize)
+    ax=fig.add_subplot(111)
+
+    Ylabel='$\phi$(E)$\cdot$E Normalized (n/cm$^{2}$s)'    # Y label
+    Ylabel='$\phi$ Normalized (n/cm$^{2}$s)'    # Y label
+
+    Check=0
+    for ci in C:
+        for ai in a:
+            for bi in b:
+                F=chi(E*10**-6,ci,ai,bi) #Plug values into function
+                #Perform the integral for Flux(E)
+                Phi_int=integrate.trapz(F,E*10**-6) #Chi
+                #Normalized phi
+                Fnorm=F/Phi_int
+                #This should be one
+                Phi_int2=integrate.trapz(Fnorm,E*10**-6)
+                #print values
+                print("C=",ci,"a=",ai,"b=",bi,"Int=",Phi_int,";Int2=",Phi_int2)
+                #Plot values
+                label="C="+str(ci)+";a="+str(ai)+";b="+str(bi)+";I="+str(Phi_int)
+                #(fig,ax)=f.plot(E,(Fnorm*E),ax,Check,label,fig,Ylabel)
+                (fig,ax)=plot(E,Fnorm,ax,Check,label,fig,Ylabel)
+                Check=Check+1
+    ax=f.Legend(ax)
+    plt.savefig("Flux_Spectra_Chi_Vary.pdf")
+
+def VaryPhi(E,Emt,Eme,E0,Ef):
+    """
+    This function will produce a plot with varied phi values
+    """
+    fig=f.plt.figure(figsize=f.FigureSize)
+    ax=fig.add_subplot(111)
+    
+    Ylabel='$\phi$(E)$\cdot$E Normalized (n/cm$^{2}$s)'    # Y label
+    Ylabel='$\phi$ Normalized (n/cm$^{2}$s)'    # Y label
+
+    for Emti in Emt:
+        for Emei in Eme:
+            for E0i in E0i:
+                for Efi in Ef:
+                    #Calculate flux (yes we need E)
+                    F=flux(E,Emti,Emei,E0i,Efi)
+                    #Perform the integral for Flux(E)
+                    Phi_int=integrate.trapz(F,E) #Chi
+                    #Normalized phi
+                    Fnorm=F/Phi_int
+                    #This should be one
+                    Phi_int2=integrate.trapz(Fnorm,E)
+                    #print values
+                    print("Emt=",Emti,"Eme=",Emei,"E0=",E0i,"Ef",Efi,"Int=",Phi_int,";Int2=",Phi_int2)
+                    #Plot values
+                    label="Emt="+str(Emti)+"Eme="+str(Emei)+"E0="+str(E0i)+"Ef"+str(Efi)+\
+                    "Int="+str(Phi_int)
+                    #(fig,ax)=f.plot(E,(Fnorm*E),ax,Check,label,fig,Ylabel)
+                    (fig,ax)=plot(E,Fnorm,ax,Check,label,fig,Ylabel)
+                    Check=Check+1
+    ax=f.Legend(ax)
+    plt.savefig("Flux_Spectra_Phi_Vary.pdf")
+    
+
+def loop_values(list1,index):
+    """                                                                                               
+    This function will loop through values in list even if outside range 
+    (in the positive sense not negative)                                                                                                  
+    """
+    while True:
+        try:
+            list1[index]
+            break
+        except IndexError:
+            index=index-len(list1)
+    return(list1[index])                                    
+
+def plot(x,y,ax,Check,label,fig,Ylabel):
+    Color=loop_values(Colors,Check)
+    Marker=loop_values(MarkerType,Check)
     #Plot X and Y
     ax.plot(x,y,
             linestyle="solid", #"solid","dashed","dash_dot","dotted","."
-            marker="", # "*" "H" "h" "d" "^" ">"
+            #marker="", # "*" "H" "h" "d" "^" ">"
+            marker=Marker,
 # good ones http://matplotlib.org/1.4.1/api/markers_api.html for more
             color=Color,
             markersize=8,
@@ -108,7 +239,27 @@ def plot(x,y,ax,Color,label,fig,Ylabel):
         	  fontsize=YFontSize,
         	  fontweight=YFontWeight,
         	  fontdict=font)
-	
+
+
+    #Earlier Era
+    # ax[j].plot(a[start:end+1,var.XValues],a[start:end+1,var.YValues2],
+    #                                   linestyle=var.loop_values(var.LineStyles,check),
+    #                                   marker=var.loop_values(var.MarkerType,check),
+    #                                   color=var.loop_values(var.Colors,check),
+    #                                   markersize=var.loop_values(var.MarkSize,check)*0.5,
+    #                                   alpha=var.loop_values(var.Alpha_Value,check)*0.5,
+    #                                   label=unique_names[check],linewidth=var.Linewidth)
+            
+
+
+    
+    #Sets up limits of graphs
+    if Xlimits:
+        ax.set_xlim(XLim[0],XLim[1])
+    if Ylimits:
+        ax.set_ylim(YLim[0],YLim[1])
+                                        
+    
     return(fig,ax)
 
 def Legend(ax):
