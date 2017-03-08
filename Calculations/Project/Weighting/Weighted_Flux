@@ -39,9 +39,9 @@ b=[1.461,2,3.4005]
 #f.VaryChi(E,C,a,b)
 #f.VaryPhi(E,Emt,Eme,E0,Ef)
 
-#f.PlotChiNPhi(E,Emt[0],Eme[0],E0[0],Ef[0],C[0],a[0],b[0])
+f.PlotChiNPhi(E,Emt[0],Eme[0],E0[0],Ef[0],C[0],a[0],b[0])
 
-f.PercentChi(C[0],a[0],b[0],E,Ethermal,Eepi,Efast)
+#f.PercentChi(C[0],a[0],b[0],E,Ethermal,Eepi,Efast)
 
 
 
