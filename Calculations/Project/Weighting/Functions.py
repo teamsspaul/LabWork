@@ -134,10 +134,21 @@ def chi(E,C=0.4865,a=1,b=2):
     return(F)
 
 def PercentChi(C,a,b,E,Ethermal,Eepi,Efast):
+    #Total
     F=chi(E*10**-6,C,a,b)
     Phi_int=integrate.trapz(F,E*10**-6)
+    #Thermal
+    Ftherm=chi(Ethermal*10**-6,C,a,b)
+    Phi_int_therm=integrate.trapz(Ftherm,Ethermal*10**-6)
+    #Epi
+    Fepi=chi(Eepi*10**-6,C,a,b)
+    Phi_int_epi=integrate.trapz(Fepi,Eepi*10**-6)
+    #Fast
+    Ffast=chi(Efast*10**-6,C,a,b)
+    Phi_int_fast=integrate.trapz(Ftherm,Efast*10**-6)
 
-
+    print(Phi_int_fast,Phi_int_epi,Phi_int_therm,Phi_int)
+    
 def VaryChi(E,C,a,b):
     """
     This function will produce a plot with varied Chi Values
