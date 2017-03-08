@@ -92,6 +92,8 @@ MarkerType=["8","s","p","D","*","H","h","d","^",">"] # Can change all these to "
 # LineStyles=["solid","dashed","dash_dot","dotted","."]
 LineStyles=["."]
 
+LineWidth=[2,2,2,2]
+
 ################################################################
 ######################### Functions ############################
 ################################################################
@@ -131,12 +133,16 @@ def chi(E,C=0.4865,a=1,b=2):
         F[i]=C*np.exp(-E[i]/a)*np.sinh(np.sqrt(b*E[i]))
     return(F)
 
+def PercentChi(C,a,b,E,Ethermal,Eepi,Efast):
+    F=chi(E*10**-6,C,a,b)
+    Phi_int=integrate.trapz(F,E*10**-6)
+
 
 def VaryChi(E,C,a,b):
     """
     This function will produce a plot with varied Chi Values
     """
-    fig=plt.figure(figsize=f.FigureSize)
+    fig=plt.figure(figsize=FigureSize)
     ax=fig.add_subplot(111)
 
     Ylabel='$\phi$(E)$\cdot$E Normalized (n/cm$^{2}$s)'    # Y label
@@ -157,25 +163,26 @@ def VaryChi(E,C,a,b):
                 print("C=",ci,"a=",ai,"b=",bi,"Int=",Phi_int,";Int2=",Phi_int2)
                 #Plot values
                 label="C="+str(ci)+";a="+str(ai)+";b="+str(bi)+";I="+str(Phi_int)
-                #(fig,ax)=f.plot(E,(Fnorm*E),ax,Check,label,fig,Ylabel)
-                (fig,ax)=plot(E,Fnorm,ax,Check,label,fig,Ylabel)
+                #(fig,ax)=f.plot(E,(Fnorm*E),ax,Check,label,fig,Ylabel,'log','linear',MarkerType,[1])
+                (fig,ax)=plot(E,Fnorm,ax,Check,label,fig,Ylabel,'log','linear',MarkerType,[1])
                 Check=Check+1
-    ax=f.Legend(ax)
-    plt.savefig("Flux_Spectra_Chi_Vary.pdf")
+    ax=Legend(ax)
+    plt.savefig("Figures/Flux_Spectra_Chi_Vary.pdf")
 
 def VaryPhi(E,Emt,Eme,E0,Ef):
     """
     This function will produce a plot with varied phi values
     """
-    fig=f.plt.figure(figsize=f.FigureSize)
+    fig=plt.figure(figsize=FigureSize)
     ax=fig.add_subplot(111)
     
     Ylabel='$\phi$(E)$\cdot$E Normalized (n/cm$^{2}$s)'    # Y label
     Ylabel='$\phi$ Normalized (n/cm$^{2}$s)'    # Y label
 
+    Check=0
     for Emti in Emt:
         for Emei in Eme:
-            for E0i in E0i:
+            for E0i in E0:
                 for Efi in Ef:
                     #Calculate flux (yes we need E)
                     F=flux(E,Emti,Emei,E0i,Efi)
@@ -190,13 +197,54 @@ def VaryPhi(E,Emt,Eme,E0,Ef):
                     #Plot values
                     label="Emt="+str(Emti)+"Eme="+str(Emei)+"E0="+str(E0i)+"Ef"+str(Efi)+\
                     "Int="+str(Phi_int)
-                    #(fig,ax)=f.plot(E,(Fnorm*E),ax,Check,label,fig,Ylabel)
-                    (fig,ax)=plot(E,Fnorm,ax,Check,label,fig,Ylabel)
+                    #(fig,ax)=f.plot(E,(Fnorm*E),ax,Check,label,fig,Ylabel,'log','log',MarkerType,[1])
+                    (fig,ax)=plot(E,Fnorm,ax,Check,label,fig,Ylabel,'log','log',MarkerType,[1])
                     Check=Check+1
-    ax=f.Legend(ax)
-    plt.savefig("Flux_Spectra_Phi_Vary.pdf")
-    
+    ax=Legend(ax)
+    plt.savefig("Figures/Flux_Spectra_Phi_Vary.pdf")
 
+def PlotChiNPhi(E,Emt,Eme,E0,Ef,C,a,b):
+    """
+    This function plots both ChiNPhi on the same plot
+    """
+    fig=plt.figure(figsize=FigureSize)
+    ax=fig.add_subplot(111)
+    
+    Ylabel='$\phi$(E)$\cdot$E Normalized (n/cm$^{2}$s)'    # Y label
+    Ylabel='$\phi$ Normalized (n/cm$^{2}$s)'    # Y label
+    
+    #Calculate flux (yes we need E)
+    FPhi=flux(E,Emt,Eme,E0,Ef)
+    #Perform the integral for Flux(E)
+    Phi_int=integrate.trapz(FPhi,E) 
+    #Normalized phi
+    FnormPhi=FPhi/Phi_int
+    #This should be one
+    Phi_int2=integrate.trapz(FnormPhi,E)
+    #Plot values
+    label="Phi"
+    #(fig,ax)=f.plot(E,(Fnorm*E),ax,0,label,fig,Ylabel,'log','log',[""],LineWidth)
+    (fig,ax)=plot(E,FnormPhi,ax,0,label,fig,Ylabel,'log','log',[""],LineWidth)
+
+
+    Fchi=chi(E*10**-6,C,a,b) #Plug values into function
+    #Perform the integral for Flux(E)
+    Phi_int=integrate.trapz(Fchi,E*10**-6) #Chi
+    #Normalized phi
+    Fnormchi=Fchi/Phi_int
+    #This should be one
+    Phi_int2=integrate.trapz(Fnormchi,E*10**-6)
+    #Plot values
+    label="Chi"
+    #(fig,ax)=f.plot(E,(Fnorm*E),ax,1,label,fig,Ylabel,'log','log',[""],LineWidth)
+    (fig,ax)=plot(E,Fnormchi,ax,1,label,fig,Ylabel,'log','log',[""],LineWidth)
+
+                
+    ax=Legend(ax)
+    plt.savefig("Figures/Phi_N_Chi.pdf")
+
+    
+    
 def loop_values(list1,index):
     """                                                                                               
     This function will loop through values in list even if outside range 
@@ -210,9 +258,10 @@ def loop_values(list1,index):
             index=index-len(list1)
     return(list1[index])                                    
 
-def plot(x,y,ax,Check,label,fig,Ylabel):
+def plot(x,y,ax,Check,label,fig,Ylabel,XScale,YScale,Markers,LineWidth):
     Color=loop_values(Colors,Check)
-    Marker=loop_values(MarkerType,Check)
+    Marker=loop_values(Markers,Check)
+    LineW=loop_values(LineWidth,Check)
     #Plot X and Y
     ax.plot(x,y,
             linestyle="solid", #"solid","dashed","dash_dot","dotted","."
@@ -221,6 +270,7 @@ def plot(x,y,ax,Check,label,fig,Ylabel):
 # good ones http://matplotlib.org/1.4.1/api/markers_api.html for more
             color=Color,
             markersize=8,
+            lw=LineW,
             alpha=1,
             label=label)
     	
