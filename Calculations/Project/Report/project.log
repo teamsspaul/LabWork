@@ -1,0 +1,868 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.30)  10 DEC 2016 14:39
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**project.tex
+(./project.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/home/paul/texmf/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/06/28 v2.15d AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/home/paul/texmf/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/home/paul/texmf/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen103
+))
+(/home/paul/texmf/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+(/home/paul/texmf/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks16
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks17
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks25
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen112
+\lightrulewidth=\dimen113
+\cmidrulewidth=\dimen114
+\belowrulesep=\dimen115
+\belowbottomsep=\dimen116
+\aboverulesep=\dimen117
+\abovetopsep=\dimen118
+\cmidrulesep=\dimen119
+\cmidrulekern=\dimen120
+\defaultaddspace=\dimen121
+\@cmidla=\count99
+\@cmidlb=\count100
+\@aboverulesep=\dimen122
+\@belowrulesep=\dimen123
+\@thisruleclass=\count101
+\@lastruleclass=\count102
+\@thisrulewidth=\dimen124
+) (./wrapfig.sty
+\wrapoverhang=\dimen125
+\WF@size=\dimen126
+\c@WF@wrappedlines=\count103
+\WF@box=\box28
+\WF@everypar=\toks26
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks27
+)
+\captionmargin=\dimen127
+\captionmargin@=\dimen128
+\captionwidth=\dimen129
+\caption@tempdima=\dimen130
+\caption@indent=\dimen131
+\caption@parindent=\dimen132
+\caption@hangindent=\dimen133
+)
+\c@ContinuedFloat=\count104
+Package caption Info: wrapfig package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count105
+))
+\Gin@req@height=\dimen134
+\Gin@req@width=\dimen135
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count106
+\Gm@cntv=\count107
+\c@Gm@tempcnt=\count108
+\Gm@bindingoffset=\dimen136
+\Gm@wd@mp=\dimen137
+\Gm@odd@mp=\dimen138
+\Gm@even@mp=\dimen139
+\Gm@layoutwidth=\dimen140
+\Gm@layoutheight=\dimen141
+\Gm@layouthoffset=\dimen142
+\Gm@layoutvoffset=\dimen143
+\Gm@dimlist=\toks28
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count109
+\float@exts=\toks29
+\float@box=\box29
+\@float@everytoks=\toks30
+\@floatcapt=\box30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 143.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count110
+\lst@gtempboxa=\box31
+\lst@token=\toks31
+\lst@length=\count111
+\lst@currlwidth=\dimen144
+\lst@column=\count112
+\lst@pos=\count113
+\lst@lostspace=\dimen145
+\lst@width=\dimen146
+\lst@newlines=\count114
+\lst@lineno=\count115
+\lst@maxwidth=\dimen147
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count116
+\lst@skipnumbers=\count117
+\lst@framebox=\box32
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count118
+\calc@Bcount=\count119
+\calc@Adimen=\dimen148
+\calc@Bdimen=\dimen149
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count120
+\calc@Cskip=\skip51
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count121
+\l_MT_multwidth_dim=\dimen150
+\origjot=\skip52
+\l_MT_shortvdotswithinadjustabove_dim=\dimen151
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen152
+\l_MT_above_intertext_sep=\dimen153
+\l_MT_below_intertext_sep=\dimen154
+\l_MT_above_shortintertext_sep=\dimen155
+\l_MT_below_shortintertext_sep=\dimen156
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/home/paul/texmf/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip53
+\enit@outerparindent=\dimen157
+\enit@toks=\toks32
+\enit@inbox=\box33
+\enitdp@description=\count122
+)
+\enitdp@todolist=\count123
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+)) (./project.aux
+
+LaTeX Warning: Label `fig:XPu239' multiply defined.
+
+
+LaTeX Warning: Label `fig:XPu240' multiply defined.
+
+
+LaTeX Warning: Label `fig:XPu241' multiply defined.
+
+
+LaTeX Warning: Label `fig:XU235' multiply defined.
+
+
+LaTeX Warning: Label `fig:XU238' multiply defined.
+
+
+LaTeX Warning: Label `fig:POSTHISTBa136' multiply defined.
+
+)
+\openout1 = `project.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count124
+\scratchdimen=\dimen158
+\scratchbox=\box34
+\nofMPsegments=\count125
+\nofMParguments=\count126
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count127
+\MPscratchDim=\dimen159
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
+\everyMPtoPDFconversion=\toks34
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(50.58878pt, 672.11122pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=672.11122pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-58.68121pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count130
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 141.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 142.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 180.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 180.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 220.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+(../Origen2/TAPE5.inp [1
+
+{/home/paul/.texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+Overfull \hbox (13.9904pt too wide) detected at line 241
+[] \OMS/cmsy/m/n/10.95 ^^A [] ^^A [] ^^A [] ^^A [] ^^A [] \OT1/cmr/m/n/10.95 = 
+15\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 018 []
+ []
+
+(../Origen2/ORIGENBACKUP/TAPE9_BANK.inp) [2] (../Origen2/RunSamples
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [3]
+Overfull \hbox (25.71458pt too wide) in paragraph at lines 97--98
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][] 
+ []
+
+[4] [5] [6])
+<../Weighting/Reduce_Err/E0_vs_SumErr_third.pdf, id=34, 794.97pt x 433.62pt>
+File: ../Weighting/Reduce_Err/E0_vs_SumErr_third.pdf Graphic file (type pdf)
+
+<use ../Weighting/Reduce_Err/E0_vs_SumErr_third.pdf>
+Package pdftex.def Info: ../Weighting/Reduce_Err/E0_vs_SumErr_third.pdf used on
+ input line 374.
+(pdftex.def)             Requested size: 422.77664pt x 230.61148pt.
+ [7]
+<../Weighting/Flux_Spectra.pdf, id=41, 794.97pt x 433.62pt>
+File: ../Weighting/Flux_Spectra.pdf Graphic file (type pdf)
+
+<use ../Weighting/Flux_Spectra.pdf>
+Package pdftex.def Info: ../Weighting/Flux_Spectra.pdf used on input line 385.
+(pdftex.def)             Requested size: 422.77664pt x 230.61148pt.
+ [8 <../Weighting/Reduce_Err/E0_vs_SumErr_third.pdf> <../Weighting/Flux_Spectra
+.pdf
+
+pdfTeX warning: pdflatex (file ../Weighting/Flux_Spectra.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>] (../Weighting/Cal_Sig_w_Err [9] [10])
+<../Weighting/X_Sections/XwVar_Pu_239_94_a.pdf, id=121, 794.97pt x 433.62pt>
+File: ../Weighting/X_Sections/XwVar_Pu_239_94_a.pdf Graphic file (type pdf)
+
+<use ../Weighting/X_Sections/XwVar_Pu_239_94_a.pdf>
+Package pdftex.def Info: ../Weighting/X_Sections/XwVar_Pu_239_94_a.pdf used on 
+input line 468.
+(pdftex.def)             Requested size: 422.77664pt x 230.61148pt.
+ [11]
+<../Weighting/X_Sections/XwVar_Pu_240_94_a.pdf, id=125, 794.97pt x 433.62pt>
+File: ../Weighting/X_Sections/XwVar_Pu_240_94_a.pdf Graphic file (type pdf)
+
+<use ../Weighting/X_Sections/XwVar_Pu_240_94_a.pdf>
+Package pdftex.def Info: ../Weighting/X_Sections/XwVar_Pu_240_94_a.pdf used on 
+input line 477.
+(pdftex.def)             Requested size: 422.77664pt x 230.61148pt.
+
+<../Weighting/X_Sections/XwVar_Pu_241_94_a.pdf, id=126, 794.97pt x 433.62pt>
+File: ../Weighting/X_Sections/XwVar_Pu_241_94_a.pdf Graphic file (type pdf)
+
+<use ../Weighting/X_Sections/XwVar_Pu_241_94_a.pdf>
+Package pdftex.def Info: ../Weighting/X_Sections/XwVar_Pu_241_94_a.pdf used on 
+input line 486.
+(pdftex.def)             Requested size: 422.77664pt x 230.61148pt.
+ [12 <../Weighting/X_Sections/XwVar_Pu_239_94_a.pdf> <../Weighting/X_Sections/X
+wVar_Pu_240_94_a.pdf
+
+pdfTeX warning: pdflatex (file ../Weighting/X_Sections/XwVar_Pu_240_94_a.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>] <../Weighting/X_Sections/XwVar_U_235_92_a.pdf, id=179, 794.97pt x 433.62pt>
+File: ../Weighting/X_Sections/XwVar_U_235_92_a.pdf Graphic file (type pdf)
+
+<use ../Weighting/X_Sections/XwVar_U_235_92_a.pdf>
+Package pdftex.def Info: ../Weighting/X_Sections/XwVar_U_235_92_a.pdf used on i
+nput line 495.
+(pdftex.def)             Requested size: 422.77664pt x 230.61148pt.
+
+<../Weighting/X_Sections/XwVar_U_238_92_a.pdf, id=180, 794.97pt x 433.62pt>
+File: ../Weighting/X_Sections/XwVar_U_238_92_a.pdf Graphic file (type pdf)
+
+<use ../Weighting/X_Sections/XwVar_U_238_92_a.pdf>
+Package pdftex.def Info: ../Weighting/X_Sections/XwVar_U_238_92_a.pdf used on i
+nput line 504.
+(pdftex.def)             Requested size: 422.77664pt x 230.61148pt.
+ [13 <../Weighting/X_Sections/XwVar_Pu_241_94_a.pdf> <../Weighting/X_Sections/X
+wVar_U_235_92_a.pdf
+
+pdfTeX warning: pdflatex (file ../Weighting/X_Sections/XwVar_U_235_92_a.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+>]
+<../Weighting/X_Sections/XwVar_Pu_239_94_f.pdf, id=231, 794.97pt x 433.62pt>
+File: ../Weighting/X_Sections/XwVar_Pu_239_94_f.pdf Graphic file (type pdf)
+
+<use ../Weighting/X_Sections/XwVar_Pu_239_94_f.pdf>
+Package pdftex.def Info: ../Weighting/X_Sections/XwVar_Pu_239_94_f.pdf used on 
+input line 513.
+(pdftex.def)             Requested size: 422.77664pt x 230.61148pt.
+
+<../Weighting/X_Sections/XwVar_Pu_240_94_f.pdf, id=232, 794.97pt x 433.62pt>
+File: ../Weighting/X_Sections/XwVar_Pu_240_94_f.pdf Graphic file (type pdf)
+
+<use ../Weighting/X_Sections/XwVar_Pu_240_94_f.pdf>
+Package pdftex.def Info: ../Weighting/X_Sections/XwVar_Pu_240_94_f.pdf used on 
+input line 522.
+(pdftex.def)             Requested size: 422.77664pt x 230.61148pt.
+ [14 <../Weighting/X_Sections/XwVar_U_238_92_a.pdf> <../Weighting/X_Sections/Xw
+Var_Pu_239_94_f.pdf
+
+pdfTeX warning: pdflatex (file ../Weighting/X_Sections/XwVar_Pu_239_94_f.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<../Weighting/X_Sections/XwVar_Pu_241_94_f.pdf, id=281, 794.97pt x 433.62pt>
+File: ../Weighting/X_Sections/XwVar_Pu_241_94_f.pdf Graphic file (type pdf)
+
+<use ../Weighting/X_Sections/XwVar_Pu_241_94_f.pdf>
+Package pdftex.def Info: ../Weighting/X_Sections/XwVar_Pu_241_94_f.pdf used on 
+input line 531.
+(pdftex.def)             Requested size: 422.77664pt x 230.61148pt.
+
+<../Weighting/X_Sections/XwVar_U_235_92_f.pdf, id=282, 794.97pt x 433.62pt>
+File: ../Weighting/X_Sections/XwVar_U_235_92_f.pdf Graphic file (type pdf)
+
+<use ../Weighting/X_Sections/XwVar_U_235_92_f.pdf>
+Package pdftex.def Info: ../Weighting/X_Sections/XwVar_U_235_92_f.pdf used on i
+nput line 540.
+(pdftex.def)             Requested size: 422.77664pt x 230.61148pt.
+ [15 <../Weighting/X_Sections/XwVar_Pu_240_94_f.pdf> <../Weighting/X_Sections/X
+wVar_Pu_241_94_f.pdf
+
+pdfTeX warning: pdflatex (file ../Weighting/X_Sections/XwVar_Pu_241_94_f.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>] <../Weighting/X_Sections/XwVar_U_238_92_f.pdf, id=332, 794.97pt x 433.62pt>
+File: ../Weighting/X_Sections/XwVar_U_238_92_f.pdf Graphic file (type pdf)
+
+<use ../Weighting/X_Sections/XwVar_U_238_92_f.pdf>
+Package pdftex.def Info: ../Weighting/X_Sections/XwVar_U_238_92_f.pdf used on i
+nput line 549.
+(pdftex.def)             Requested size: 422.77664pt x 230.61148pt.
+ [16 <../Weighting/X_Sections/XwVar_U_235_92_f.pdf> <../Weighting/X_Sections/Xw
+Var_U_238_92_f.pdf
+
+pdfTeX warning: pdflatex (file ../Weighting/X_Sections/XwVar_U_238_92_f.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+>] (../Origen2/SampleGen [17])
+<../Origen2/PLOTS/94Pu239aHIST.pdf, id=384, 578.16pt x 433.62pt>
+File: ../Origen2/PLOTS/94Pu239aHIST.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/94Pu239aHIST.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/94Pu239aHIST.pdf used on input line 5
+90.
+(pdftex.def)             Requested size: 361.71336pt x 271.28311pt.
+
+<../Origen2/PLOTS/94Pu240fHIST.pdf, id=385, 578.16pt x 433.62pt>
+File: ../Origen2/PLOTS/94Pu240fHIST.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/94Pu240fHIST.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/94Pu240fHIST.pdf used on input line 5
+99.
+(pdftex.def)             Requested size: 361.71336pt x 271.28311pt.
+ [18 <../Origen2/PLOTS/94Pu239aHIST.pdf>] (../Origen2/PLOToutput
+Overfull \hbox (1.71434pt too wide) in paragraph at lines 7--8
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (1.71434pt too wide) in paragraph at lines 8--9
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (1.71434pt too wide) in paragraph at lines 9--11
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (1.71434pt too wide) in paragraph at lines 22--23
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (1.71434pt too wide) in paragraph at lines 23--24
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (1.71434pt too wide) in paragraph at lines 24--26
+[][][][][][][][] 
+ []
+
+[19 <../Origen2/PLOTS/94Pu240fHIST.pdf>] [20])
+<../Origen2/PLOTS/PU239Post_HIST.pdf, id=431, 578.16pt x 433.62pt>
+File: ../Origen2/PLOTS/PU239Post_HIST.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/PU239Post_HIST.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/PU239Post_HIST.pdf used on input line
+ 663.
+(pdftex.def)             Requested size: 361.71336pt x 271.28311pt.
+ [21]
+<../Origen2/PLOTS/PU239Post_XY.pdf, id=435, 794.97pt x 433.62pt>
+File: ../Origen2/PLOTS/PU239Post_XY.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/PU239Post_XY.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/PU239Post_XY.pdf used on input line 6
+72.
+(pdftex.def)             Requested size: 361.71336pt x 197.30402pt.
+
+<../Origen2/PLOTS/PU242Post_HIST.pdf, id=436, 578.16pt x 433.62pt>
+File: ../Origen2/PLOTS/PU242Post_HIST.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/PU242Post_HIST.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/PU242Post_HIST.pdf used on input line
+ 682.
+(pdftex.def)             Requested size: 361.71336pt x 271.28311pt.
+ [22 <../Origen2/PLOTS/PU239Post_HIST.pdf> <../Origen2/PLOTS/PU239Post_XY.pdf
+
+pdfTeX warning: pdflatex (file ../Origen2/PLOTS/PU239Post_XY.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>] <../Origen2/PLOTS/PU242Post_XY.pdf, id=467, 794.97pt x 433.62pt>
+File: ../Origen2/PLOTS/PU242Post_XY.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/PU242Post_XY.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/PU242Post_XY.pdf used on input line 6
+91.
+(pdftex.def)             Requested size: 361.71336pt x 197.30402pt.
+
+<../Origen2/PLOTS/SB125Post_HIST.pdf, id=468, 578.16pt x 433.62pt>
+File: ../Origen2/PLOTS/SB125Post_HIST.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/SB125Post_HIST.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/SB125Post_HIST.pdf used on input line
+ 700.
+(pdftex.def)             Requested size: 361.71336pt x 271.28311pt.
+ [23 <../Origen2/PLOTS/PU242Post_HIST.pdf> <../Origen2/PLOTS/PU242Post_XY.pdf
+
+pdfTeX warning: pdflatex (file ../Origen2/PLOTS/PU242Post_XY.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>] <../Origen2/PLOTS/SB125Post_XY.pdf, id=493, 794.97pt x 433.62pt>
+File: ../Origen2/PLOTS/SB125Post_XY.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/SB125Post_XY.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/SB125Post_XY.pdf used on input line 7
+09.
+(pdftex.def)             Requested size: 361.71336pt x 197.30402pt.
+
+<../Origen2/PLOTS/EU154Post_HIST.pdf, id=494, 578.16pt x 433.62pt>
+File: ../Origen2/PLOTS/EU154Post_HIST.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/EU154Post_HIST.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/EU154Post_HIST.pdf used on input line
+ 718.
+(pdftex.def)             Requested size: 361.71336pt x 271.28311pt.
+ [24 <../Origen2/PLOTS/SB125Post_HIST.pdf> <../Origen2/PLOTS/SB125Post_XY.pdf
+
+pdfTeX warning: pdflatex (file ../Origen2/PLOTS/SB125Post_XY.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>] <../Origen2/PLOTS/EU154Post_XY.pdf, id=520, 794.97pt x 433.62pt>
+File: ../Origen2/PLOTS/EU154Post_XY.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/EU154Post_XY.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/EU154Post_XY.pdf used on input line 7
+27.
+(pdftex.def)             Requested size: 361.71336pt x 197.30402pt.
+
+<../Origen2/PLOTS/RH106Post_HIST.pdf, id=521, 578.16pt x 433.62pt>
+File: ../Origen2/PLOTS/RH106Post_HIST.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/RH106Post_HIST.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/RH106Post_HIST.pdf used on input line
+ 736.
+(pdftex.def)             Requested size: 361.71336pt x 271.28311pt.
+ [25 <../Origen2/PLOTS/EU154Post_HIST.pdf> <../Origen2/PLOTS/EU154Post_XY.pdf
+
+pdfTeX warning: pdflatex (file ../Origen2/PLOTS/EU154Post_XY.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>] <../Origen2/PLOTS/RH106Post_XY.pdf, id=547, 794.97pt x 433.62pt>
+File: ../Origen2/PLOTS/RH106Post_XY.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/RH106Post_XY.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/RH106Post_XY.pdf used on input line 7
+45.
+(pdftex.def)             Requested size: 361.71336pt x 197.30402pt.
+
+<../Origen2/PLOTS/SM150Post_HIST.pdf, id=548, 578.16pt x 433.62pt>
+File: ../Origen2/PLOTS/SM150Post_HIST.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/SM150Post_HIST.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/SM150Post_HIST.pdf used on input line
+ 754.
+(pdftex.def)             Requested size: 361.71336pt x 271.28311pt.
+ [26 <../Origen2/PLOTS/RH106Post_HIST.pdf> <../Origen2/PLOTS/RH106Post_XY.pdf
+
+pdfTeX warning: pdflatex (file ../Origen2/PLOTS/RH106Post_XY.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>] <../Origen2/PLOTS/SM150Post_XY.pdf, id=579, 794.97pt x 433.62pt>
+File: ../Origen2/PLOTS/SM150Post_XY.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/SM150Post_XY.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/SM150Post_XY.pdf used on input line 7
+63.
+(pdftex.def)             Requested size: 361.71336pt x 197.30402pt.
+
+<../Origen2/PLOTS/ND148Post_HIST.pdf, id=580, 578.16pt x 433.62pt>
+File: ../Origen2/PLOTS/ND148Post_HIST.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/ND148Post_HIST.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/ND148Post_HIST.pdf used on input line
+ 772.
+(pdftex.def)             Requested size: 361.71336pt x 271.28311pt.
+ [27 <../Origen2/PLOTS/SM150Post_HIST.pdf> <../Origen2/PLOTS/SM150Post_XY.pdf
+
+pdfTeX warning: pdflatex (file ../Origen2/PLOTS/SM150Post_XY.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>] <../Origen2/PLOTS/ND148Post_XY.pdf, id=605, 794.97pt x 433.62pt>
+File: ../Origen2/PLOTS/ND148Post_XY.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/ND148Post_XY.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/ND148Post_XY.pdf used on input line 7
+81.
+(pdftex.def)             Requested size: 361.71336pt x 197.30402pt.
+
+<../Origen2/PLOTS/BA136Post_HIST.pdf, id=606, 578.16pt x 433.62pt>
+File: ../Origen2/PLOTS/BA136Post_HIST.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/BA136Post_HIST.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/BA136Post_HIST.pdf used on input line
+ 790.
+(pdftex.def)             Requested size: 361.71336pt x 271.28311pt.
+ [28 <../Origen2/PLOTS/ND148Post_HIST.pdf> <../Origen2/PLOTS/ND148Post_XY.pdf
+
+pdfTeX warning: pdflatex (file ../Origen2/PLOTS/ND148Post_XY.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>] <../Origen2/PLOTS/BA136Post_XY.pdf, id=632, 794.97pt x 433.62pt>
+File: ../Origen2/PLOTS/BA136Post_XY.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/BA136Post_XY.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/BA136Post_XY.pdf used on input line 7
+99.
+(pdftex.def)             Requested size: 361.71336pt x 197.30402pt.
+
+<../Origen2/PLOTS/CS134Post_HIST.pdf, id=633, 578.16pt x 433.62pt>
+File: ../Origen2/PLOTS/CS134Post_HIST.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/CS134Post_HIST.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/CS134Post_HIST.pdf used on input line
+ 808.
+(pdftex.def)             Requested size: 361.71336pt x 271.28311pt.
+ [29 <../Origen2/PLOTS/BA136Post_HIST.pdf> <../Origen2/PLOTS/BA136Post_XY.pdf
+
+pdfTeX warning: pdflatex (file ../Origen2/PLOTS/BA136Post_XY.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>] <../Origen2/PLOTS/CS134Post_XY.pdf, id=661, 794.97pt x 433.62pt>
+File: ../Origen2/PLOTS/CS134Post_XY.pdf Graphic file (type pdf)
+
+<use ../Origen2/PLOTS/CS134Post_XY.pdf>
+Package pdftex.def Info: ../Origen2/PLOTS/CS134Post_XY.pdf used on input line 8
+17.
+(pdftex.def)             Requested size: 361.71336pt x 197.30402pt.
+ (./project.bbl [30 <../Origen2/PLOTS/CS134Post_HIST.pdf> <../Origen2/PLOTS/CS1
+34Post_XY.pdf
+
+pdfTeX warning: pdflatex (file ../Origen2/PLOTS/CS134Post_XY.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>]) [31] (./project.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.28pt have occurred.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 7317 strings out of 494953
+ 110943 string characters out of 6180977
+ 220895 words of memory out of 5000000
+ 10420 multiletter control sequences out of 15000+600000
+ 13360 words of font info for 49 fonts, out of 8000000 for 9000
+ 17 hyphenation exceptions out of 8191
+ 38i,14n,47p,281b,1946s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/courier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfd
+ing/uzdr.pfb>
+Output written on project.pdf (31 pages, 769973 bytes).
+PDF statistics:
+ 736 PDF objects out of 1000 (max. 8388607)
+ 619 compressed objects within 7 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+

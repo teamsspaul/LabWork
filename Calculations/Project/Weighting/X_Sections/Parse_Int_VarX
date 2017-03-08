@@ -1,0 +1,78 @@
+#!/usr/bin/env python3
+"""
+This function will look at the url,
+and pull information from it. I am assuming in this file
+variance information for x-sections. The 
+information should be taken from the brookhaven site
+"""
+############################################################
+############### Import Packages ############################
+############################################################
+
+
+import requests
+from bs4 import BeautifulSoup
+
+############################################################
+#################### Open Link #############################
+############################################################
+
+#Might have to update these URLs
+#To Find, Google ENDF
+#Pick link for Brookhaven National Lab (not IAEA)
+#Search for element you are looking for
+#Reaction n,g
+#Pick plots for covariance, pick intertive mode for
+#covariacne plot, on bottom left look at data (copy that link)
+url_to_scrape='http://www.nndc.bnl.gov/exfor/servlet/X4sShowData?File=E4R_ZV15.zvd'
+Name="U_235_92_f"
+MTFunction='fun: MT102xMT102'
+MTFunction='fun: MT18xMT18'
+
+#not sure what these two lines do, but it
+#gets all the information from the URL, and saves
+#it in a soup type...thingy
+r = requests.get(url_to_scrape)
+soup = BeautifulSoup(r.text,"lxml")
+
+#Find the index of our starting point
+x=soup.prettify().find(MTFunction)
+if x==-1:
+        while x==-1:
+                print("")
+                print("Could not find MT102xMT102")
+                print("Input different string to look for in the html")
+                print("Or to leave enter 'Done'")
+                newparse=input('')
+                if newparse == 'Done':
+                        quit()
+                else:
+                        x=soup.prettify().find(newparse)
+
+
+#Save all the information in a long list
+LongList=soup.prettify()[x:-1].split('\n')
+
+#open the output file
+output=open(Name+'V.csv',"w")
+
+#Modify the data (to Mev), and store in file
+#Add extra point to make flat
+Collect=False;
+for i in range(0,len(LongList)-1):
+        if '//' in LongList[i] and not Collect:
+                Collect=True
+                continue
+        if '//' in LongList[i] and Collect:
+                break
+        if Collect:
+                try:
+                        yold=Data[1]
+                        Data=LongList[i].split()
+                        Data[0]=str(float(Data[0])*1e-6)
+                        print(Data[0]+","+yold,file=output)
+                        print(",".join(Data),file=output)
+                except NameError:
+                        Data=LongList[i].split()
+                        Data[0]=str(float(Data[0])*1e-6)
+                        print(",".join(Data),file=output)

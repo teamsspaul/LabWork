@@ -1,0 +1,115 @@
+#!/usr/bin/env python3
+"""
+This program will compute 1-group cross sections with a weighted 
+flux. The flux is plotted in the same directory and you can
+check it out if you want. Also parameters for the flux were
+determined in a subdirectory called Reduce_Err.
+This program also will plot the X-section values, but not the covariance
+values. 
+"""
+
+#########################################################################
+######################## Import Packages ################################
+#########################################################################
+
+import time
+start_time = time.time()
+import Functions as f
+from scipy import interpolate
+from scipy import integrate
+from scipy.integrate import trapz
+
+#########################################################################
+########################## Calculations #################################
+#########################################################################
+
+#########################################################
+############### Import X-Section Data ###################
+#########################################################
+
+#Get list of csv files with X-section information
+Names=f.GETcsvFiles("X_Sections")
+Names=["Pu_239_94_a.csv",
+       "Pu_240_94_a.csv",
+       "Pu_241_94_a.csv",
+       "U_235_92_a.csv",
+       "U_238_92_a.csv",
+       "Pu_239_94_f.csv",
+       "Pu_240_94_f.csv",
+       "Pu_241_94_f.csv",
+       "U_235_92_f.csv",
+       "U_238_92_f.csv"]
+
+#Flux Parameters
+Emt=0.38       #Max thermal energy in ev
+Eme=1e5        #Max epithermal energy in ev
+E0=0.0658       #Thermal average in ev (1045 K)
+Ef=1.35e6      #Fission average in ev
+
+#Loop through all the X-sections I got
+for Name in Names:
+
+    Element=Name.split('_')[0]
+    Isotope=Name.split('_')[1]
+    Protons=Name.split('_')[2]
+    Reaction=Name.split('_')[3].split('.')[0]
+
+    #Do not do Averaging of variances
+    if 'V' in Reaction:
+        continue
+
+    Xsec = f.np.genfromtxt('X_Sections/'+Name,delimiter=',')
+    
+    #Set energy, and convert from MeV to ev
+    E=f.copy.copy(Xsec[:,0])*10**6
+
+    #Calculate flux (yes we need E)
+    F=f.flux(E,Emt,Eme,E0,Ef)
+
+    #Make function for X-Section(E) * Flux(E)
+    X_phi=interpolate.interp1d(E,F*Xsec[:,1],
+                               fill_value=0,bounds_error=False)
+    #Perform the integral for X-Section(E) * Flux(E)
+    X_int=integrate.trapz(X_phi(E),E)
+    #Perform the integral for Flux(E)
+    Phi_int=integrate.trapz(F,E)
+    #Average X-section value
+    Avg=X_int/Phi_int
+
+    #Find TAPE9's X-section value for comparison
+    TAPE9_X=f.LoopTAPE(Protons,Isotope,Reaction)
+    Ratio=str(float(TAPE9_X)/Avg)
+    print(Protons+Element+Isotope+Reaction+' Average: %.3e' % Avg
+          +', TAPE Value: '+TAPE9_X+
+          ", Their Ratio: "+Ratio)
+    #########################################################
+    ################## X-sec Plotting #######################
+    #########################################################
+
+    fig=f.plt.figure(figsize=f.FigureSize)
+    ax=fig.add_subplot(111)
+    label="$\sigma_"+Reaction+"$ "+Element+"$^{"+Isotope+"}$"
+    Ylabel='$\sigma$(E)'    # Y label
+    
+    (fig,ax)=f.plot(E,Xsec[:,1],ax,'blue',label,fig,Ylabel)
+    f.Legend(ax)
+    f.plt.savefig('X_Sections/X_'+Element+'_'+Isotope+'_'+
+                  Reaction+'.pdf')
+    
+#########################################################
+################## Flux Plotting ########################
+#########################################################
+
+fig=f.plt.figure(figsize=f.FigureSize)
+ax=fig.add_subplot(111)
+label=""
+Ylabel='$\phi$(E)$\cdot$E Normalized (n/cm$^{2}$s)'    # Y label
+(fig,ax)=f.plot(E,(F*E)/f.np.sum(F),ax,'blue',label,fig,Ylabel)
+#ax=f.Legend(ax)
+f.plt.savefig('Flux_Spectra.pdf')
+
+##################################################################
+######################## Time to Execute #########################
+##################################################################
+
+print("--- %s seconds ---" % (time.time() - start_time))

@@ -1,0 +1,12 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Background}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Current Problem}{4}{0}{1}
+\beamer@sectionintoc {2}{Objectives}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{ORIGEN2 Model}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{Cross Section Variations}{9}{0}{2}
+\beamer@subsectionintoc {2}{3}{Variance for cross-sections}{11}{0}{2}
+\beamer@subsectionintoc {2}{4}{Sampling Space and Plotting Program}{27}{0}{2}
+\beamer@sectionintoc {3}{Results}{31}{0}{3}
+\beamer@sectionintoc {4}{Conclusions}{50}{0}{4}

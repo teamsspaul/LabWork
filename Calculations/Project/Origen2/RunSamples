@@ -1,0 +1,216 @@
+#!/usr/bin/env python3
+
+#Please note, might have to run command
+# sed -i 's/E /E\+/g' TAPE9_BANK.inp
+# on file to make sure there are no spaces after E's
+
+#####################################################################
+######################## Import Packages ############################
+#####################################################################
+
+import time
+start_time = time.time()
+import numpy as np
+import Functions as Fun
+from subprocess import call
+import os
+
+
+#####################################################################
+############################ Low Class ##############################
+#####################################################################
+#As opposed to high class
+class ToPull:
+    def __init__(self):
+        self.Isotope  = ""
+        self.Type     = ""
+
+ListToPull=[]
+with open('LISTTOPULL') as f:
+    Lines=f.readlines()
+for i in Lines:
+    i=i.split()
+    ListToPull.append(ToPull())
+    ListToPull[-1].Isotope =i[0]
+    ListToPull[-1].Type    =i[1]
+        
+#####################################################################
+######################## Load all samples ###########################
+#####################################################################
+
+with open('SAMPLES/94Pu239a') as f:
+    Pu239a=f.readlines()
+Pu239a=Fun.StripNL(Pu239a)
+with open('SAMPLES/94Pu240a') as f:
+    Pu240a=f.readlines()
+Pu240a=Fun.StripNL(Pu240a)
+with open('SAMPLES/94Pu241a') as f:
+    Pu241a=f.readlines()
+Pu241a=Fun.StripNL(Pu241a)
+
+with open('SAMPLES/94Pu239f') as f:
+    Pu239f=f.readlines()
+Pu239f=Fun.StripNL(Pu239f)
+with open('SAMPLES/94Pu240f') as f:
+    Pu240f=f.readlines()
+Pu240f=Fun.StripNL(Pu240f)
+with open('SAMPLES/94Pu241f') as f:
+    Pu241f=f.readlines()
+Pu241f=Fun.StripNL(Pu241f)
+
+with open('SAMPLES/92U235a') as f:
+    U235a=f.readlines()
+U235a=Fun.StripNL(U235a)
+with open('SAMPLES/92U238a') as f:
+    U238a=f.readlines()
+U238a=Fun.StripNL(U238a)
+
+with open('SAMPLES/92U235f') as f:
+    U235f=f.readlines()
+U235f=Fun.StripNL(U235f)
+with open('SAMPLES/92U238f') as f:
+    U238f=f.readlines()
+U238f=Fun.StripNL(U238f)
+
+#####################################################################
+##################### Load TAPE9 Template ###########################
+#####################################################################
+
+with open('ORIGENBACKUP/TAPE9_BANK.inp') as f:
+    TAPE9content=f.readlines()
+
+#####################################################################
+##################### Loop through all samples ######################
+############################ and ... ################################
+#####################################################################
+
+for k in range(0,len(U238f)):
+#for k in range(0,1):
+    #k=2
+    ############################################################
+    ################### Make new TAPE9 #########################
+    ############################################################
+
+    #Open output file
+    output=open("TAPE50.inp","w")
+    #output=open("tape9.inp","w")
+    START=False #To print everything (True), otherwise print somethings...
+    PRINTFIRSTLINE=True #Print first line of actinides lib
+    PRINTLASTLINE=True  #Print the minus 1 at the end of act lib
+    REMOVEM1=False #If you want to remove all the -1s after each line
+                  #Be careful if you are moding the first lib
+    #Loop through the TAPE9 template file, make changes,
+    #and write to new TAPE9 (output)
+    for i in TAPE9content:
+        hold=i.split()
+        toprint=START
+        if '602' in hold[0] and "-" not in hold[0]:
+            if "942390" in hold[1]:
+                #Replace the gamma x-section
+                i=i.replace(hold[2],Pu239a[k])
+                #Replace the fission x-section
+                i=i.replace(hold[5],Pu239f[k])
+                toprint=True
+            if "942400" in hold[1]:
+                #Replace the gamma x-section
+                i=i.replace(hold[2],Pu240a[k])
+                #Replace the fission x-section
+                i=i.replace(hold[5],Pu240f[k])
+                toprint=True
+            if "942410" in hold[1]:
+                #Replace the gamma x-section
+                i=i.replace(hold[2],Pu241a[k])
+                #Replace the fission x-section
+                i=i.replace(hold[5],Pu241f[k])
+                toprint=True
+            if "922350" in hold[1]:
+                #Replace the gamma x-section
+                i=i.replace(hold[2],U235a[k])
+                #Replace the fission x-section
+                i=i.replace(hold[5],U235f[k])
+                toprint=True
+            if "922380" in hold[1]:
+                #Replace the gamma x-section
+                i=i.replace(hold[2],U238a[k])
+                #Replace the fission x-section
+                i=i.replace(hold[5],U238f[k])
+                toprint=True
+            if "ACTINIDE+AND" in i and PRINTFIRSTLINE:
+                toprint=True
+        if REMOVEM1:
+            i=i.replace("-1","")
+        if toprint:
+            i=i.replace("\n","")
+            print(i,file=output)
+    if not START and PRINTLASTLINE:
+        print("  -1",file=output)
+    output.close() #important or ORIGEN2 wont run
+    #endfile record being detected otherwise
+
+    ############################################################
+    ##################### Run ORIGEN2 ##########################
+    ############################################################
+
+    #I think tape9 needs to be executable?
+    #os.system("chmod +x tape9.inp")
+    #os.system("chmod +x TAPE50.inp")
+    
+    #Run with new TAPE9, also deletes old files
+    print("Run number :"+str(k+1))
+    call(["./r"])
+
+    ############################################################
+    ################## COLLECT OUTPUT ##########################
+    ############################################################
+
+    #Open output file and save contents
+    with open('TAPE6.OUT') as f:
+        content=f.readlines()
+    
+    #Work on Page by Page Basis for output
+    #Also grab time steps
+    Pages=[];Page=""
+    TimeDays=[];AD="ACTINIDES+DAUGHTERS" #For space
+    for i in content:
+        if "PAGE" in i:
+            #Save the Page if it has useful information
+            if AD in Page or "FISSION PRODUCTS" in Page:
+                Pages.append(Page)
+            Page=""
+        else:
+            Page=Page+i
+        #If we have located the time steps pull the info
+        if "TIME, SEC" in i:
+            i=i.replace("TIME, SEC","")
+            i=i.split()
+            for j in i:
+                TimeDays.append(str(round(float(j)/86400,2)))
+
+    #Pages has a list of strings, each with a page on it
+    #from the output
+    #The only pages saved in Pages are ones with text:
+    #"ACTINIDES+DAUGHTERS" or "FISSION PRODUCTS" the rest
+    #of the output is trashed
+    
+    #Loop through all isotopes and grab info
+    for item in ListToPull:
+        Isotope=item.Isotope
+        Type=item.Type
+        Info=Fun.Graboutput(Isotope,Pages,Type)
+        if k==0:
+            SaveFile=open("OUTPUTDATA/"+Isotope+'.out','w')
+            print('D,'.join(TimeDays)+'D',file=SaveFile)
+            print(','.join(Info),file=SaveFile)
+            SaveFile.close()
+        else:
+            SaveFile=open("OUTPUTDATA/"+Isotope+'.out','a')
+            print(','.join(Info),file=SaveFile)
+            SaveFile.close()
+
+    
+#####################################################################
+######################## Time to Execute ############################
+#####################################################################
+
+print("--- %s seconds ---" % (time.time() - start_time))
+

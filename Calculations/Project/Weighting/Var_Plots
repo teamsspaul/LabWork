@@ -1,0 +1,118 @@
+#!/usr/bin/env python3
+"""
+This program will need command line input in the form:
+element-symbol_Isotope_Number-of-Protons_Reaction
+make sure its the second argument like: './Var_Plots U_235_92_a'
+also make sure absorbtion and variance informatio for absorption
+are in a subdirectory 'X_Sections' with the same format
+'U_235_92_a.csv' and 'U_235_92_aV.csv'
+This function will plot the two over each other
+"""
+
+
+#########################################################################
+######################## Import Packages ################################
+#########################################################################
+
+import time
+start_time = time.time()
+import Functions as f
+from scipy import interpolate
+from scipy import integrate
+from scipy.integrate import trapz
+import sys
+import os
+
+#########################################################################
+########################## Calculations #################################
+#########################################################################
+
+#########################################################
+############### Import X-Section Data ###################
+#########################################################
+
+#Command line input
+#Format 'U_235_92_a'
+ElementInput=sys.argv[1]
+
+# (n,g) x section with its variance (x-section first, variance second)
+Names=[ElementInput+".csv",ElementInput+"V.csv"]
+
+#Check if both files exist
+if not os.path.isfile('X_Sections/'+Names[0]):
+    print("File "+Names[0]+" does not exist in X_Sections directory")
+    quit()
+if not os.path.isfile('X_Sections/'+Names[1]):
+    print("File "+Names[1]+" does not exist in X_Sections directory")
+    quit()
+
+#Get Into
+Name=Names[0]
+NameVar=Names[1]
+Element=Name.split('_')[0]
+Isotope=Name.split('_')[1]
+Protons=Name.split('_')[2]
+Reaction=Name.split('_')[3].split('.')[0]
+
+Xsec = f.np.genfromtxt('X_Sections/'+Name,delimiter=',')
+Var  = f.np.genfromtxt('X_Sections/'+NameVar,delimiter=',')
+#Set energy, and convert from MeV to ev
+E=f.copy.copy(Xsec[:,0])*10**6
+Evar=f.copy.copy(Var[:,0])*10**6
+#Make function for variance, so I can plot with the same
+#x axis
+Var_int=interpolate.interp1d(Evar,Var[:,1],
+                             fill_value=0,bounds_error=False)
+
+#Determine the absolute err from the variance
+ErrAb=(Var_int(E)/100)*Xsec[:,1]
+#Find minimum X-section
+Xmin=Xsec[:,1]-ErrAb
+#Find Max X-section
+Xmax=Xsec[:,1]+ErrAb
+
+
+#########################################################
+################## X-sec Plotting #######################
+#########################################################
+
+fig=f.plt.figure(figsize=f.FigureSize)
+ax=fig.add_subplot(111)
+label="ENDF/B-VII.1: $\sigma_"+Reaction+"$ "+Element+"$^{"+Isotope+"}$"
+Ylabel='$\sigma$(E)'
+(fig,ax)=f.plot(E,Xsec[:,1],ax,'blue',label,fig,Ylabel)
+label=""
+(fig,ax)=f.plot(X,Xmin,ax,'black',label,fig,Ylabel)
+(fig,ax)=f.plot(X,Xmax,ax,'black',label,fig,Ylabel)
+
+# Make the y-axis label and tick labels match the line color.
+# ax.set_ylabel(Ylabel, color='blue')
+for tl in ax.get_yticklabels():
+    tl.set_color('blue')
+
+#########################################################
+################## Variance Plot  #######################
+#########################################################
+
+ax2=ax.twinx()
+label=""
+Ylabel='Uncertainty (\%)'
+(fig,ax2)=f.plot(Evar,Var[:,1],ax2,'red',label,fig,Ylabel)
+
+# Make the y-axis label and tick labels match the line color.
+# ax2.set_ylabel(Ylabel, color='red')
+for tl in ax2.get_yticklabels():
+    tl.set_color('red')
+
+#########################################################
+################### Legend/Save  ########################
+#########################################################
+
+f.Legend(ax)
+f.plt.savefig('X_Sections/XwVar_'+ElementInput+'.pdf')
+
+##################################################################
+######################## Time to Execute #########################
+##################################################################
+
+print("--- %s seconds ---" % (time.time() - start_time))
