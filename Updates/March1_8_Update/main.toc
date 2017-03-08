@@ -1,6 +1,6 @@
 \beamer@endinputifotherversion {3.36pt}
 \select@language {english}
 \beamer@sectionintoc {1}{Flux Spectrum}{3}{0}{1}
-\beamer@sectionintoc {2}{Cross Sections}{5}{0}{2}
-\beamer@sectionintoc {3}{Bateman Results}{7}{0}{3}
-\beamer@sectionintoc {4}{Next Week}{9}{0}{4}
+\beamer@sectionintoc {2}{Cross Sections}{6}{0}{2}
+\beamer@sectionintoc {3}{Bateman Results}{8}{0}{3}
+\beamer@sectionintoc {4}{Next Week}{10}{0}{4}
