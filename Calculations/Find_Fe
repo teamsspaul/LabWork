@@ -39,7 +39,7 @@ import Functions as fun
 # particular volume
 #######################################################
 
-V3=ufloat(4,0.02)
+V3=ufloat(50,0.5)
 N=100
 Range=0.1
 
@@ -48,6 +48,7 @@ MF1=ufloat(2.302,0.009)
 MF2=ufloat(0,0)
 MF3=ufloat(0.024,0.001)
 V1=(MF3*V3)/MF1
+#V1=ufloat(0.894,0.00894)
 gramsOmolF=ufloat(248.022,0.017)
 p1=ufloat(1.418,0.005)
 
@@ -56,27 +57,30 @@ gramsOmolN=ufloat(63.0130,0.0012)
 Temperature=ufloat(24.8,3)
 dfDen=pd.read_csv('../Data/Nitric_Acid.csv')
 MN1=ufloat(0,0)
-MN3=ufloat(4,0.05)
+MN3=ufloat(0.75,0.05)
 mN3=fun.ConvertMol(True,MN3,gramsOmolN,dfDen,Temperature)
+#mN3=ufloat(0,0)
 WtN3=fun.GetWt(mN3,gramsOmolN)
+#WtN3=ufloat(0,0)
 p3=fun.GetDensity(Temperature,WtN3,dfDen)
 
-#### Calculation
+#### Calculation to determine molar concentration of HNO3 in V2
 
-C=(V3*MN3)/(V3*p3-V1*p1)
+# C=(V3*MN3)/(V3*p3-V1*p1)
 
-MN2=(MN3*V3)/(V3-V1) # A Guess
-MN2Range=np.linspace(MN2-MN2*Range,MN2+MN2*Range,N)
+# MN2=(MN3*V3)/(V3-V1) # A Guess
+# MN2Range=np.linspace(MN2-MN2*Range,MN2+MN2*Range,N)
 
-Compare=[]
-for MN2i in MN2Range:
-    mN2i=fun.ConvertMol(True,MN2i,gramsOmolN,dfDen,Temperature)
-    WtN2i=fun.GetWt(mN2i,gramsOmolN)
-    p2i=fun.GetDensity(Temperature,WtN2i,dfDen)
-    Compare.append(abs(MN2i-C*p2i))
-    if Compare[-1]==0:
-        break
-MN2=MN2Range[Compare.index(min(Compare))]
+# Compare=[]
+# for MN2i in MN2Range:
+#     mN2i=fun.ConvertMol(True,MN2i,gramsOmolN,dfDen,Temperature)
+#     WtN2i=fun.GetWt(mN2i,gramsOmolN)
+#     p2i=fun.GetDensity(Temperature,WtN2i,dfDen)
+#     Compare.append(abs(MN2i-C*p2i))
+#     if Compare[-1]==0:
+#         break
+# MN2=MN2Range[Compare.index(min(Compare))]
+MN2=ufloat(15.35,0.13)
 mN2=fun.ConvertMol(True,MN2,gramsOmolN,dfDen,Temperature)
 WtN2=fun.GetWt(mN2,gramsOmolN)
 p2=fun.GetDensity(Temperature,WtN2,dfDen)
@@ -87,7 +91,7 @@ print("Combine "+str(V1)+" ml of "+str(MF1)+\
       " M Fe(II) in "+str(MN1)+" M HNO_3 solution with "+str(V2)+\
       " ml of "+str(MF2)+" M Fe(II) in "+str(MN2)+" M HNO_3 solution, to get "+str(V3)+" ml of "+\
       str(MF3)+" M Fe(II) in "+str(MN3)+" M HNO_3 solution")
-
+print("Final Density assumes the density of nitric and is ",p3)
 
 ###################### Time To execute #################
 

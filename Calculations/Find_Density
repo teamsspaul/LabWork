@@ -34,26 +34,9 @@ start_time = time.time()
 import Functions as fun
 
 #######################################################
-# Known initial Molarities, and volumes
-# Calculate final molarity and volume and density
-#######################################################
-
-#My Calc
-# Vf1=ufloat(0.5,0.05)
-# Vi=ufloat(5.167,0.1)
-# vi2=ufloat(4.88,0.08)
-# vf2=ufloat(0.5,0.05)
-# V1=ufloat(1,0.01)
-# V2=ufloat(1,0.01)
-# V3=ufloat(1,0.01)
-# V4=ufloat(0.5,0.006)
-# V5=ufloat(1,0.01)
-# V6=ufloat(0.5,0.006)
-# print((V5+V6)/(V1+V2+V3+V4+V5+V6))
-# quit()
-
-#nothin to do with the rest
-
+# Known initial Molarities, find density
+# 
+########################################/###############
 
 Temperature=ufloat(24.8,3)
 gramsOmol=ufloat(63.0130,0.0012)
@@ -61,35 +44,16 @@ dfDen=pd.read_csv('../Data/Nitric_Acid.csv')
 
 PipettError=0.001 #Depends on volume preparing
 
-M1=ufloat(0,0.)
-#M1=ufloat(4,0.13)
+
+
+############ Remove inside these brakets
+M1=ufloat(3.95,0.09)
 m1=fun.ConvertMol(True,M1,gramsOmol,dfDen,Temperature)
-
-M2=ufloat(15.43,0.5)
-m2=fun.ConvertMol(True,M2,gramsOmol,dfDen,Temperature)
-
-Vol1=ufloat(3.97,0.04)
-Vol2=ufloat(0.5,0.05)
-
 WtConcentration1=fun.GetWt(m1,gramsOmol)
-WtConcentration2=fun.GetWt(m2,gramsOmol)
-
 p1=fun.GetDensity(Temperature,WtConcentration1,dfDen)
-p2=fun.GetDensity(Temperature,WtConcentration2,dfDen)
+############
 
-
-#Check calculation
-m3,p3,Vol3,Wt,M3=fun.NewConcentration(m1,m2,gramsOmol,
-                                Temperature,dfDen,
-                                Vol1,Vol2)
-
-print("Combine "+str(Vol1)+" ml of "+str(M1)+\
-      " M solution with "+str(Vol2)+\
-      " ml of "+str(M2)+" M solution, to get "+str(Vol3)+" ml of "+\
-      str(M3)+" M solution")
-print("The final density is "+str(p3))
-print("The initial density of volume 1 is "+str(p1))
-print("The initial density of volume 2 is "+str(p2))
+print("Density is ",p1)
 
 ###################### Time To execute #################
 

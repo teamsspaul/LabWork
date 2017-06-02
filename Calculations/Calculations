@@ -119,10 +119,20 @@ else:
     Molarity=fun.ConvertMol(MolarityToMolality,Molality,
                             gramsOmol,dfDen,Temperature)
 print(Molarity)
-quit()
 
 #print("Molarity = "+str(Molarity))
 #print("Molality = "+str(Molality))
+
+#######################################################
+############ Find Density #############################
+#######################################################
+
+MolarityDensity=ufloat(15.46,0.01)
+mDensity=fun.ConvertMol(True,MolarityDensity,gramsOmol,dfDen,Temperature)
+WtConcentrationDensity=100/(1000/(mDensity*gramsOmol)+1)
+density=fun.GetDensity(Temperature,WtConcentrationDensity,dfDen)
+print(density)
+quit()
 
 
 #######################################################
@@ -133,15 +143,18 @@ Vol1=ufloat(0.136503,0.00136503)  #Step 1
 Vol2=ufloat(1.86347,0.0186347)
 
 Vol1=ufloat(0.5,0.005)   #Step2
-Vol2=ufloat(2.0,0.02)
-
+Vol2=ufloat(4.5,0.045)
 
 gramsOmol=gramsOmol
-
 m1=Molality
 
-m2=0
-m2=1.0913   #Step2
+M1=Molarity
+M2=ufloat(4,0.01)
+
+m1=fun.ConvertMol(True,M1,
+                  gramsOmol,dfDen,Temperature)
+m2=fun.ConvertMol(True,M2,
+                  gramsOmol,dfDen,Temperature)
 
 Temperature=ufloat(24.8,3)
 
@@ -154,8 +167,8 @@ m3,p3,Vol3,Wt,M3=fun.NewConcentration(m1,m2,gramsOmol,
 M1=fun.ConvertMol(False,m1,gramsOmol,dfDen,Temperature)
 M2=fun.ConvertMol(False,m2,gramsOmol,dfDen,Temperature)
 
-print(m3)
 print(M3)
+print(p3)
 print(Vol3)
 
 #print(M1)

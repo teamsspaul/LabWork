@@ -1,0 +1,166 @@
+#!/usr/bin/env python3
+
+"""
+Chem Calculations
+"""
+
+__author__     =  "Paul Mendoza"
+__copyright__  =  "Copyright 2016, Planet Earth"
+__credits__    = ["Sunil Chirayath",
+                  "Charles Folden",
+                  "Jeremy Conlin"]
+__license__    =  "GPL"
+__version__    =  "1.0.1"
+__maintainer__ =  "Paul Mendoza"
+__email__      =  "paul.m.mendoza@gmail.com"
+__status__     =  "Production"
+
+################################################################
+##################### Import packages ##########################
+################################################################
+
+import os.path
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import datetime
+from uncertainties import ufloat
+from uncertainties.umath import *
+from uncertainties import unumpy as unp
+import re
+import time
+start_time = time.time()
+
+import Functions as fun
+
+################################################################
+#################### Random Calculcations ######################
+################################################################
+
+###############################################################
+################### Fe Calculation ############################
+############# 40 G Page 80 paper lab book #####################
+###############################################################
+
+#40 G
+# pHNO3=ufloat(1.402,0.006)
+# pwater=ufloat(0.9971,0.0008)
+# pFe=ufloat(1.418,0.005)
+
+# V_DI=ufloat(47.05,1)
+# V_HNO3=ufloat(2.429,0.03)
+# V_Fe=ufloat(0.521,0.01)
+
+#36G
+# pHNO3=ufloat(1.402,0.006)
+# pwater=ufloat(0.9971,0.0008)
+# pFe=ufloat(1.418,0.005)
+
+# V_DI=ufloat(0.943,0.01)
+# V_HNO3=ufloat(1.036,0.01)
+# V_Fe=ufloat(0.021,0.00105)
+
+#37G
+# pHNO3=ufloat(1.402,0.006)
+# pwater=ufloat(0.9971,0.0008)
+# pFe=ufloat(1.418,0.005)
+
+# V_DI=ufloat(1.461,1.461*0.01)
+# V_HNO3=ufloat(0.518,0.518*0.015)
+# V_Fe=ufloat(0.021,0.021*0.05)
+
+#38G
+# pHNO3=ufloat(1.402,0.006)
+# pwater=ufloat(0.9971,0.0008)
+# pFe=ufloat(1.418,0.005)
+
+# V_DI=ufloat(1.72,1.72*0.01)
+# V_HNO3=ufloat(.259,0.259*0.015)
+# V_Fe=ufloat(0.021,0.021*0.05)
+
+#39G
+pHNO3=ufloat(1.402,0.006)
+pwater=ufloat(0.9971,0.0008)
+pFe=ufloat(1.418,0.005)
+
+V_DI=ufloat(3.932,3.932*0.01)
+V_HNO3=ufloat(0.026,0.026*0.015)
+V_Fe=ufloat(0.042,0.042*0.05)
+
+
+
+
+
+################################################################
+# First combine the water and HNO3
+################################################################
+
+#######################################################
+# Known initial Molarities, and volumes
+# Calculate final molarity and volume and density
+#######################################################
+Temperature=ufloat(24.8,3)
+gramsOmol=ufloat(63.0130,0.0012)
+dfDen=pd.read_csv('../Data/Nitric_Acid.csv')
+
+PipettError=0.001 #Depends on volume preparing
+
+M1=ufloat(0,0.) #water
+m1=fun.ConvertMol(True,M1,gramsOmol,dfDen,Temperature)
+
+M2=ufloat(15.35,0.13)
+m2=fun.ConvertMol(True,M2,gramsOmol,dfDen,Temperature)
+
+import copy
+Vol1=copy.copy(V_DI)
+Vol2=copy.copy(V_HNO3)
+
+WtConcentration1=fun.GetWt(m1,gramsOmol)
+WtConcentration2=fun.GetWt(m2,gramsOmol)
+    
+p1=fun.GetDensity(Temperature,WtConcentration1,dfDen)
+p2=fun.GetDensity(Temperature,WtConcentration2,dfDen)
+
+
+#Check calculation
+m3,p3,Vol3,Wt,M3=fun.NewConcentration(m1,m2,gramsOmol,
+                                Temperature,dfDen,
+                                Vol1,Vol2)
+
+print("Combine "+str(Vol1)+" ml of "+str(M1)+\
+      " M HNO3 solution with "+str(Vol2)+\
+      " ml of "+str(M2)+" M HNO3 solution, to get "+str(Vol3)+" ml of "+\
+      str(M3)+" M HNO3 solution")
+#print("The final density is "+str(p3))
+#print("The initial density of volume 1 is "+str(p1))
+#print("The initial density of volume 2 is "+str(p2))
+
+############################################################
+## Combine HNO3 and Fe
+############################################################
+
+#Volume average density with nitric acid and Fe
+pFe_HNO3=(pFe*V_Fe+p3*Vol3)/((V_Fe+Vol3))
+#Assume mass is conserved
+VFe_HNO3=(pFe*V_Fe+p3*Vol3)/pFe_HNO3
+#Molarity of HNO3
+MHNO3_Final=(V_HNO3*M2)/(VFe_HNO3)
+#Molarity of Fe
+MFe=ufloat(2.302,0.009)
+MFe_Final=(V_Fe*MFe)/(VFe_HNO3)
+#print(pFe_HNO3)
+#print(VFe_HNO3)
+#print(MHNO3_Final)
+#print(MFe_Final)
+
+print("")
+print("Then add that solution to "+\
+      str(V_Fe)+" ml of "+str(MFe)+\
+      " M Fe(II) in "+str(0)+" M HNO_3 solution"\
+      " to get "+str(VFe_HNO3)+" ml of "+\
+      str(MFe_Final)+" M Fe(II) in "+str(MHNO3_Final)+" M HNO_3 solution")
+print("Final Density assumes the density is averae of Fe and Nitric and is ",pFe_HNO3)
+
+###################### Time To execute #################
+
+print("--- %s seconds ---" % (time.time() - start_time))
